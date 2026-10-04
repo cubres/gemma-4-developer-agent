@@ -1,0 +1,63 @@
+{
+  "experiment": "Interrupted B_scout_kit versus J_scout_kit_progress_ledger development comparison",
+  "kind": "PUBLIC_TRAINING_DEVELOPMENT_ONLY",
+  "execution": {
+    "private_notebook_ref": "prvsiyan/zz-gpuchk-861737",
+    "version": 13,
+    "status": "CANCEL_ACKNOWLEDGED",
+    "stopped_by": "Human owner",
+    "identity_preserved": true,
+    "source_sha256": "d41e264947fe5578a857ac9645524ac4b8b24ff7100ce38e817b686c18db104e",
+    "verified_before_utc": "2026-10-04T19:38:44.646744Z",
+    "verified_after_utc": "2026-10-04T19:38:51.241027Z"
+  },
+  "protocol": {
+    "same_frozen_public_panel": 12,
+    "arms_sequential": true,
+    "model": "gemma-4-31b-it-qat-w4a16-ct",
+    "per_task_minutes": 5,
+    "max_tool_calls": 100,
+    "hardware": "4 NVIDIA L4",
+    "compiler": "adk-submission 0.2.12",
+    "development_verifier": "SubprocessManager"
+  },
+  "observed": {
+    "B": {
+      "completed_task_rows": 12,
+      "resolved": 3,
+      "rows_with_error": 2,
+      "error_categories": [
+        "Agent session timeout",
+        "Public test-patch application failure"
+      ],
+      "aggregate_task_seconds": 2231.268818014999,
+      "charged_tool_calls": 711
+    },
+    "J": {
+      "task_complete_events": 0,
+      "first_task_trace_events": 199,
+      "model_final_event_seen": true,
+      "verification_started": true,
+      "final_validation_receipt_available": false
+    }
+  },
+  "bindings": {
+    "selected_fetch_receipt_sha256": "ff84eb73be3b2c0d800b45581f1bdee0f188f34ad08dea2c192d143fba10030a",
+    "B_validation_receipt_sha256": "206e6e04ca7151e4766ec7629a3f97d20b3871bd255e471ba3afd130ed474041"
+  },
+  "official_public_score": null,
+  "interpretation": "B completed the development panel; J was interrupted before any task had a completed verification result. No paired effect or improvement estimate is available.",
+  "lessons": [
+    "A four-L4 compute session was launched with an oversized wall-time budget that omitted the previously documented 2x quota multiplier. The owner stopped it.",
+    "The resource planner now checks quota multipliers across every supplied phase bound; its arithmetic tests do not establish runtime or performance.",
+    "The next prompt-only candidate uses the simpler A_scout reference instead of patch-kit."
+  ],
+  "limits": [
+    "This reused public development panel is not the hidden official task set.",
+    "Two B rows contain errors and remain in the full twelve-task denominator.",
+    "The development subprocess verifier differs from the official Docker scorer.",
+    "A model final response is not a completed verification result.",
+    "Prompt guidance is not enforced by an external loop-prevention callback.",
+    "No raw competition task descriptions, test patches, labels or repository snapshots are included in this record."
+  ]
+}
