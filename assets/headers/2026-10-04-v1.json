@@ -1,0 +1,16 @@
+{
+  "schema_version": 1,
+  "created_date": "2026-10-04",
+  "campaign": "Gemma 4 Developer Agent",
+  "image": "2026-10-04-v1.png",
+  "sha256": "29c205c6dacb57eda07da734495b28cb4756f7ab95267fdb1220d295b1c7424c",
+  "style": "Retrofuturist glass-and-chrome editorial 3D",
+  "generation_mode": "built-in image_gen",
+  "prompt": "Use case: stylized-concept. Asset type: striking opening cover art for a Gemma 4 developer-agent notebook. Create a premium wide landscape editorial 3D illustration, 16:9, retrofuturist glass-and-chrome art direction. A luminous blue-violet precious-stone prism is the visual heart of a developer workbench; narrow streams of clean abstract source-code glyphs and branching repository pathways pass through it, becoming a precise small patch and a verified test pattern. Make the mechanism feel like careful code investigation, evidence collection and repair. Architectural composition, soft volumetric light, tactile brushed metal and glass, deep midnight blue, electric ultramarine, tiny warm amber accents. Integrate the exact wordmark text \"Gemma 4\" once, highly legible and elegant, understated contemporary sans serif, cool pale blue. No other words or numbers, no fake results or badges, no watermarks, no robot face. Sophisticated, coherent, beautiful research notebook cover, with breathing room and exceptionally clean detail.",
+  "intended_use": "Opening artwork for the campaign notebook and repository",
+  "illustrative": true,
+  "cadence": "Refresh approximately every 10 versions, rotating art styles and retaining versioned assets",
+  "kaggle_versions_using_asset": [],
+  "diagram_policy": "Include readable pipeline, data, validation and experiment diagrams throughout; measured charts use reproducible plotting.",
+  "notebook_identity_preserved": true
+}
