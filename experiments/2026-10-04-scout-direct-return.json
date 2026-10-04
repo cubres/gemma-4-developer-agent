@@ -1,0 +1,64 @@
+{
+  "schema_version": 1,
+  "experiment": "A scout with native direct-return behavior",
+  "candidate": "L_scout_skip_summary",
+  "parent": "A_scout",
+  "prepared_utc": "2026-10-04T20:09:11.284630+00:00",
+  "compiler_checked_utc": "2026-10-04T20:11:01.984565+00:00",
+  "status": "COMPILED_UNMEASURED",
+  "hypothesis": "Measure whether direct return after the scout helps patch quality or changes continuation overhead; direction unknown.",
+  "compiled_graph_difference": [
+    {
+      "path": "root.tools[6].skip_summarization",
+      "before": false,
+      "after": true
+    }
+  ],
+  "unchanged": [
+    "Parent and scout prompts",
+    "Native tools and scalar argument declarations",
+    "Sampling",
+    "Literal gemma-4-31b-it-qat-w4a16-ct alias",
+    "Evaluation settings"
+  ],
+  "mechanism": "The organizer forwards this boolean to AgentTool. Both values already isolate the child session. True marks the response final for the current parent invocation; unfinished work then needs an organizer continuation nudge, up to the harness limit. It does not demonstrate a saved coder call.",
+  "zip": {
+    "bytes": 6236,
+    "members": 6,
+    "sha256": "a5d3a08b7b8d79d48f81c5a6e6ff827b3ad2ddc2145ebb4456073036da8ecff8",
+    "parent_sha256": "d43f47063a4df557325d3e9e3cf28fddeb00ddbbcd49150e50a200d50a52d6fa",
+    "independent_memory_rebuild_equal": true,
+    "originals_preserved": true
+  },
+  "changed_member": {
+    "path": "agent.yaml",
+    "before_sha256": "8328e181b2e9b8215b42d0ef4f442bf8bcb423cae4fe5cb785c9cec5a6afa80f",
+    "after_sha256": "4a9bef7e794fafffaf9f0dad6d4782d7320321c811a0e1e9648c86ed8284cc08"
+  },
+  "compiler": {
+    "adk_submission": "0.2.12",
+    "google_adk": "1.36.1",
+    "google_genai": "2.11.0",
+    "swegemma": "0.2.7",
+    "receipt_sha256": "0d7cf955b08490c4439b5e8e3a069de03b89113f5a976ec5e7d38f79ca1cf1f1",
+    "organizer_compiler_source_sha256": "39cc4884699faf147ca1b326664e888c1861f750fe36525b840b5f812d593eed",
+    "organizer_context_source_sha256": "97f06280c50df3132d1af7ef6126884b66b48887a1cf94b293af01e5907dc2a7",
+    "organizer_tools_source_sha256": "e19d1e81d90976fda93f346104d7f34f74018747ac81838a363de2e357358c31"
+  },
+  "verification": "Root independently verified all six ZIP member hashes, changed-member list, compiler receipt hash and CRCs.",
+  "runtime_validated": false,
+  "score_validated": false,
+  "official_submission": null,
+  "official_score": null,
+  "model_calls": 0,
+  "tool_calls": 0,
+  "GPU": false,
+  "required_next_evidence": [
+    "Matched A/L development tasks under the actual parser",
+    "Resolved tasks and valid source patches",
+    "Scout calls and continuation_nudge counts",
+    "Charged calls and wall time",
+    "Conservative quota plan including accelerator multiplier and startup reserve"
+  ],
+  "source_binding_limit": "Black Cat's scored V10 badge is distinct from its current unvalidated V13 configurations. Exact scored historical ZIP binding remains unresolved; no competitor gain is attributed to this boolean."
+}
