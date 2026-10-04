@@ -1,0 +1,33 @@
+{
+  "experiment": "Scouting agent with patch-kit skill",
+  "submitted_at_utc": "2026-10-04T08:29:19.363Z",
+  "official": {
+    "ref": "56818847",
+    "status": "COMPLETE",
+    "public_score": "0.05",
+    "error_description": "",
+    "verified_at_utc": "2026-10-04T17:05:29.552502Z"
+  },
+  "reference": {
+    "ref": "56794711",
+    "status": "COMPLETE",
+    "public_score": "0.08",
+    "bundle": "A_scout",
+    "submission_sha256": "d43f47063a4df557325d3e9e3cf28fddeb00ddbbcd49150e50a200d50a52d6fa"
+  },
+  "configuration": {
+    "bundle": "B_scout_kit",
+    "time_minutes": 5,
+    "max_tool_calls": 100
+  },
+  "bindings": {
+    "submission_zip_sha256": "95773a76a7d6d69351892fe64aff1ee9a2922594faf48c5041e2b6a1ef5d7ad3"
+  },
+  "change_from_reference": "Adds the patch-kit skill configuration and installation/editing instructions; model, sampling and evaluation configuration remain unchanged.",
+  "interpretation": "Below the simpler scout reference in one official draw; retain both artifacts and use the simpler bundle as the next prompt-only reference.",
+  "limits": [
+    "The two official rows differ in configuration and submission date; this is not a paired causal estimate.",
+    "A prior byte-identical control scored 0.08 and 0.06 on different dates.",
+    "Reused public development outcomes do not establish hidden-task performance."
+  ]
+}
