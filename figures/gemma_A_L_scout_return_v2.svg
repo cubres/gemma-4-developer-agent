@@ -1,0 +1,113 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1160" viewBox="0 0 1600 1160" role="img" aria-labelledby="title desc">
+  <title id="title">A and L: native scout return and parent continuation</title>
+  <desc id="desc">Both configurations invoke the scout in a fresh isolated child session and return its last nonthought text. A uses skip_summarization false, so the parent model flow continues inside its invocation. L uses true, marking the function response final and ending the current parent invocation. If work is unfinished and budgets permit, the organizer harness sends a continuation nudge in the same parent session. Its limit is three consecutive nudges without tool activity; tool calls reset the counter. A may also receive a nudge if it ends later without a patch. Charged calls, runtime and quality effects are unmeasured.</desc>
+  <defs>
+    <linearGradient id="background" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#081b31" />
+      <stop offset="1" stop-color="#112538" />
+    </linearGradient>
+    <linearGradient id="sharedGlass" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#173750" />
+      <stop offset="1" stop-color="#10283d" />
+    </linearGradient>
+    <linearGradient id="blueGlass" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#14364e" />
+      <stop offset="1" stop-color="#10283d" />
+    </linearGradient>
+    <linearGradient id="amberGlass" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#35382e" />
+      <stop offset="1" stop-color="#172a36" />
+    </linearGradient>
+    <marker id="arrowBlue" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M 1 1 L 9 5 L 1 9" fill="none" stroke="#80d5f7" stroke-width="1.8" />
+    </marker>
+    <marker id="arrowAmber" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M 1 1 L 9 5 L 1 9" fill="none" stroke="#f6c477" stroke-width="1.8" />
+    </marker>
+    <style>
+      text { font-family: Arial, Helvetica, sans-serif; fill: #edf6fb; }
+      .body { font-size: 21px; }
+      .small { font-size: 18px; fill: #b8cad5; }
+      .muted { fill: #b8cad5; }
+      .blue { fill: #87dcfb; }
+      .amber { fill: #f6c477; }
+      .mono { font-family: Menlo, Consolas, monospace; font-size: 20px; }
+      .step { font-size: 24px; font-weight: 700; }
+    </style>
+  </defs>
+  <rect width="1600" height="1160" fill="url(#background)" />
+  <path d="M 1240 0 C 1350 120 1450 80 1600 260" fill="none" stroke="#2e5e74" stroke-opacity="0.22" stroke-width="90" />
+  <path d="M 0 880 C 170 900 40 1100 330 1160" fill="none" stroke="#285b76" stroke-opacity="0.18" stroke-width="90" />
+  <text x="64" y="72" font-size="48" font-weight="700" font-family="Arial, Helvetica, sans-serif" fill="#edf6fb">A and L: how the scout returns</text>
+  <text x="64" y="114" font-size="23" class="muted" font-family="Arial, Helvetica, sans-serif" fill="#b8cad5">One native boolean changes parent continuation. The scout stays isolated in both paths.</text>
+  <text x="64" y="145" font-size="18" class="blue" font-family="Arial, Helvetica, sans-serif" fill="#87dcfb">Verified organizer code path · compiler construction only · no agent run or score claim</text>
+  <rect x="60" y="166" width="1480" height="225" rx="24" fill="url(#sharedGlass)" stroke="#50758a" stroke-opacity="0.6" />
+  <text x="92" y="207" font-size="25" font-weight="700" font-family="Arial, Helvetica, sans-serif" fill="#edf6fb">Shared in A and L</text>
+  <text x="1298" y="207" class="small" font-family="Arial, Helvetica, sans-serif" fill="#b8cad5" font-size="18">Same model and tools</text>
+  <rect x="92" y="233" width="408" height="115" rx="15" fill="#0c263a" stroke="#43667b" />
+  <circle cx="120" cy="262" r="12" fill="#82d9fa" />
+  <text x="116" y="267" font-size="15" font-weight="700" fill="#102b3f" font-family="Arial, Helvetica, sans-serif">1</text>
+  <text x="148" y="268" class="step" font-family="Arial, Helvetica, sans-serif" fill="#edf6fb" font-size="24" font-weight="700">Parent calls the scout</text>
+  <text x="112" y="306" class="mono" font-family="Menlo, Consolas, monospace" fill="#edf6fb" font-size="20">scout(request: string)</text>
+  <text x="112" y="332" class="small" font-family="Arial, Helvetica, sans-serif" fill="#b8cad5" font-size="18">The same original A prompt and tools.</text>
+  <path d="M 516 290 L 554 290 M 545 284 L 553 290 L 545 296" stroke="#80d5f7" stroke-width="2.5" fill="none" />
+  <rect x="576" y="233" width="432" height="115" rx="15" fill="#0c263a" stroke="#43667b" />
+  <circle cx="604" cy="262" r="12" fill="#82d9fa" />
+  <text x="600" y="267" font-size="15" font-weight="700" fill="#102b3f" font-family="Arial, Helvetica, sans-serif">2</text>
+  <text x="632" y="268" class="step" font-family="Arial, Helvetica, sans-serif" fill="#edf6fb" font-size="24" font-weight="700">Fresh child session</text>
+  <text x="596" y="306" class="body" font-family="Arial, Helvetica, sans-serif" fill="#edf6fb" font-size="21">Separate session and memory services.</text>
+  <text x="596" y="332" class="small" font-family="Arial, Helvetica, sans-serif" fill="#b8cad5" font-size="18">Exploration stays in the child context.</text>
+  <path d="M 1024 290 L 1062 290 M 1053 284 L 1061 290 L 1053 296" stroke="#80d5f7" stroke-width="2.5" fill="none" />
+  <rect x="1084" y="233" width="424" height="115" rx="15" fill="#0c263a" stroke="#43667b" />
+  <circle cx="1112" cy="262" r="12" fill="#82d9fa" />
+  <text x="1108" y="267" font-size="15" font-weight="700" fill="#102b3f" font-family="Arial, Helvetica, sans-serif">3</text>
+  <text x="1140" y="268" class="step" font-family="Arial, Helvetica, sans-serif" fill="#edf6fb" font-size="24" font-weight="700">Child response returned</text>
+  <text x="1104" y="306" class="body" font-family="Arial, Helvetica, sans-serif" fill="#edf6fb" font-size="21">Last nonthought text from the child.</text>
+  <text x="1104" y="332" class="small" font-family="Arial, Helvetica, sans-serif" fill="#b8cad5" font-size="18">Both values use this same return shape.</text>
+  <text x="92" y="375" class="small" font-family="Arial, Helvetica, sans-serif" fill="#b8cad5" font-size="18">The flag does not create the child isolation, add a helper, or change the scout's native tool schema.</text>
+  <path d="M 800 392 L 800 418 L 420 418 L 420 440 M 414 432 L 420 440 L 426 432" fill="none" stroke="#80d5f7" stroke-width="2.5" />
+  <path d="M 800 418 L 1180 418 L 1180 440 M 1174 432 L 1180 440 L 1186 432" fill="none" stroke="#f6c477" stroke-width="2.5" />
+  <rect x="60" y="454" width="720" height="514" rx="24" fill="url(#blueGlass)" stroke="#4c9bc0" stroke-opacity="0.65" />
+  <rect x="820" y="454" width="720" height="514" rx="24" fill="url(#amberGlass)" stroke="#c3a46b" stroke-opacity="0.65" />
+  <text x="92" y="497" font-size="30" font-weight="700" class="blue" font-family="Arial, Helvetica, sans-serif" fill="#87dcfb">A · original scout return</text>
+  <rect x="92" y="515" width="656" height="41" rx="10" fill="#08283e" />
+  <text x="110" y="542" class="mono blue" font-family="Menlo, Consolas, monospace" fill="#87dcfb" font-size="20">skip_summarization = false</text>
+  <rect x="92" y="578" width="656" height="101" rx="15" fill="#0a2438" stroke="#3f6980" />
+  <text x="112" y="612" class="step" font-family="Arial, Helvetica, sans-serif" fill="#edf6fb" font-size="24" font-weight="700">Parent invocation continues</text>
+  <text x="112" y="645" class="body" font-family="Arial, Helvetica, sans-serif" fill="#edf6fb" font-size="21">The function response is available to its next model step.</text>
+  <text x="112" y="668" class="small" font-family="Arial, Helvetica, sans-serif" fill="#b8cad5" font-size="18">The flag does not mark this response as final.</text>
+  <path d="M 420 690 L 420 719 M 414 711 L 420 719 L 426 711" fill="none" stroke="#80d5f7" stroke-width="2.5" />
+  <rect x="92" y="737" width="656" height="95" rx="15" fill="#0a2438" stroke="#3f6980" />
+  <text x="112" y="773" class="step" font-family="Arial, Helvetica, sans-serif" fill="#edf6fb" font-size="24" font-weight="700">Next parent model step</text>
+  <text x="112" y="807" class="body" font-family="Arial, Helvetica, sans-serif" fill="#edf6fb" font-size="21">May continue with tools, edit, verify, or submit a patch.</text>
+  <text x="112" y="875" class="small" font-family="Arial, Helvetica, sans-serif" fill="#b8cad5" font-size="18">A can also receive a harness nudge later if it ends</text>
+  <text x="112" y="902" class="small" font-family="Arial, Helvetica, sans-serif" fill="#b8cad5" font-size="18">without a patch and the task still has budget.</text>
+  <text x="112" y="941" class="blue" font-size="18" font-family="Arial, Helvetica, sans-serif" fill="#87dcfb">No claimed extra summary call or quality advantage.</text>
+  <text x="852" y="497" font-size="30" font-weight="700" class="amber" font-family="Arial, Helvetica, sans-serif" fill="#f6c477">L · native direct return</text>
+  <rect x="852" y="515" width="656" height="41" rx="10" fill="#252e2d" />
+  <text x="870" y="542" class="mono amber" font-family="Menlo, Consolas, monospace" fill="#f6c477" font-size="20">skip_summarization = true</text>
+  <rect x="852" y="578" width="656" height="93" rx="15" fill="#172b36" stroke="#8a8067" />
+  <text x="872" y="612" class="step" font-family="Arial, Helvetica, sans-serif" fill="#edf6fb" font-size="24" font-weight="700">Current parent invocation ends</text>
+  <text x="872" y="644" class="body" font-family="Arial, Helvetica, sans-serif" fill="#edf6fb" font-size="21">AgentTool sets the flag; the function response is final.</text>
+  <text x="872" y="665" class="small" font-family="Arial, Helvetica, sans-serif" fill="#b8cad5" font-size="18">Final for this invocation, not necessarily for the task.</text>
+  <path d="M 1180 682 L 1180 700 M 1174 692 L 1180 700 L 1186 692" fill="none" stroke="#f6c477" stroke-width="2.5" />
+  <rect x="852" y="718" width="656" height="75" rx="15" fill="#172b36" stroke="#8a8067" />
+  <text x="872" y="748" class="step" font-family="Arial, Helvetica, sans-serif" fill="#edf6fb" font-size="24" font-weight="700">Harness checks task state and budgets</text>
+  <text x="872" y="777" class="body" font-family="Arial, Helvetica, sans-serif" fill="#edf6fb" font-size="21">Patch submitted or stopping limit reached → task stops.</text>
+  <path d="M 1180 804 L 1180 821 M 1174 813 L 1180 821 L 1186 813" fill="none" stroke="#f6c477" stroke-width="2.5" />
+  <rect x="852" y="839" width="656" height="107" rx="15" fill="#172b36" stroke="#8a8067" />
+  <text x="872" y="872" class="step" font-family="Arial, Helvetica, sans-serif" fill="#edf6fb" font-size="24" font-weight="700">Unfinished → continuation nudge</text>
+  <text x="872" y="902" class="body" font-family="Arial, Helvetica, sans-serif" fill="#edf6fb" font-size="21">New user message, same parent session.</text>
+  <text x="872" y="930" class="small" font-family="Arial, Helvetica, sans-serif" fill="#b8cad5" font-size="18">Up to 3 consecutive nudges; tool calls reset the counter.</text>
+  <rect x="60" y="991" width="1480" height="105" rx="20" fill="#102638" stroke="#526e7f" stroke-opacity="0.65" />
+  <text x="92" y="1026" font-size="22" font-weight="700" font-family="Arial, Helvetica, sans-serif" fill="#edf6fb">What the compiler check does not measure</text>
+  <circle cx="106" cy="1062" r="5" fill="#87dcfb" />
+  <text x="122" y="1069" class="body" font-family="Arial, Helvetica, sans-serif" fill="#edf6fb" font-size="21">Charged calls: unknown</text>
+  <circle cx="554" cy="1062" r="5" fill="#f6c477" />
+  <text x="570" y="1069" class="body" font-family="Arial, Helvetica, sans-serif" fill="#edf6fb" font-size="21">Wall time: unknown</text>
+  <circle cx="1002" cy="1062" r="5" fill="#c6d9e2" />
+  <text x="1018" y="1069" class="body" font-family="Arial, Helvetica, sans-serif" fill="#edf6fb" font-size="21">Task quality / score: unknown</text>
+  <text x="64" y="1127" class="small" font-family="Arial, Helvetica, sans-serif" fill="#b8cad5" font-size="18">Actual organizer compiler: one graph difference only · zero model/tool calls during construction</text>
+  <text x="64" y="1150" font-size="15" fill="#90a8b8" font-family="Arial, Helvetica, sans-serif">Original mechanism diagram · organizer schema, AgentTool, ADK flow and Swegemma harness · 2026-10-04 · v2</text>
+</svg>

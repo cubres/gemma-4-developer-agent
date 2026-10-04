@@ -1,0 +1,106 @@
+{
+  "artifact": "gemma_A_L_scout_return_v2",
+  "authorship": "Original mechanism diagram by cubres (Kaggle prvsiyan) campaign; no competitor source used",
+  "compiler_receipt_sha256": "0d7cf955b08490c4439b5e8e3a069de03b89113f5a976ec5e7d38f79ca1cf1f1",
+  "created_utc": "2026-10-04T20:53:07.173241+00:00",
+  "graph_difference": [
+    {
+      "after": true,
+      "before": false,
+      "path": "root.tools[6].skip_summarization"
+    }
+  ],
+  "model_calls": 0,
+  "notebook_mutation": false,
+  "preserved_drafts": [
+    "gemma_A_L_scout_return_v1.svg",
+    "gemma_A_L_scout_return_v1.svg.png",
+    "gemma_A_L_scout_return_v1_native.png"
+  ],
+  "preview": {
+    "bytes": 1023715,
+    "file": "gemma_A_L_scout_return_v2_native.png",
+    "renderer": "macOS AppKit NSImage to NSBitmapImageRep; native Arial and Menlo fonts",
+    "sha256": "00149f9342596c8f448178a056be31be755e1d456a6f4e337437cacff1f60426"
+  },
+  "publication": true,
+  "semantic_caveats": [
+    "Both flags isolate the child session and return its last nonthought text.",
+    "True ends the current parent invocation, not necessarily the task.",
+    "Unfinished work can receive up to three consecutive continuation nudges; tool activity resets the counter.",
+    "A can also enter harness continuation after ending later without a patch."
+  ],
+  "sources": [
+    {
+      "line_span": [
+        85,
+        101
+      ],
+      "module": "adk_submission.schema",
+      "sha256": "6554de60cfa208dcb0b095f4236271795b2955adf87f3be3c40dfa3d62521c5d"
+    },
+    {
+      "line_span": [
+        89,
+        117
+      ],
+      "module": "adk_submission.resolvers.tools",
+      "sha256": "ae44a5ca815a05edfd763b92283d0444c77755afbd827fc35bcb87eb2633259e"
+    },
+    {
+      "line_span": [
+        504,
+        737
+      ],
+      "module": "swegemma.harness.agent_runner",
+      "sha256": "dff7d2505340633c3fe50ba7073f2609fb2b41becd69c356d9af25cc4c1f98dd"
+    },
+    {
+      "line_span": [
+        202,
+        296
+      ],
+      "sha256": "ffa8905d8a73e9edd837ff362ad71b3e4a965760ccb8e9bc469baf4ffb23d915",
+      "symbol": "google.adk.tools.agent_tool.AgentTool.run_async"
+    },
+    {
+      "line_span": [
+        83,
+        98
+      ],
+      "sha256": "120808bf6ce77d6c2322881b335bcdee12e2ac8a94d9fbbfc38353f3764d946a",
+      "symbol": "google.adk.events.event.Event.is_final_response"
+    },
+    {
+      "line_span": [
+        862,
+        875
+      ],
+      "sha256": "b20beb63a63aa143ef49c6246a1efed75e0dfcb9d8fae45b46c390d0cacab1fd",
+      "symbol": "google.adk.flows.llm_flows.base_llm_flow.BaseLlmFlow.run_async"
+    }
+  ],
+  "svg": {
+    "bytes": 12489,
+    "file": "gemma_A_L_scout_return_v2.svg",
+    "height": 1160,
+    "sha256": "10f349fcc6b2d5a6285127d55b42ebd493a04a80b168f22b27200d3142044cd9",
+    "width": 1600
+  },
+  "tool_invocations": 0,
+  "unmeasured": [
+    "charged_calls",
+    "wall_time",
+    "task_quality",
+    "official_score"
+  ],
+  "validation": {
+    "XML": true,
+    "accessible_title_description": true,
+    "external_resources": false,
+    "native_full_canvas_render": true,
+    "unique_ids": true,
+    "visual_inspection": "PASS readable text, explicit arrows and full two-path layout"
+  },
+  "published_as": "figures/gemma_A_L_scout_return_v2.svg"
+}
