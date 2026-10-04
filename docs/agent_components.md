@@ -8,6 +8,8 @@ From the repository root, with Python 3.12:
 PYTHONPATH=src python -m unittest discover -s tests -v
 ```
 
+For the import examples below, start Python from the repository root with `PYTHONPATH=src python`, or run your own script with `PYTHONPATH=src python your_script.py`.
+
 ## Bounded source locator
 
 ```python
