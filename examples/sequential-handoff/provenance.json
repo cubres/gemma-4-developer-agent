@@ -1,0 +1,49 @@
+{
+  "artifact": "Original portable sequential-handoff CPU mechanics fixture",
+  "license": "MIT; copyright2026 cubres; no third-party source bundled",
+  "idea_attribution": {
+    "author": "hsiaosuan",
+    "url": "https://www.kaggle.com/code/hsiaosuan/gemma-developer-agent-0-13-submission?scriptVersionId=355057602",
+    "version": 2,
+    "script_version_id": 355057602,
+    "verified_public_best_score": 0.1,
+    "binding": "Fresh exact-version rendered Kaggle badge and matching embedded ZIP; notebook title/prose0.13 is not the badge result",
+    "notebook_license": "Apache-2.0",
+    "notebook_source_sha256": "b98f7af52190f0129e1331df66c4f40f1e90cebde971b05920099643e153fe46",
+    "bundle_sha256": "6b3ebb33f2688515a5493ed299248ca169501d33e283facd0453d4af0a6a92f6",
+    "adaptation": "Independent synthetic test of sequential explorer output_key state reaching coder; no competitor code copied or executed"
+  },
+  "predecessor": {
+    "source_sha256": "a30689f8107fd47994157186b261687f68ef26caac01fab5b4af1334663da2dd",
+    "protocol_sha256": "452a0adaa3960e9ce02f946334f69be1dc516197930b3988dc5db51fd5925465",
+    "receipt_sha256": "12f217b60100feec6c4526d204117eddeaae7d53de1325000dd17572ca3275bf",
+    "status": "PASS; three state cases and direct SDK budget APIs"
+  },
+  "first_fixture": {
+    "status": "COMPILER_SCHEMA_REJECTED_BEFORE_ANY_SCRIPTED_MODEL",
+    "reason": "Inline subagent configs were unsupported; subagents require config_path references",
+    "source_sha256": "16c5289663dfefee66f49734160142c121462fba6915901d6219bc8aee8ca0b9",
+    "protocol_sha256": "67896f8f9a35cb6f23054aeda2ceac1939b25434587bdd53eb453cffdaf2dc24",
+    "preserved": true
+  },
+  "limits": {
+    "posix_process_alarm_seconds": 90,
+    "async_cases_seconds": 50,
+    "task_config_minutes": 5,
+    "task_config_tool_calls": 60,
+    "task_config_turns": 100,
+    "task_config_command_timeout_seconds": 60
+  },
+  "boundaries": {
+    "real_model_calls": 0,
+    "expected_scripted_model_calls": 5,
+    "native_tool_execution": false,
+    "sandbox_commands": false,
+    "full_evaluator_enforcement": false,
+    "gpu": false,
+    "hidden_runtime_attestation": false,
+    "solve_rate_or_score_claim": false,
+    "public_notebook_score_is_not_fixture_score": true
+  },
+  "portable_source_sha256": "6912ba3778afa87069e463a5e0aa7f07ca435230fb89256056b4f2108ce597b7"
+}

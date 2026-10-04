@@ -1,0 +1,70 @@
+{
+  "cases": [
+    [
+      "present_state",
+      true,
+      true
+    ],
+    [
+      "optional_absent_state",
+      false,
+      true
+    ],
+    [
+      "required_absent_state",
+      false,
+      false
+    ]
+  ],
+  "fixture": "Scripted BaseLlm, empty closed ToolRegistry, synthetic text, no organizer evaluator or tools",
+  "fixture_sha256": {
+    "optional_absent_state": {
+      "agent.yaml": "d36409a3c396362684fe6df4e339a8e76e2a713cbcb369c5272caa4ff0ce49c4",
+      "coder.yaml": "72c070c2e4eccf71051dcff11c908fdb438384057e4f854e42cf1439d6113144",
+      "eval_config.yaml": "8e2a49c212d71ea59eeaa1403f6cb68de5606e7e206f3a382a72ca900c1a703f",
+      "explorer.yaml": "ea51065593cc13aca8e6689a7b0d8de18ed24e6221904485c135c00ffae8deb5"
+    },
+    "present_state": {
+      "agent.yaml": "d36409a3c396362684fe6df4e339a8e76e2a713cbcb369c5272caa4ff0ce49c4",
+      "coder.yaml": "72c070c2e4eccf71051dcff11c908fdb438384057e4f854e42cf1439d6113144",
+      "eval_config.yaml": "8e2a49c212d71ea59eeaa1403f6cb68de5606e7e206f3a382a72ca900c1a703f",
+      "explorer.yaml": "b25f6dddbb650b95794ec5c8cdd5cf07275905e919031985047f393327950bee"
+    },
+    "required_absent_state": {
+      "agent.yaml": "d36409a3c396362684fe6df4e339a8e76e2a713cbcb369c5272caa4ff0ce49c4",
+      "coder.yaml": "220670cf6c8a12238a9b9ac1cdf672b9a62525b302ee1c5c92087e908e56bcb5",
+      "eval_config.yaml": "8e2a49c212d71ea59eeaa1403f6cb68de5606e7e206f3a382a72ca900c1a703f",
+      "explorer.yaml": "ea51065593cc13aca8e6689a7b0d8de18ed24e6221904485c135c00ffae8deb5"
+    }
+  },
+  "frozen_utc": "2026-10-04T23:46:14.357285+00:00",
+  "gpu": false,
+  "hard_wall_seconds": 90,
+  "limits": {
+    "max_time_minutes": 5,
+    "max_tool_calls": 60,
+    "max_turns": 100,
+    "timeout_seconds": 60
+  },
+  "native_tool_execution": false,
+  "prior_attempt": {
+    "protocol_sha256": "67896f8f9a35cb6f23054aeda2ceac1939b25434587bdd53eb453cffdaf2dc24",
+    "reason": "Subagents require config_path references, not inline configuration",
+    "source_sha256": "16c5289663dfefee66f49734160142c121462fba6915901d6219bc8aee8ca0b9",
+    "status": "COMPILER_SCHEMA_REJECTED_BEFORE_SCRIPTED_MODELS"
+  },
+  "quality_evaluation": false,
+  "real": "Pinned organizer compiler, ADK SequentialAgent/LlmAgent/Runner/state injection, SDK budget APIs",
+  "real_model_calls": 0,
+  "script_sha256": "6912ba3778afa87069e463a5e0aa7f07ca435230fb89256056b4f2108ce597b7",
+  "sdk_pins": {
+    "/Users/cubres/Documents/Neurogolf/research/claude_campaign_20261002/gemma/readonly_api_20261002T1612Z/wheelhouse_v28_small/src/adk_submission/adk_submission/builders/workflows.py": "d8d7ccf9a51d57daec58c7231e2a62621a3ecca269e71ee64c57062cadadf980",
+    "/Users/cubres/Documents/Neurogolf/research/claude_campaign_20261002/gemma/readonly_api_20261002T1612Z/wheelhouse_v28_small/src/adk_submission/adk_submission/compiler.py": "39cc4884699faf147ca1b326664e888c1861f750fe36525b840b5f812d593eed",
+    "/Users/cubres/Documents/Neurogolf/research/claude_campaign_20261002/gemma/readonly_api_20261002T1612Z/wheelhouse_v28_small/src/adk_submission/adk_submission/resolvers/generation.py": "ba8bf237261220d46843c8d71118faa387fc07f876f072756dff44d641dd1c14",
+    "/Users/cubres/Documents/Neurogolf/research/claude_campaign_20261002/gemma/readonly_api_20261002T1612Z/wheelhouse_v28_small/src/swegemma/swegemma/config.py": "f035916218f895796c4d39f1f9ec25284152a6df57cf6de1fea4931165d2349f",
+    "/Users/cubres/Documents/Neurogolf/research/claude_campaign_20261002/gemma/readonly_api_20261002T1612Z/wheelhouse_v28_small/src/swegemma/swegemma/context.py": "97f06280c50df3132d1af7ef6126884b66b48887a1cf94b293af01e5907dc2a7",
+    "/Users/cubres/Documents/Neurogolf/research/gemma4_developer_20260924/validation-venv/lib/python3.12/site-packages/google/adk/agents/llm_agent.py": "7d0a8b71724536898ca7f347038dbbc1cf0eeb38d1d6f9e1077b8cfeb9461c0b",
+    "/Users/cubres/Documents/Neurogolf/research/gemma4_developer_20260924/validation-venv/lib/python3.12/site-packages/google/adk/agents/sequential_agent.py": "10fb38007cd8f5ecea23df9311ef1fedbc72b9511ad3040c1b571785a6aad769"
+  },
+  "synthetic_plan": "Synthetic source synthetic_module.py: preserve accepted input; check boundary \"\u03bb\".\nNo repository execution."
+}

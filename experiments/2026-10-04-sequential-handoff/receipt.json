@@ -1,0 +1,344 @@
+{
+  "budget_api_checks": {
+    "fixture_charges_only": true,
+    "full_evaluator_enforcement_exercised": false,
+    "native_tools_executed": false,
+    "one_tool_charge_then_reject": {
+      "error_message": "Tool call budget exhausted (1 calls)",
+      "error_type": "BudgetExceeded",
+      "status": "error"
+    },
+    "two_turn_charges_then_reject": {
+      "error_message": "Turn budget exhausted (2 turns)",
+      "error_type": "BudgetExceeded",
+      "status": "error"
+    },
+    "zero_time_reject": {
+      "error_message": "Session time budget exhausted (0 minutes)",
+      "error_type": "TimeoutExceeded",
+      "status": "error"
+    }
+  },
+  "case_count": 3,
+  "cases": [
+    {
+      "actual_native_tool_calls": 0,
+      "case": "present_state",
+      "events": [
+        {
+          "author": "synthetic_explorer",
+          "is_final": true,
+          "state_delta": {
+            "repair_plan": "Synthetic source synthetic_module.py: preserve accepted input; check boundary \"\u03bb\".\nNo repository execution."
+          }
+        },
+        {
+          "author": "synthetic_coder",
+          "is_final": true,
+          "state_delta": {}
+        }
+      ],
+      "expected_failure": null,
+      "mapped_budget": {
+        "cost_usd": null,
+        "time_minutes": 5,
+        "tool_calls": 60,
+        "total_tokens": null,
+        "turns": 100
+      },
+      "mapped_harness": {
+        "command_timeout_seconds": 60,
+        "max_file_chars": 10000,
+        "max_file_lines": 150,
+        "max_stdout_chars": 5000
+      },
+      "no_parent_summary_model_call": true,
+      "scripted_requests": [
+        {
+          "request": {
+            "config": {
+              "labels": {
+                "adk_agent_name": "synthetic_explorer"
+              },
+              "max_output_tokens": 16384,
+              "system_instruction": "Emit the fixed synthetic plan without tools.\n\nYou are an agent. Your internal name is \"synthetic_explorer\".",
+              "thinking_config": {
+                "thinking_budget": 4096
+              }
+            },
+            "contents": [
+              {
+                "parts": [
+                  {
+                    "text": "Synthetic boundary repair."
+                  }
+                ],
+                "role": "user"
+              }
+            ],
+            "live_connect_config": {
+              "input_audio_transcription": {},
+              "output_audio_transcription": {}
+            },
+            "model": "local_scripted_explorer"
+          },
+          "stage": "explorer",
+          "system_instruction": "Emit the fixed synthetic plan without tools.\n\nYou are an agent. Your internal name is \"synthetic_explorer\"."
+        },
+        {
+          "request": {
+            "config": {
+              "labels": {
+                "adk_agent_name": "synthetic_coder"
+              },
+              "max_output_tokens": 16384,
+              "system_instruction": "Synthetic coder. STATE_BEGIN[Synthetic source synthetic_module.py: preserve accepted input; check boundary \"\u03bb\".\nNo repository execution.]STATE_END\n\nYou are an agent. Your internal name is \"synthetic_coder\".",
+              "thinking_config": {
+                "thinking_budget": 4096
+              }
+            },
+            "contents": [
+              {
+                "parts": [
+                  {
+                    "text": "Synthetic boundary repair."
+                  }
+                ],
+                "role": "user"
+              },
+              {
+                "parts": [
+                  {
+                    "text": "For context:"
+                  },
+                  {
+                    "text": "[synthetic_explorer] said: Synthetic source synthetic_module.py: preserve accepted input; check boundary \"\u03bb\".\nNo repository execution."
+                  }
+                ],
+                "role": "user"
+              }
+            ],
+            "live_connect_config": {
+              "input_audio_transcription": {},
+              "output_audio_transcription": {}
+            },
+            "model": "local_scripted_coder"
+          },
+          "stage": "coder",
+          "system_instruction": "Synthetic coder. STATE_BEGIN[Synthetic source synthetic_module.py: preserve accepted input; check boundary \"\u03bb\".\nNo repository execution.]STATE_END\n\nYou are an agent. Your internal name is \"synthetic_coder\"."
+        }
+      ],
+      "sdk_shared_context_model_events": 2,
+      "state": {
+        "repair_plan": "Synthetic source synthetic_module.py: preserve accepted input; check boundary \"\u03bb\".\nNo repository execution."
+      },
+      "status": "PASS"
+    },
+    {
+      "actual_native_tool_calls": 0,
+      "case": "optional_absent_state",
+      "events": [
+        {
+          "author": "synthetic_explorer",
+          "is_final": true,
+          "state_delta": {}
+        },
+        {
+          "author": "synthetic_coder",
+          "is_final": true,
+          "state_delta": {}
+        }
+      ],
+      "expected_failure": null,
+      "mapped_budget": {
+        "cost_usd": null,
+        "time_minutes": 5,
+        "tool_calls": 60,
+        "total_tokens": null,
+        "turns": 100
+      },
+      "mapped_harness": {
+        "command_timeout_seconds": 60,
+        "max_file_chars": 10000,
+        "max_file_lines": 150,
+        "max_stdout_chars": 5000
+      },
+      "no_parent_summary_model_call": true,
+      "scripted_requests": [
+        {
+          "request": {
+            "config": {
+              "labels": {
+                "adk_agent_name": "synthetic_explorer"
+              },
+              "max_output_tokens": 16384,
+              "system_instruction": "Emit the fixed synthetic plan without tools.\n\nYou are an agent. Your internal name is \"synthetic_explorer\".",
+              "thinking_config": {
+                "thinking_budget": 4096
+              }
+            },
+            "contents": [
+              {
+                "parts": [
+                  {
+                    "text": "Synthetic boundary repair."
+                  }
+                ],
+                "role": "user"
+              }
+            ],
+            "live_connect_config": {
+              "input_audio_transcription": {},
+              "output_audio_transcription": {}
+            },
+            "model": "local_scripted_explorer"
+          },
+          "stage": "explorer",
+          "system_instruction": "Emit the fixed synthetic plan without tools.\n\nYou are an agent. Your internal name is \"synthetic_explorer\"."
+        },
+        {
+          "request": {
+            "config": {
+              "labels": {
+                "adk_agent_name": "synthetic_coder"
+              },
+              "max_output_tokens": 16384,
+              "system_instruction": "Synthetic coder. STATE_BEGIN[]STATE_END\n\nYou are an agent. Your internal name is \"synthetic_coder\".",
+              "thinking_config": {
+                "thinking_budget": 4096
+              }
+            },
+            "contents": [
+              {
+                "parts": [
+                  {
+                    "text": "Synthetic boundary repair."
+                  }
+                ],
+                "role": "user"
+              },
+              {
+                "parts": [
+                  {
+                    "text": "For context:"
+                  },
+                  {
+                    "text": "[synthetic_explorer] said: Synthetic source synthetic_module.py: preserve accepted input; check boundary \"\u03bb\".\nNo repository execution."
+                  }
+                ],
+                "role": "user"
+              }
+            ],
+            "live_connect_config": {
+              "input_audio_transcription": {},
+              "output_audio_transcription": {}
+            },
+            "model": "local_scripted_coder"
+          },
+          "stage": "coder",
+          "system_instruction": "Synthetic coder. STATE_BEGIN[]STATE_END\n\nYou are an agent. Your internal name is \"synthetic_coder\"."
+        }
+      ],
+      "sdk_shared_context_model_events": 2,
+      "state": {},
+      "status": "PASS"
+    },
+    {
+      "actual_native_tool_calls": 0,
+      "case": "required_absent_state",
+      "events": [
+        {
+          "author": "synthetic_explorer",
+          "is_final": true,
+          "state_delta": {}
+        }
+      ],
+      "expected_failure": {
+        "message": "'Context variable not found: `repair_plan`.'",
+        "type": "KeyError"
+      },
+      "mapped_budget": {
+        "cost_usd": null,
+        "time_minutes": 5,
+        "tool_calls": 60,
+        "total_tokens": null,
+        "turns": 100
+      },
+      "mapped_harness": {
+        "command_timeout_seconds": 60,
+        "max_file_chars": 10000,
+        "max_file_lines": 150,
+        "max_stdout_chars": 5000
+      },
+      "no_parent_summary_model_call": true,
+      "scripted_requests": [
+        {
+          "request": {
+            "config": {
+              "labels": {
+                "adk_agent_name": "synthetic_explorer"
+              },
+              "max_output_tokens": 16384,
+              "system_instruction": "Emit the fixed synthetic plan without tools.\n\nYou are an agent. Your internal name is \"synthetic_explorer\".",
+              "thinking_config": {
+                "thinking_budget": 4096
+              }
+            },
+            "contents": [
+              {
+                "parts": [
+                  {
+                    "text": "Synthetic boundary repair."
+                  }
+                ],
+                "role": "user"
+              }
+            ],
+            "live_connect_config": {
+              "input_audio_transcription": {},
+              "output_audio_transcription": {}
+            },
+            "model": "local_scripted_explorer"
+          },
+          "stage": "explorer",
+          "system_instruction": "Emit the fixed synthetic plan without tools.\n\nYou are an agent. Your internal name is \"synthetic_explorer\"."
+        }
+      ],
+      "sdk_shared_context_model_events": 1,
+      "state": {},
+      "status": "PASS"
+    }
+  ],
+  "elapsed_seconds": 2.434182958000747,
+  "finished_utc": "2026-10-04T23:46:14.406606+00:00",
+  "fixture_inputs_preserved": true,
+  "gpu": false,
+  "hidden_runtime_attested": false,
+  "native_tool_calls": 0,
+  "network_attempts": [],
+  "notebook_changes": false,
+  "protocol_sha256": "c66ac9f4e50fe81e9df6e224f20849036fac6ce0319b390a772ca9bc9be2ec68",
+  "python": "3.12.14 (main, Aug 25 2026, 13:50:33) [Clang 22.1.3 ]",
+  "real_model_calls": 0,
+  "sandbox_commands": 0,
+  "script_sha256": "6912ba3778afa87069e463a5e0aa7f07ca435230fb89256056b4f2108ce597b7",
+  "scripted_model_calls": 5,
+  "sdk_pins": {
+    "/Users/cubres/Documents/Neurogolf/research/claude_campaign_20261002/gemma/readonly_api_20261002T1612Z/wheelhouse_v28_small/src/adk_submission/adk_submission/builders/workflows.py": "d8d7ccf9a51d57daec58c7231e2a62621a3ecca269e71ee64c57062cadadf980",
+    "/Users/cubres/Documents/Neurogolf/research/claude_campaign_20261002/gemma/readonly_api_20261002T1612Z/wheelhouse_v28_small/src/adk_submission/adk_submission/compiler.py": "39cc4884699faf147ca1b326664e888c1861f750fe36525b840b5f812d593eed",
+    "/Users/cubres/Documents/Neurogolf/research/claude_campaign_20261002/gemma/readonly_api_20261002T1612Z/wheelhouse_v28_small/src/adk_submission/adk_submission/resolvers/generation.py": "ba8bf237261220d46843c8d71118faa387fc07f876f072756dff44d641dd1c14",
+    "/Users/cubres/Documents/Neurogolf/research/claude_campaign_20261002/gemma/readonly_api_20261002T1612Z/wheelhouse_v28_small/src/swegemma/swegemma/config.py": "f035916218f895796c4d39f1f9ec25284152a6df57cf6de1fea4931165d2349f",
+    "/Users/cubres/Documents/Neurogolf/research/claude_campaign_20261002/gemma/readonly_api_20261002T1612Z/wheelhouse_v28_small/src/swegemma/swegemma/context.py": "97f06280c50df3132d1af7ef6126884b66b48887a1cf94b293af01e5907dc2a7",
+    "/Users/cubres/Documents/Neurogolf/research/gemma4_developer_20260924/validation-venv/lib/python3.12/site-packages/google/adk/agents/llm_agent.py": "7d0a8b71724536898ca7f347038dbbc1cf0eeb38d1d6f9e1077b8cfeb9461c0b",
+    "/Users/cubres/Documents/Neurogolf/research/gemma4_developer_20260924/validation-venv/lib/python3.12/site-packages/google/adk/agents/sequential_agent.py": "10fb38007cd8f5ecea23df9311ef1fedbc72b9511ad3040c1b571785a6aad769"
+  },
+  "solve_rate_or_score_claim": false,
+  "source_inputs_preserved": true,
+  "status": "PASS",
+  "versions": {
+    "adk-submission": "0.2.12",
+    "google-adk": "1.36.1",
+    "google-genai": "2.11.0",
+    "swegemma": "0.2.7"
+  }
+}
