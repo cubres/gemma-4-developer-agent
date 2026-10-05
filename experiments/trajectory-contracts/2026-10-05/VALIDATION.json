@@ -1,0 +1,47 @@
+{
+  "measured_at_utc": "2026-10-05T14:46:32.944335+00:00",
+  "native_observation_replay_verified": false,
+  "native_token_mask_verified": false,
+  "official_score": null,
+  "private_single_row_argument_contract": {
+    "accepted_argument_contract_turns": 11,
+    "assistant_turns": 21,
+    "checked_against_public_converter": true,
+    "refusal_reasons": {
+      "create_absence_unproven": 4,
+      "replacement_current_file_unproven": 1,
+      "unhandled_shell_cwd_or_path": 5
+    },
+    "refused_turns": 10,
+    "source_response_sha256": "d3339ebf2ec2a909ede1e731c25615ebca3eb408f1853e507f843eec6d1b6b1c",
+    "source_trajectory_contents_redistributed": false
+  },
+  "public_code_sha256": {
+    "test_trajectory_converter.py": "65cc5e885e65552376554aaee2889de49b18df946a4db092ff97658db6ea356f",
+    "trajectory_converter.py": "29628fc815138e832cdd718de2f3f077ae6f87fba9704d6c01d905e0f5819fd5"
+  },
+  "public_test_change": "Only an explicit skip guard for missing private frozen-row fixtures; all synthetic test bodies and converter source remain unchanged.",
+  "python_implementation": "CPython",
+  "python_version": "3.9.6",
+  "reviewed_private_v4_sha256": {
+    "test_trajectory_converter.py": "3d717200e16673d9d966b36547f28f041f4fd3157a440e43a4e3e678ae14ca4c",
+    "trajectory_converter.py": "29628fc815138e832cdd718de2f3f077ae6f87fba9704d6c01d905e0f5819fd5"
+  },
+  "scope": "OFFLINE_ARGUMENT_CONTRACT_ONLY",
+  "status": "PASS_PUBLIC_SYNTHETIC_CONTRACTS_WITH_ONE_EXPLICIT_PRIVATE_FIXTURE_SKIP",
+  "tests": {
+    "errors": 0,
+    "failures": 0,
+    "method": "unittest.TestLoader.discover and TextTestRunner; same discovery suite as README command",
+    "passed": 30,
+    "reproduction_command": "python3 -m unittest discover -s experiments/trajectory-contracts/2026-10-05/reviewed_v4 -p test_trajectory_converter.py -v",
+    "skip_reasons": [
+      "The frozen trajectory contents are retained privately; only the synthetic suite runs publicly."
+    ],
+    "skipped": 1,
+    "tests_discovered": 31,
+    "wall_seconds": 0.007739916999999999
+  },
+  "training_performed": false,
+  "training_ready": false
+}

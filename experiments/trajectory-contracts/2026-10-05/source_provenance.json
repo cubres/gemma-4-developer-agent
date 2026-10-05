@@ -1,0 +1,21 @@
+{
+  "dataset": "SWE-bench/SWE-smith-trajectories",
+  "instance_id": "marshmallow-code__apispec.8b421526.func_pm_remove_assign__kdkrbg6a",
+  "license_sha256": "f345555ff39d6b573342781a6346a5202a8f14bce424fee41f910c6c5379cc7d",
+  "license_url": "https://raw.githubusercontent.com/marshmallow-code/apispec/8b421526ea1015046de42599dd93da6a3473fe44/LICENSE",
+  "model": "claude-3-7-sonnet-20250219",
+  "patch_bytes": 1925,
+  "public_exports": false,
+  "repository": "marshmallow-code/apispec",
+  "repository_commit": "8b421526ea1015046de42599dd93da6a3473fe44",
+  "resolved": true,
+  "response_bytes": 60566,
+  "response_sha256": "d3339ebf2ec2a909ede1e731c25615ebca3eb408f1853e507f843eec6d1b6b1c",
+  "retrieved_at_utc": "2026-10-05T13:13:23.974879+00:00",
+  "revision": "08e109b4a59eaeebf80e4675cd125d42e7ac99a4",
+  "row_index": 1,
+  "service_access": "Public HF row and upstream MIT notice only; no teacher service request",
+  "source_contents_private": true,
+  "source_url": "https://datasets-server.huggingface.co/rows?dataset=SWE-bench%2FSWE-smith-trajectories&config=default&split=tool&offset=1&length=1",
+  "traj_id": "marshmallow-code__apispec.8b421526.func_pm_remove_assign__kdkrbg6a.8qa84d2e"
+}
