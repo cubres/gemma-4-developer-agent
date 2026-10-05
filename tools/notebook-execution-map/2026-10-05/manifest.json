@@ -1,0 +1,34 @@
+{
+  "component": "notebook-execution-map",
+  "files": [
+    {
+      "bytes": 11021,
+      "path": "notebook_execution_map.py",
+      "sha256": "c9a0a847906c170c05c9f68fbf21eb0da0b9aea441bbcdbeb8fb47163df73d7d"
+    },
+    {
+      "bytes": 5871,
+      "path": "test_notebook_execution_map.py",
+      "sha256": "b07d1b8335effb95653b84d0dba468a30ada652b48066e91bbc2d97ce9b79f86"
+    },
+    {
+      "bytes": 4862,
+      "path": "README.md",
+      "sha256": "6a98b9bc70322717f134dfbe4ab10b5a6c550d8bd03f59736a7de080deaf9732"
+    },
+    {
+      "bytes": 1063,
+      "path": "LICENSE",
+      "sha256": "eed854701ae3433dccb0da2fc34fb3a8b70460bb4cad7f9e1abb4145a6cdbf0e"
+    },
+    {
+      "bytes": 2027,
+      "path": "provenance.json",
+      "sha256": "12c2a8f8eeb4328e708f2458a621cdd8313c9213ba97f5458c600a0ab114373e"
+    }
+  ],
+  "license": "MIT",
+  "manifest_self_hash": "Excluded to avoid a circular digest; supplied by the external publication packet.",
+  "release_date": "2026-10-05",
+  "schema_version": 1
+}

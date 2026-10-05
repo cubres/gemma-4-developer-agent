@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "component": "notebook-execution-map",
+  "date": "2026-10-05",
+  "authorship": "Original code and synthetic tests authored with Codex for cubres; no external notebook code or actual notebook contents copied.",
+  "license": "MIT",
+  "dependencies": "Python standard library only; Python 3.10 or newer",
+  "network": "none",
+  "notebook_execution": "none",
+  "notebook_mutation": "none",
+  "actual_notebook_inspection_during_development": false,
+  "fixtures": "Tiny synthetic Python source strings inside test_notebook_execution_map.py; no notebook fixture files.",
+  "original_source_pins": {
+    "notebook_execution_map.py": "c9a0a847906c170c05c9f68fbf21eb0da0b9aea441bbcdbeb8fb47163df73d7d",
+    "test_notebook_execution_map.py": "b07d1b8335effb95653b84d0dba468a30ada652b48066e91bbc2d97ce9b79f86"
+  },
+  "validation_observation": {
+    "scope": "synthetic unittest checks only",
+    "tests": 15,
+    "passed": true,
+    "unittest_reported_seconds": 0.011,
+    "runner_elapsed_seconds": 0.056884958,
+    "runner_cpu_seconds": 0.047679,
+    "evidence": "Observed tool output during development; no separately retained measurement receipt exists.",
+    "publication_packet_retested": false,
+    "claim": "No notebook runtime estimate, competition result or score improvement is established."
+  },
+  "platform_limits": {
+    "development_platform_observation": {
+      "os_name": "posix",
+      "sys_platform": "darwin",
+      "python_version": "3.9.6",
+      "O_NOFOLLOW_available": true,
+      "O_NOFOLLOW_value": 256,
+      "scope": "Read-only platform inspection; no test rerun."
+    },
+    "symbolic_links": "O_NOFOLLOW, when available, protects only the final path component. Ancestor directory links can still be followed.",
+    "missing_O_NOFOLLOW": "The code substitutes zero; final-component link refusal is not guaranteed and the fallback has not been certified.",
+    "existing_test_scope": "The input filesystem-boundary check used mocks; no live symbolic-link rejection was tested."
+  }
+}
