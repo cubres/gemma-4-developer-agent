@@ -1,0 +1,87 @@
+{
+  "artifact": "Original standalone stdlib AST/BM25 source locator v2",
+  "artifact_license": "MIT",
+  "author_account": "cubres",
+  "caps": {
+    "depth": 64,
+    "directories": 4096,
+    "entries": 100000,
+    "report_ancestor_steps": 256,
+    "strict_entry_ceiling_may_be_conservatively_incomplete": true
+  },
+  "changes": [
+    "Reject ambiguous double-leading root/report paths",
+    "Bounded global scandir entries, visited directories and depth; explicit incomplete coverage",
+    "Captured indexed-root device/inode; reject path identity drift before report",
+    "Bounded report-parent descriptor ancestry with O_DIRECTORY/O_NOFOLLOW, refusing physical aliases/errors/incomplete validation",
+    "Original lexical BM25, AST unit construction and indexed-source non-execution preserved"
+  ],
+  "created_utc": "2026-10-05T21:25:15.466978+00:00",
+  "guard_files_modified_or_bypassed": false,
+  "independent_v2_review": "Pending root independent review; author synthetic verification is not independent approval",
+  "initial_v2_snapshot": "development_snapshot_22_tests/; preserved with original 22-test fixture before physical ancestry extension",
+  "limitations": [
+    "No hard wall-time/heap sandbox",
+    "No atomic filesystem transaction; adversarial rename window after validation remains",
+    "No full checkout snapshot",
+    "ASCII lexical signals longer than one character; intentional overlapping AST units",
+    "No native model, agent-patch or official-score efficacy claim"
+  ],
+  "native_integration": false,
+  "notebooks_or_identities_changed": false,
+  "official_score_gain": false,
+  "private_models_assets_competition_data_labels_notebooks_read": false,
+  "publication_readiness": "ROOT_REVIEWED_SYNTHETICALLY_VERIFIED_SOURCE_ONLY",
+  "real_macos_alias_verification": {
+    "path": "physical_boundary_check_20261005T212222Z/PHYSICAL_BOUNDARY_CHECK.json",
+    "report_refused_before_leaf_creation": true,
+    "same_device_inode": true,
+    "source_bytes_unchanged": true
+  },
+  "remote_mutations_publication_submissions": false,
+  "root_independent_review": "ROOT_REVIEW.json",
+  "source_only_scope": "Generic standard-library utility; only new synthetic Python fixture inputs and directory identity metadata used",
+  "upstream_motivation_only": {
+    "author": "Aghasalim Mustafazada",
+    "commit": "893a6878f6241a46cd9b95fd0cf78b8dbf49afbd",
+    "license": "MIT",
+    "public_code_reused": false,
+    "public_document_byte_pins": [
+      {
+        "bytes": 17635,
+        "path": "PAPER.md",
+        "sha256": "a9552152c33a0f665441f58e3af03b8a288db605db546005903b382a56624e5d",
+        "url": "https://raw.githubusercontent.com/aghasalim/gemma4-code-graph-localization/893a6878f6241a46cd9b95fd0cf78b8dbf49afbd/PAPER.md"
+      },
+      {
+        "bytes": 1078,
+        "path": "LICENSE",
+        "sha256": "a661bd01e992e0c9eacf6fb9d8557dc7dc8d4934bb650e5a6b7e49592e4ff41c",
+        "url": "https://raw.githubusercontent.com/aghasalim/gemma4-code-graph-localization/893a6878f6241a46cd9b95fd0cf78b8dbf49afbd/LICENSE"
+      }
+    ],
+    "repository": "https://github.com/aghasalim/gemma4-code-graph-localization"
+  },
+  "v1_review": "HOLD: reproducible // path alias report violation and overstated traversal bounds; all v1 files and failed/corrected test fixtures preserved",
+  "v1_source_sha256": "3e7bf5e8b9b2d4db0122043e98bdcf1097061d14a444414f98fcada2cc355e64",
+  "v1_verifier_sha256": "b5436f0877febd477cb2c4b8a6215bf2ff91cda3d0062de41385a0de3d3a7f86",
+  "v2_source": {
+    "bytes": 22230,
+    "path": "source_locator.py",
+    "sha256": "fd347917af3a2e95aa2756e57dc55e6544da425ff502838eaca452276479ccf4"
+  },
+  "v2_verifier": {
+    "bytes": 23453,
+    "path": "verify_toy.py",
+    "sha256": "0ef7dcefc5d9777a2a9f3569086b632897036c1060b9d74a2b881c8b88beff9e"
+  },
+  "verification": {
+    "indexed_source_execution": false,
+    "input_bytes_modes_and_tree_preserved": true,
+    "path": "toy_verification_20261005T212222432696Z/verification_receipt.json",
+    "python": "3.12.14",
+    "status": "PASS",
+    "tests": 28,
+    "zero_failures_and_errors": true
+  }
+}

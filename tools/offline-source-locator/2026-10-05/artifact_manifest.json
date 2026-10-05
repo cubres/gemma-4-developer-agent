@@ -1,0 +1,62 @@
+{
+  "files": [
+    {
+      "bytes": 1063,
+      "path": "LICENSE",
+      "sha256": "eed854701ae3433dccb0da2fc34fb3a8b70460bb4cad7f9e1abb4145a6cdbf0e"
+    },
+    {
+      "bytes": 831,
+      "path": "PREPARATION_RECEIPT.json",
+      "sha256": "3656b26dd0796f42f5ab404be81c903a68355974362c7af0f3f9c5e1d3a8f67d"
+    },
+    {
+      "bytes": 7800,
+      "path": "README.md",
+      "sha256": "213578dae3e3d7e534267c8c89f19078554dfd6565891c9ea5e304b262b4f06c"
+    },
+    {
+      "bytes": 1086,
+      "path": "ROOT_REVIEW.json",
+      "sha256": "ac21cbacfba84869ed5eadc23571d2875f1952a6182ab776d7607585837a9803"
+    },
+    {
+      "bytes": 12807,
+      "path": "V1_TO_V2_SOURCE.diff",
+      "sha256": "d2e093efe1418eb41a076b3883a5a290d5bdcf9b81fca3e74cbd2673ee4ee3af"
+    },
+    {
+      "bytes": 9715,
+      "path": "V1_TO_V2_VERIFIER.diff",
+      "sha256": "4cc4107e8c781deee3e576faf08464f389915229560483432a36ac77a3c0e083"
+    },
+    {
+      "bytes": 527,
+      "path": "physical_boundary_check_20261005T212222Z/PHYSICAL_BOUNDARY_CHECK.json",
+      "sha256": "597cbc577b75f41d0a59d4713a54e9d83efbb34f706b65501a49230ec41b1990"
+    },
+    {
+      "bytes": 4090,
+      "path": "provenance.json",
+      "sha256": "74e51f1a0acb9cfcd5589fc7f34c36a084fe66962ef0a81e9e8750534a131ab3"
+    },
+    {
+      "bytes": 22230,
+      "path": "source_locator.py",
+      "sha256": "fd347917af3a2e95aa2756e57dc55e6544da425ff502838eaca452276479ccf4"
+    },
+    {
+      "bytes": 11110,
+      "path": "toy_verification_20261005T212222432696Z/verification_receipt.json",
+      "sha256": "18742fc0cc0755b1ab5d2635aacdd236d6f655eba4543c54ae9e86bf65e47c51"
+    },
+    {
+      "bytes": 23453,
+      "path": "verify_toy.py",
+      "sha256": "0ef7dcefc5d9777a2a9f3569086b632897036c1060b9d74a2b881c8b88beff9e"
+    }
+  ],
+  "manifest_excludes_itself": true,
+  "publication_readiness": "ROOT_REVIEWED_SOURCE_ONLY",
+  "v1_and_all_fixture_history_preserved": true
+}

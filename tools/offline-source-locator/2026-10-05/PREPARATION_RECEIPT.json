@@ -1,0 +1,13 @@
+{
+  "initial_v2_snapshot_preserved": true,
+  "native_or_remote_actions": false,
+  "passing_receipt_path": "toy_verification_20261005T212222432696Z/verification_receipt.json",
+  "passing_receipt_sha256": "18742fc0cc0755b1ab5d2635aacdd236d6f655eba4543c54ae9e86bf65e47c51",
+  "physical_receipt_path": "physical_boundary_check_20261005T212222Z/PHYSICAL_BOUNDARY_CHECK.json",
+  "physical_receipt_sha256": "597cbc577b75f41d0a59d4713a54e9d83efbb34f706b65501a49230ec41b1990",
+  "readme_sha256": "af46cad84ffdd5ec281fc6ad7603037b943bd32c0491efa5517a500feb64bc11",
+  "source_sha256": "fd347917af3a2e95aa2756e57dc55e6544da425ff502838eaca452276479ccf4",
+  "status": "PREPARED_28_TESTS_PASS_PENDING_ROOT_REVIEW",
+  "v1_manifest_entries_unchanged": true,
+  "verifier_sha256": "0ef7dcefc5d9777a2a9f3569086b632897036c1060b9d74a2b881c8b88beff9e"
+}

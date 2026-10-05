@@ -1,0 +1,214 @@
+{
+  "errors": 0,
+  "failures": 0,
+  "fixture_directory": "/Users/cubres/Documents/Neurogolf/research/codex_gemma_source_locator_20261005T204701Z/portable_v2/toy_verification_20261005T212222432696Z",
+  "fixture_inputs": {
+    "clean": {
+      "async_sample.py": {
+        "ctime_ns": 1791235342434572317,
+        "mode": 420,
+        "mtime_ns": 1791235342434572317,
+        "sha256": "cf653c8ea0c1cb3cc4054733fa214107ee48e9103474816413bb857c1292a91d",
+        "size": 199
+      },
+      "blank.py": {
+        "ctime_ns": 1791235342435558984,
+        "mode": 420,
+        "mtime_ns": 1791235342435558984,
+        "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+        "size": 1
+      },
+      "duplicate_a.py": {
+        "ctime_ns": 1791235342433959275,
+        "mode": 420,
+        "mtime_ns": 1791235342433959275,
+        "sha256": "04907239f514059ef553d3caf15e33f121b1c53722e05aca6b4bfaa4ed4f0ad9",
+        "size": 55
+      },
+      "duplicate_b.py": {
+        "ctime_ns": 1791235342434158900,
+        "mode": 420,
+        "mtime_ns": 1791235342434158900,
+        "sha256": "04907239f514059ef553d3caf15e33f121b1c53722e05aca6b4bfaa4ed4f0ad9",
+        "size": 55
+      },
+      "execution_sentinel.py": {
+        "ctime_ns": 1791235342435350067,
+        "mode": 420,
+        "mtime_ns": 1791235342435350067,
+        "sha256": "4a4a861e39644fe941a3d13f066defb2f74db7cdcc53a7e30b371c0e32e82149",
+        "size": 231
+      },
+      "long_snippet.py": {
+        "ctime_ns": 1791235342434923109,
+        "mode": 420,
+        "mtime_ns": 1791235342434923109,
+        "sha256": "ec163f59a76491bac2c2beef91887fb43bd66dfbdbd6c147165da42e9680787b",
+        "size": 5057
+      },
+      "network": {
+        "ctime_ns": 1791235342433678817,
+        "mode": 493,
+        "mtime_ns": 1791235342433678817,
+        "size": 96
+      },
+      "network/protocol.py": {
+        "ctime_ns": 1791235342433731109,
+        "mode": 420,
+        "mtime_ns": 1791235342433731109,
+        "sha256": "465328351eaeb16d657bd5e3cf6526e0f3158beaaef5e9aa5384a996ffd584e9",
+        "size": 129
+      },
+      "shadowed.py": {
+        "ctime_ns": 1791235342434371734,
+        "mode": 420,
+        "mtime_ns": 1791235342434371734,
+        "sha256": "d3b7bc11678edca62956bec3e10bf2c705680788b9dc4b2b72ac94d955800fbc",
+        "size": 104
+      },
+      "unreadable.py": {
+        "ctime_ns": 1791235342435137359,
+        "mode": 420,
+        "mtime_ns": 1791235342435137359,
+        "sha256": "b6cb70a623f7152d1b116b327ed5b9746cd20e84999b309ff1d5a0cd1da853b1",
+        "size": 69
+      }
+    },
+    "external": {
+      "outside.py": {
+        "ctime_ns": 1791235342436145400,
+        "mode": 420,
+        "mtime_ns": 1791235342436145400,
+        "sha256": "1415839dcdaec6a2e965d917ef0e5421801d59be2cb0752c341305c77c5c77cf",
+        "size": 50
+      }
+    },
+    "toy": {
+      ".git": {
+        "ctime_ns": 1791235342435870359,
+        "mode": 493,
+        "mtime_ns": 1791235342435870359,
+        "size": 96
+      },
+      ".git/ignored.py": {
+        "ctime_ns": 1791235342435910067,
+        "mode": 420,
+        "mtime_ns": 1791235342435910067,
+        "sha256": "229c71309d89406b0f4cc9fda2b9f84e30195016a19348dd5e14aa2582f1e8a0",
+        "size": 55
+      },
+      "async_sample.py": {
+        "ctime_ns": 1791235342434480859,
+        "mode": 420,
+        "mtime_ns": 1791235342434480859,
+        "sha256": "cf653c8ea0c1cb3cc4054733fa214107ee48e9103474816413bb857c1292a91d",
+        "size": 199
+      },
+      "blank.py": {
+        "ctime_ns": 1791235342435450817,
+        "mode": 420,
+        "mtime_ns": 1791235342435450817,
+        "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+        "size": 1
+      },
+      "broken.py": {
+        "ctime_ns": 1791235342435658359,
+        "mode": 420,
+        "mtime_ns": 1791235342435658359,
+        "sha256": "369df850df3c7db0acbbd0b9306fd5777554c7ec53412a459c1599752f6cf735",
+        "size": 30
+      },
+      "duplicate_a.py": {
+        "ctime_ns": 1791235342433844650,
+        "mode": 420,
+        "mtime_ns": 1791235342433844650,
+        "sha256": "04907239f514059ef553d3caf15e33f121b1c53722e05aca6b4bfaa4ed4f0ad9",
+        "size": 55
+      },
+      "duplicate_b.py": {
+        "ctime_ns": 1791235342434059275,
+        "mode": 420,
+        "mtime_ns": 1791235342434059275,
+        "sha256": "04907239f514059ef553d3caf15e33f121b1c53722e05aca6b4bfaa4ed4f0ad9",
+        "size": 55
+      },
+      "execution_sentinel.py": {
+        "ctime_ns": 1791235342435253150,
+        "mode": 420,
+        "mtime_ns": 1791235342435253150,
+        "sha256": "4a4a861e39644fe941a3d13f066defb2f74db7cdcc53a7e30b371c0e32e82149",
+        "size": 231
+      },
+      "invalid_utf8.py": {
+        "ctime_ns": 1791235342435768775,
+        "mode": 420,
+        "mtime_ns": 1791235342435768775,
+        "sha256": "bdaad05723fe52f5c697598ec1be3f3c7a2685afe5736843401ae9f4cdebe0ef",
+        "size": 24
+      },
+      "long_snippet.py": {
+        "ctime_ns": 1791235342434759067,
+        "mode": 420,
+        "mtime_ns": 1791235342434759067,
+        "sha256": "ec163f59a76491bac2c2beef91887fb43bd66dfbdbd6c147165da42e9680787b",
+        "size": 5057
+      },
+      "network": {
+        "ctime_ns": 1791235342433430900,
+        "mode": 493,
+        "mtime_ns": 1791235342433430900,
+        "size": 96
+      },
+      "network/protocol.py": {
+        "ctime_ns": 1791235342433523359,
+        "mode": 420,
+        "mtime_ns": 1791235342433523359,
+        "sha256": "465328351eaeb16d657bd5e3cf6526e0f3158beaaef5e9aa5384a996ffd584e9",
+        "size": 129
+      },
+      "outside_alias.py": {
+        "ctime_ns": 1791235342436239609,
+        "mode": 493,
+        "mtime_ns": 1791235342436206775,
+        "size": 168,
+        "symlink_target": "/Users/cubres/Documents/Neurogolf/research/codex_gemma_source_locator_20261005T204701Z/portable_v2/toy_verification_20261005T212222432696Z/synthetic_external/outside.py"
+      },
+      "outside_directory": {
+        "ctime_ns": 1791235342436312609,
+        "mode": 493,
+        "mtime_ns": 1791235342436289025,
+        "size": 157,
+        "symlink_target": "/Users/cubres/Documents/Neurogolf/research/codex_gemma_source_locator_20261005T204701Z/portable_v2/toy_verification_20261005T212222432696Z/synthetic_external"
+      },
+      "shadowed.py": {
+        "ctime_ns": 1791235342434270567,
+        "mode": 420,
+        "mtime_ns": 1791235342434270567,
+        "sha256": "d3b7bc11678edca62956bec3e10bf2c705680788b9dc4b2b72ac94d955800fbc",
+        "size": 104
+      },
+      "unindexed.txt": {
+        "ctime_ns": 1791235342436023984,
+        "mode": 420,
+        "mtime_ns": 1791235342436023984,
+        "sha256": "0b7ef0be9221c9b5a9209b18ab029d5c93cc31b206cf5ae3bbd7bc173fbaeb42",
+        "size": 38
+      },
+      "unreadable.py": {
+        "ctime_ns": 1791235342435034317,
+        "mode": 420,
+        "mtime_ns": 1791235342435034317,
+        "sha256": "b6cb70a623f7152d1b116b327ed5b9746cd20e84999b309ff1d5a0cd1da853b1",
+        "size": 69
+      }
+    }
+  },
+  "indexed_source_execution_marker_absent": true,
+  "input_bytes_modes_and_tree_preserved": true,
+  "input_manifest_after_sha256": "41990cf12055170456272d29c4c3c077e15afbd813ad70322d0c7c67b60be951",
+  "input_manifest_before_sha256": "41990cf12055170456272d29c4c3c077e15afbd813ad70322d0c7c67b60be951",
+  "status": "PASS",
+  "test_output": "test_async_decorators_and_nested_names (__main__.Verification.test_async_decorators_and_nested_names) ... ok\ntest_caps_are_visible_and_never_claim_complete (__main__.Verification.test_caps_are_visible_and_never_claim_complete) ... ok\ntest_captured_root_identity_drift_refuses_report (__main__.Verification.test_captured_root_identity_drift_refuses_report) ... ok\ntest_cli_global_entry_cap_is_incomplete (__main__.Verification.test_cli_global_entry_cap_is_incomplete) ... ok\ntest_cli_json_and_no_indexed_source_execution (__main__.Verification.test_cli_json_and_no_indexed_source_execution) ... ok\ntest_directory_depth_cap_is_explicit (__main__.Verification.test_directory_depth_cap_is_explicit) ... ok\ntest_distinct_files_and_exact_tie_order (__main__.Verification.test_distinct_files_and_exact_tie_order) ... ok\ntest_double_leading_root_and_report_aliases_are_refused (__main__.Verification.test_double_leading_root_and_report_aliases_are_refused) ... ok\ntest_duplicate_declaration_spans_are_preserved (__main__.Verification.test_duplicate_declaration_spans_are_preserved) ... ok\ntest_empty_directories_consume_visited_directory_cap (__main__.Verification.test_empty_directories_consume_visited_directory_cap) ... ok\ntest_exact_entry_cap_is_conservatively_incomplete (__main__.Verification.test_exact_entry_cap_is_conservatively_incomplete) ... ok\ntest_exclusive_report_and_repo_write_refusal (__main__.Verification.test_exclusive_report_and_repo_write_refusal) ... ok\ntest_new_resource_limits_validate (__main__.Verification.test_new_resource_limits_validate) ... ok\ntest_non_python_entries_consume_the_global_entry_cap (__main__.Verification.test_non_python_entries_consume_the_global_entry_cap) ... ok\ntest_parse_and_decode_failure_coverage (__main__.Verification.test_parse_and_decode_failure_coverage) ... ok\ntest_permission_error_is_explicit (__main__.Verification.test_permission_error_is_explicit) ... ok\ntest_physical_ancestor_alias_is_refused_by_descriptor_identity (__main__.Verification.test_physical_ancestor_alias_is_refused_by_descriptor_identity) ... ok\ntest_physical_parent_alias_is_refused_by_descriptor_identity (__main__.Verification.test_physical_parent_alias_is_refused_by_descriptor_identity) ... ok\ntest_query_bounds_and_bounded_snippets (__main__.Verification.test_query_bounds_and_bounded_snippets) ... ok\ntest_relevant_function_and_hash (__main__.Verification.test_relevant_function_and_hash) ... ok\ntest_repeated_index_and_query_are_deterministic (__main__.Verification.test_repeated_index_and_query_are_deterministic) ... ok\ntest_report_ancestry_must_reach_root_within_bound (__main__.Verification.test_report_ancestry_must_reach_root_within_bound) ... ok\ntest_report_ancestry_read_error_is_refused (__main__.Verification.test_report_ancestry_read_error_is_refused) ... ok\ntest_report_requires_captured_index_root_identity (__main__.Verification.test_report_requires_captured_index_root_identity) ... ok\ntest_scandir_replaces_unbounded_listdir (__main__.Verification.test_scandir_replaces_unbounded_listdir) ... ok\ntest_symlink_root_and_relative_root_are_refused (__main__.Verification.test_symlink_root_and_relative_root_are_refused) ... ok\ntest_symlinks_and_ignored_directories_are_not_indexed (__main__.Verification.test_symlinks_and_ignored_directories_are_not_indexed) ... ok\ntest_unreadable_mode_gate_without_changing_inputs (__main__.Verification.test_unreadable_mode_gate_without_changing_inputs) ... ok\n\n----------------------------------------------------------------------\nRan 28 tests in 0.188s\n\nOK\n",
+  "tests_run": 28,
+  "unreadability_verification": "EACCES and zero read mode bits were fault-injected; source permissions and bytes stayed unchanged"
+}

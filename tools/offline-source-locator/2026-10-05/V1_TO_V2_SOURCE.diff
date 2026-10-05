@@ -1,0 +1,211 @@
+--- v1/V1_TO_V2_SOURCE.diff
++++ v2/V1_TO_V2_SOURCE.diff
+@@ -15,7 +15,7 @@
+ import stat
+ from typing import Any
+ 
+-VERSION = "original-stdlib-ast-bm25-v1"
++VERSION = "original-stdlib-ast-bm25-v2"
+ TOKEN = re.compile(r"[A-Za-z_][A-Za-z0-9_]*")
+ CAMEL = re.compile(r"_|(?<=[a-z0-9])(?=[A-Z])|(?<=[A-Z])(?=[A-Z][a-z])")
+ IGNORED_DIRS = frozenset({".git", ".hg", ".svn", ".venv", "venv", "__pycache__", "node_modules"})
+@@ -39,6 +39,9 @@
+     max_file_bytes: int = 1_048_576
+     max_total_bytes: int = 16_777_216
+     max_units: int = 50_000
++    max_entries: int = 100_000
++    max_directories: int = 4096
++    max_depth: int = 64
+     max_top_k: int = 20
+     max_query_chars: int = 4096
+     max_snippet_chars: int = 1200
+@@ -70,7 +73,10 @@
+ 
+ 
+ def explicit_root(value: str | Path) -> Path:
+-    path = Path(value)
++    raw = os.fspath(value)
++    if not isinstance(raw, str) or raw.startswith("//"):
++        raise ValueError("repo_root must use one leading slash; ambiguous // paths are refused")
++    path = Path(raw)
+     if not path.is_absolute():
+         raise ValueError("repo_root must be an explicit absolute path")
+     if ".." in path.parts:
+@@ -81,6 +87,8 @@
+ 
+ 
+ def directory_fd_without_symlinks(path: Path) -> int:
++    if str(path).startswith("//"):
++        raise ValueError("Ambiguous double-leading absolute paths are refused")
+     if not hasattr(os, "O_NOFOLLOW") or not hasattr(os, "O_DIRECTORY"):
+         raise ValueError("This descriptor-based implementation requires POSIX O_NOFOLLOW and O_DIRECTORY")
+     flags = os.O_RDONLY | os.O_DIRECTORY | os.O_NOFOLLOW
+@@ -138,10 +146,15 @@
+         self.files: list[dict] = []
+         self.directory_events: list[dict] = []
+         self.total_bytes = 0
++        self.directory_entries_seen = 0
++        self.directories_visited = 0
++        self.deepest_directory_depth = 0
+         self.complete = True
+         self.scan_stopped_reason: str | None = None
+         root_fd = directory_fd_without_symlinks(self.root)
+         try:
++            root_metadata = os.fstat(root_fd)
++            self.root_identity = (root_metadata.st_dev, root_metadata.st_ino)
+             try:
+                 self._walk(root_fd, "")
+             except ScanStopped as error:
+@@ -152,13 +165,36 @@
+         self.units.sort(key=lambda unit: unit.key)
+         self.files.sort(key=lambda record: record["path"])
+         self.directory_events.sort(key=lambda record: (record["path"], record["status"]))
+-        self.manifest_sha256 = digest(canonical_json({"files": self.files, "directory_events": self.directory_events, "scan_stopped_reason": self.scan_stopped_reason}))
++        self.manifest_sha256 = digest(canonical_json({"files": self.files, "directory_events": self.directory_events, "scan_stopped_reason": self.scan_stopped_reason, "directory_entries_seen": self.directory_entries_seen, "directories_visited": self.directories_visited, "deepest_directory_depth": self.deepest_directory_depth}))
+         self.df = Counter(term for unit in self.units for term in unit.frequencies)
+         self.average_length = sum(sum(unit.frequencies.values()) for unit in self.units) / max(1, len(self.units))
+ 
+-    def _walk(self, directory_fd: int, relative: str) -> None:
++    def _walk(self, directory_fd: int, relative: str, depth: int = 0) -> None:
++        if depth > self.limits.max_depth:
++            self.directory_events.append({"path": relative or ".", "status": "max_depth"})
++            raise ScanStopped("max_depth; deeper and remaining source coverage unknown")
++        if self.directories_visited >= self.limits.max_directories:
++            self.directory_events.append({"path": relative or ".", "status": "max_directories"})
++            raise ScanStopped("max_directories; remaining source coverage unknown")
++        self.directories_visited += 1
++        self.deepest_directory_depth = max(self.deepest_directory_depth, depth)
+         try:
+-            names = sorted(os.listdir(directory_fd))
++            names = []
++            with os.scandir(directory_fd) as entries:
++                while True:
++                    # Do not fetch an extra entry after the hard global cap.
++                    # At the exact ceiling, EOF cannot be established without
++                    # another fetch, so completeness is conservatively refused.
++                    if self.directory_entries_seen >= self.limits.max_entries:
++                        self.directory_events.append({"path": relative or ".", "status": "max_entries"})
++                        raise ScanStopped("max_entries; remaining directory entries and source coverage unknown")
++                    try:
++                        entry = next(entries)
++                    except StopIteration:
++                        break
++                    self.directory_entries_seen += 1
++                    names.append(entry.name)
++            names.sort()
+         except OSError as error:
+             self.complete = False
+             self.directory_events.append({"path": relative or ".", "status": "directory_read_error", "errno": error.errno})
+@@ -185,7 +221,7 @@
+                     self.directory_events.append({"path": path, "status": "directory_open_error", "errno": error.errno})
+                     continue
+                 try:
+-                    self._walk(child_fd, path)
++                    self._walk(child_fd, path, depth + 1)
+                 finally:
+                     os.close(child_fd)
+                 continue
+@@ -293,11 +329,69 @@
+         for score, unit in scored[:top_k]:
+             matches.append({"path": unit.path, "kind": unit.kind, "qualified_name": unit.qualified_name, "start_line": unit.start_line, "end_line": unit.end_line, "source_sha256": unit.source_sha256, "score": score, "snippet": self._snippet(unit, terms)})
+         statuses = Counter(record["status"] for record in self.files)
+-        return {"version": VERSION, "status": "OK" if self.complete else "INCOMPLETE", "repo_root": str(self.root), "query": query, "query_tokens": sorted(terms), "bm25": {"k1": k1, "b": b, "name_weight": 2, "path_weight": 1}, "limits": vars(self.limits), "coverage": {"index_complete_within_declared_scope": self.complete, "source_files_seen": len(self.files), "source_files_indexed": statuses["indexed"], "units_indexed": len(self.units), "bytes_read": self.total_bytes, "statuses": dict(sorted(statuses.items())), "scan_stopped_reason": self.scan_stopped_reason, "files": self.files, "directory_events": self.directory_events, "source_manifest_sha256": self.manifest_sha256}, "matches": matches}
+-
+-
+-def write_exclusive_report(path: str, result: dict, repo_root: Path) -> None:
+-    destination = Path(path)
++        return {"version": VERSION, "status": "OK" if self.complete else "INCOMPLETE", "repo_root": str(self.root), "query": query, "query_tokens": sorted(terms), "bm25": {"k1": k1, "b": b, "name_weight": 2, "path_weight": 1}, "limits": vars(self.limits), "coverage": {"index_complete_within_declared_scope": self.complete, "indexed_root_identity": {"device": self.root_identity[0], "inode": self.root_identity[1]}, "source_files_seen": len(self.files), "source_files_indexed": statuses["indexed"], "units_indexed": len(self.units), "bytes_read": self.total_bytes, "directory_entries_seen": self.directory_entries_seen, "directories_visited": self.directories_visited, "deepest_directory_depth": self.deepest_directory_depth, "statuses": dict(sorted(statuses.items())), "scan_stopped_reason": self.scan_stopped_reason, "files": self.files, "directory_events": self.directory_events, "source_manifest_sha256": self.manifest_sha256}, "matches": matches}
++
++
++def _directory_identity_without_symlinks(path: Path) -> tuple[int, int]:
++    fd = directory_fd_without_symlinks(path)
++    try:
++        metadata = os.fstat(fd)
++        return metadata.st_dev, metadata.st_ino
++    finally:
++        os.close(fd)
++
++
++def _reject_indexed_root_ancestry(parent_fd: int, indexed_root_identity: tuple[int, int], max_ancestors: int = 256) -> None:
++    """Refuse physical root aliases and any ancestry that cannot be validated.
++
++    Only directory descriptors are inspected. Caller retains its parent_fd;
++    this bounded walk owns and closes a duplicate and its ancestor descriptors.
++    This is a stable-namespace check, not an atomic filesystem transaction.
++    """
++    if not isinstance(max_ancestors, int) or isinstance(max_ancestors, bool) or max_ancestors < 1:
++        raise ValueError("max_ancestors must be a positive integer")
++    current_fd = os.dup(parent_fd)
++    try:
++        for _ in range(max_ancestors):
++            current_metadata = os.fstat(current_fd)
++            current_identity = (current_metadata.st_dev, current_metadata.st_ino)
++            if current_identity == indexed_root_identity:
++                raise ValueError("report parent is inside indexed root by descriptor identity")
++            ancestor_fd = os.open("..", os.O_RDONLY | os.O_DIRECTORY | os.O_NOFOLLOW, dir_fd=current_fd)
++            try:
++                ancestor_metadata = os.fstat(ancestor_fd)
++                ancestor_identity = (ancestor_metadata.st_dev, ancestor_metadata.st_ino)
++            except BaseException:
++                os.close(ancestor_fd)
++                raise
++            if ancestor_identity == indexed_root_identity:
++                os.close(ancestor_fd)
++                raise ValueError("report ancestor is indexed root by descriptor identity")
++            if ancestor_identity == current_identity:
++                os.close(ancestor_fd)
++                return
++            os.close(current_fd)
++            current_fd = ancestor_fd
++        raise ValueError("report ancestry exceeded bounded validation depth")
++    finally:
++        os.close(current_fd)
++
++
++def write_exclusive_report(path: str, result: dict, repo_root: Path, indexed_root_identity: tuple[int, int] | None = None) -> None:
++    raw = os.fspath(path)
++    if not isinstance(raw, str) or raw.startswith("//"):
++        raise ValueError("report path must use one leading slash; ambiguous // paths are refused")
++    destination = Path(raw)
++    repo_root = explicit_root(repo_root)
++    if indexed_root_identity is None:
++        captured = result.get("coverage", {}).get("indexed_root_identity", {})
++        indexed_root_identity = (captured.get("device"), captured.get("inode"))
++    if not isinstance(indexed_root_identity, tuple) or len(indexed_root_identity) != 2 or any(
++        not isinstance(value, int) or isinstance(value, bool) or value < 0 for value in indexed_root_identity
++    ):
++        raise ValueError("report requires captured indexed root device/inode identity")
++    if _directory_identity_without_symlinks(repo_root) != indexed_root_identity:
++        raise ValueError("indexed root path identity changed before report")
+     if not destination.is_absolute():
+         raise ValueError("report path must be absolute")
+     if ".." in destination.parts:
+@@ -309,6 +403,9 @@
+     # leaf. No parent directories are made and no indexed source is written.
+     parent_fd = directory_fd_without_symlinks(parent)
+     try:
++        _reject_indexed_root_ancestry(parent_fd, indexed_root_identity)
++        if _directory_identity_without_symlinks(repo_root) != indexed_root_identity:
++            raise ValueError("indexed root path identity changed before report creation")
+         fd = os.open(destination.name, os.O_WRONLY | os.O_CREAT | os.O_EXCL | os.O_NOFOLLOW, 0o600, dir_fd=parent_fd)
+         with os.fdopen(fd, "w", encoding="utf-8") as stream:
+             stream.write(canonical_json(result).decode("utf-8") + "\n")
+@@ -322,12 +419,16 @@
+     parser.add_argument("--query", required=True)
+     parser.add_argument("--top-k", type=int, default=5)
+     parser.add_argument("--report", help="Optional fresh exclusive absolute path outside repo_root")
++    parser.add_argument("--max-entries", type=int, default=Limits.max_entries)
++    parser.add_argument("--max-directories", type=int, default=Limits.max_directories)
++    parser.add_argument("--max-depth", type=int, default=Limits.max_depth)
+     arguments = parser.parse_args()
+     try:
+-        index = SourceIndex(arguments.repo_root)
++        limits = Limits(max_entries=arguments.max_entries, max_directories=arguments.max_directories, max_depth=arguments.max_depth)
++        index = SourceIndex(arguments.repo_root, limits)
+         result = index.search(arguments.query, arguments.top_k)
+         if arguments.report:
+-            write_exclusive_report(arguments.report, result, index.root)
++            write_exclusive_report(arguments.report, result, index.root, index.root_identity)
+         print(canonical_json(result).decode("utf-8"))
+         return 0 if index.complete else 2
+     except (OSError, ValueError, RecursionError) as error:

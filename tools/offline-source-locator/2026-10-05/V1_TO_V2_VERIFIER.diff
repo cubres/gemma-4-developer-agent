@@ -1,0 +1,180 @@
+--- v1/V1_TO_V2_VERIFIER.diff
++++ v2/V1_TO_V2_VERIFIER.diff
+@@ -224,6 +224,177 @@
+         self.assertFalse((RUN / "INDEXED_SOURCE_EXECUTED").exists())
+ 
+ 
++    def test_double_leading_root_and_report_aliases_are_refused(self):
++        result = locator.SourceIndex(CLEAN).search("header")
++        aliases = ["//" + str(CLEAN).lstrip("/"), "///" + str(CLEAN).lstrip("/")]
++        for alias in aliases:
++            with self.subTest(alias=alias):
++                with self.assertRaises(ValueError):
++                    locator.SourceIndex(alias)
++                with self.assertRaises(ValueError):
++                    locator.write_exclusive_report(str(CLEAN / "alias_report.json"), result, Path(alias))
++        for prefix in ("//", "///"):
++            with self.assertRaises(ValueError):
++                locator.write_exclusive_report(prefix + str(REPORTS / "alias_report.json").lstrip("/"), result, CLEAN)
++        self.assertFalse((CLEAN / "alias_report.json").exists())
++        self.assertFalse((REPORTS / "alias_report.json").exists())
++
++    def test_non_python_entries_consume_the_global_entry_cap(self):
++        root = RUN / "entry_cap_fixture"
++        root.mkdir()
++        for i in range(20):
++            put(root, "data_" + str(i) + ".txt", "constructed nonsource data")
++        before = snapshot(root)
++        result = locator.SourceIndex(root, replace(locator.Limits(), max_entries=5)).search("header")
++        self.assertEqual(result["status"], "INCOMPLETE")
++        self.assertEqual(result["coverage"]["directory_entries_seen"], 5)
++        self.assertIn("max_entries", result["coverage"]["scan_stopped_reason"])
++        self.assertEqual(result["coverage"]["source_files_seen"], 0)
++        self.assertEqual(before, snapshot(root))
++
++    def test_empty_directories_consume_visited_directory_cap(self):
++        root = RUN / "directory_cap_fixture"
++        root.mkdir()
++        for i in range(4):
++            (root / ("empty_" + str(i))).mkdir()
++        before = snapshot(root)
++        result = locator.SourceIndex(root, replace(locator.Limits(), max_directories=2)).search("header")
++        self.assertEqual(result["status"], "INCOMPLETE")
++        self.assertEqual(result["coverage"]["directories_visited"], 2)
++        self.assertIn("max_directories", result["coverage"]["scan_stopped_reason"])
++        self.assertEqual(before, snapshot(root))
++
++    def test_directory_depth_cap_is_explicit(self):
++        root = RUN / "depth_cap_fixture"
++        (root / "a" / "b" / "c").mkdir(parents=True)
++        before = snapshot(root)
++        result = locator.SourceIndex(root, replace(locator.Limits(), max_depth=1)).search("header")
++        self.assertEqual(result["status"], "INCOMPLETE")
++        self.assertEqual(result["coverage"]["deepest_directory_depth"], 1)
++        self.assertIn("max_depth", result["coverage"]["scan_stopped_reason"])
++        self.assertEqual(before, snapshot(root))
++
++    def test_scandir_replaces_unbounded_listdir(self):
++        with patch.object(locator.os, "listdir", side_effect=AssertionError("unbounded listdir used")):
++            result = locator.SourceIndex(CLEAN).search("header")
++        self.assertEqual(result["status"], "OK")
++        self.assertEqual(result["coverage"]["directories_visited"], 2)
++        self.assertEqual(result["coverage"]["directory_entries_seen"], 10)
++
++    def test_cli_global_entry_cap_is_incomplete(self):
++        environment = dict(os.environ, PYTHONDONTWRITEBYTECODE="1")
++        process = subprocess.run([sys.executable, str(ARTIFACT / "source_locator.py"), "--repo-root", str(CLEAN), "--query", "header", "--max-entries", "1"], capture_output=True, text=True, env=environment, timeout=20)
++        result = json.loads(process.stdout)
++        self.assertEqual(process.returncode, 2)
++        self.assertEqual(result["status"], "INCOMPLETE")
++        self.assertEqual(result["coverage"]["directory_entries_seen"], 1)
++        self.assertIn("max_entries", result["coverage"]["scan_stopped_reason"])
++
++    def test_new_resource_limits_validate(self):
++        for name in ("max_entries", "max_directories", "max_depth"):
++            for bad in (0, -1, True):
++                with self.subTest(name=name, bad=bad):
++                    with self.assertRaises(ValueError):
++                        locator.SourceIndex(CLEAN, replace(locator.Limits(), **{name: bad}))
++
++    def test_exact_entry_cap_is_conservatively_incomplete(self):
++        root = RUN / "exact_entry_cap_fixture"
++        root.mkdir()
++        put(root, "ordinary.py", "def header(value):\n    return value\n")
++        before = snapshot(root)
++        result = locator.SourceIndex(root, replace(locator.Limits(), max_entries=1)).search("header")
++        self.assertEqual(result["status"], "INCOMPLETE")
++        self.assertEqual(result["coverage"]["directory_entries_seen"], 1)
++        self.assertEqual(before, snapshot(root))
++
++
++    def test_physical_parent_alias_is_refused_by_descriptor_identity(self):
++        result = locator.SourceIndex(CLEAN).search("header")
++        root_id = (CLEAN.stat().st_dev, CLEAN.stat().st_ino)
++        original_dup = locator.os.dup
++        original_fstat = locator.os.fstat
++        mapped = set()
++        def duplicate(fd):
++            value = original_dup(fd)
++            mapped.add(value)
++            return value
++        def aliased_stat(fd):
++            if fd in mapped:
++                return SimpleNamespace(st_dev=root_id[0], st_ino=root_id[1])
++            return original_fstat(fd)
++        destination = REPORTS / "physical_parent_alias.json"
++        with patch.object(locator.os, "dup", duplicate), patch.object(locator.os, "fstat", aliased_stat):
++            with self.assertRaisesRegex(ValueError, "inside indexed root"):
++                locator.write_exclusive_report(str(destination), result, CLEAN)
++        self.assertFalse(destination.exists())
++
++    def test_physical_ancestor_alias_is_refused_by_descriptor_identity(self):
++        result = locator.SourceIndex(CLEAN).search("header")
++        root_id = (CLEAN.stat().st_dev, CLEAN.stat().st_ino)
++        original_dup = locator.os.dup
++        original_open = locator.os.open
++        original_fstat = locator.os.fstat
++        mapped = {}
++        def duplicate(fd):
++            value = original_dup(fd)
++            mapped[value] = (root_id[0], root_id[1] + 10000000)
++            return value
++        def open_ancestor(path, *args, **kwargs):
++            value = original_open(path, *args, **kwargs)
++            if path == ".." and kwargs.get("dir_fd") in mapped:
++                mapped[value] = root_id
++            return value
++        def aliased_stat(fd):
++            if fd in mapped:
++                return SimpleNamespace(st_dev=mapped[fd][0], st_ino=mapped[fd][1])
++            return original_fstat(fd)
++        destination = REPORTS / "physical_ancestor_alias.json"
++        with patch.object(locator.os, "dup", duplicate), patch.object(locator.os, "open", open_ancestor), patch.object(locator.os, "fstat", aliased_stat):
++            with self.assertRaisesRegex(ValueError, "ancestor is indexed root"):
++                locator.write_exclusive_report(str(destination), result, CLEAN)
++        self.assertFalse(destination.exists())
++
++    def test_report_ancestry_must_reach_root_within_bound(self):
++        root_id = (CLEAN.stat().st_dev, CLEAN.stat().st_ino)
++        parent_fd = locator.directory_fd_without_symlinks(REPORTS)
++        try:
++            with self.assertRaisesRegex(ValueError, "bounded validation depth"):
++                locator._reject_indexed_root_ancestry(parent_fd, root_id, max_ancestors=1)
++            self.assertEqual(locator.os.fstat(parent_fd).st_ino, REPORTS.stat().st_ino)
++        finally:
++            locator.os.close(parent_fd)
++
++    def test_report_ancestry_read_error_is_refused(self):
++        result = locator.SourceIndex(CLEAN).search("header")
++        original_open = locator.os.open
++        def denied_ancestor(path, *args, **kwargs):
++            if path == ".." and "dir_fd" in kwargs:
++                raise PermissionError(errno.EACCES, "Constructed ancestor read denial")
++            return original_open(path, *args, **kwargs)
++        destination = REPORTS / "ancestry_denied.json"
++        with patch.object(locator.os, "open", denied_ancestor):
++            with self.assertRaises(PermissionError):
++                locator.write_exclusive_report(str(destination), result, CLEAN)
++        self.assertFalse(destination.exists())
++
++    def test_captured_root_identity_drift_refuses_report(self):
++        index = locator.SourceIndex(CLEAN)
++        result = index.search("header")
++        wrong = (index.root_identity[0], index.root_identity[1] + 1)
++        for stage, values in (("initial", [wrong]), ("before_create", [index.root_identity, wrong])):
++            destination = REPORTS / ("drift_" + stage + ".json")
++            with patch.object(locator, "_directory_identity_without_symlinks", side_effect=values):
++                with self.assertRaisesRegex(ValueError, "identity changed"):
++                    locator.write_exclusive_report(str(destination), result, CLEAN, index.root_identity)
++            self.assertFalse(destination.exists())
++
++    def test_report_requires_captured_index_root_identity(self):
++        destination = REPORTS / "missing_capture.json"
++        with self.assertRaisesRegex(ValueError, "requires captured"):
++            locator.write_exclusive_report(str(destination), {"matches": []}, CLEAN)
++        self.assertFalse(destination.exists())
++
++
+ if __name__ == "__main__":
+     capture = io.StringIO()
+     suite = unittest.defaultTestLoader.loadTestsFromTestCase(Verification)

@@ -1,0 +1,12 @@
+{
+  "actual_alias_report_refused": true,
+  "alias_is_same_root_identity": true,
+  "indexed_source_bytes_unchanged": true,
+  "mocked_parent_and_ancestor_alias_regressions": "PASS_IN_28_TEST_VERIFIER",
+  "native_private_assets_notebooks_or_models": false,
+  "real_macos_alias_available": true,
+  "refusal": "report parent is inside indexed root by descriptor identity",
+  "report_leaf_absent": true,
+  "source_sha256": "fd347917af3a2e95aa2756e57dc55e6544da425ff502838eaca452276479ccf4",
+  "status": "PASS_REAL_ALIAS_AND_MOCKS"
+}

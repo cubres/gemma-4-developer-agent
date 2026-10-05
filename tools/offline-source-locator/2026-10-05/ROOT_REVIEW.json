@@ -1,0 +1,24 @@
+{
+  "actual_macos_firmlink_receipt_reviewed": true,
+  "all_original_v1_manifest_entries_unchanged": true,
+  "bounded_scandir_entry_directory_depth_controls_reviewed": true,
+  "checked_utc": "2026-10-05T21:31:12.978104+00:00",
+  "filesystem_transaction_atomic": false,
+  "hard_heap_or_walltime_sandbox": false,
+  "lexical_BM25_ast_tokenization_snippet_and_source_reader_core_unchanged": true,
+  "native_gemma_private_assets_or_notebooks_read": false,
+  "physical_ancestry_and_captured_root_identity_checks_reviewed": true,
+  "residual_adversarial_rename_window_disclosed": true,
+  "score_gain_claim": false,
+  "status": "PASS_ROOT_REVISED_LOCATOR_STATIC_REVIEW_AND_FRESH_28_TEST_CHECK",
+  "toy_result": {
+    "errors": 0,
+    "failures": 0,
+    "fixture_directory": "/Users/cubres/Documents/Neurogolf/research/codex_gemma_source_locator_20261005T204701Z/portable_v2/toy_verification_20261005T213112766257Z",
+    "indexed_source_execution_marker_absent": true,
+    "input_bytes_modes_and_tree_preserved": true,
+    "status": "PASS",
+    "tests_run": 28
+  },
+  "v2_manifest_entries": 10
+}
