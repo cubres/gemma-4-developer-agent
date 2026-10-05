@@ -1,0 +1,15 @@
+{
+  "scope": "original synthetic-only mathematical loss component",
+  "formula": "mean_task(mean_verified_success_trajectory(mean_action_token(-log_probability)))",
+  "outcome_provenance": "synthetic-fixture only; real task evidence is unsupported",
+  "mask_contract": "disjoint complete boolean partition: prompt, thought, action, padding",
+  "duplicate_policy": "exact records sharing canonical task/trajectory identity count once; conflicting copies fail",
+  "excluded_outcomes": ["failure", "unknown", "unverified success"],
+  "zero_supervision": ["prompt", "thought", "padding", "excluded outcomes", "exact repeated rows after first"],
+  "native_capture": false,
+  "teacher_requests": false,
+  "model_calls": false,
+  "training_ready": false,
+  "limits": {"cpu_seconds": 30, "wall_seconds": 60},
+  "promotion": "none; synthetic invariants cannot establish repair quality or native compatibility"
+}

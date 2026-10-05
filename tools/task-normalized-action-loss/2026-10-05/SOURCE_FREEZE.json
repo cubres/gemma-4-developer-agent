@@ -1,0 +1,24 @@
+{
+  "frozen_at_utc": "2026-10-05T16:49:41.463203+00:00",
+  "files": {
+    "action_sft_loss.py": {
+      "sha256": "c6ce8d16b6a52056296be4e6280eeb53d39159adb2aff25476c92cb3fd1a3a00",
+      "bytes": 5570
+    },
+    "test_action_sft_loss.py": {
+      "sha256": "f4923f9138b19471ef8233346db53377f50acdf7996748d0f0bfd7cd7a16387e",
+      "bytes": 6914
+    },
+    "PROTOCOL.json": {
+      "sha256": "916c87e03dc2ed00b30976ee9d2e36523057fd7a5a2deedc4603dd4d906f4067",
+      "bytes": 903
+    },
+    "README.md": {
+      "sha256": "fad2e7b403df634cd647675a94be0300dc78ab55a85660016590e117053e26ab",
+      "bytes": 1631
+    }
+  },
+  "training_ready": false,
+  "native_capture": false,
+  "phase": "before tests"
+}

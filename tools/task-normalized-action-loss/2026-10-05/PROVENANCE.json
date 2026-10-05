@@ -1,0 +1,50 @@
+{
+  "component": "task-normalized synthetic action-token loss",
+  "authorship": "Original code and synthetic tests written with Codex assistance for cubres; no upstream source code copied.",
+  "license": "MIT; NumPy is a separately licensed dependency.",
+  "source_sha256": "c6ce8d16b6a52056296be4e6280eeb53d39159adb2aff25476c92cb3fd1a3a00",
+  "retained_byte_exact_files": [
+    "action_sft_loss.py",
+    "test_action_sft_loss.py",
+    "PROTOCOL.json",
+    "SOURCE_FREEZE.json",
+    "VALIDATION_RECEIPT.json"
+  ],
+  "frozen_fixture_before_test": true,
+  "historical_freeze_documentation_note": {
+    "recorded_path": "README.md",
+    "historical_sha256": "fad2e7b403df634cd647675a94be0300dc78ab55a85660016590e117053e26ab",
+    "included": false,
+    "reason": "Historical quick-start documentation contains a local environment path; the public README is separate portable documentation."
+  },
+  "runtime": {
+    "python": "3.12",
+    "numpy": "2.2.6",
+    "recorded_tests": 17,
+    "wall_seconds": 0.1624670419987524,
+    "child_cpu_seconds": 0.09655599999999999,
+    "unittest_internal_seconds": 0.021
+  },
+  "public_packet_checks": "Byte identity, receipt consistency, UTF-8 decoding and privacy inspection only. The 17 existing tests were not rerun for this documentation packet.",
+  "new_portable_launcher": false,
+  "privacy": {
+    "actual_native_captures": false,
+    "real_task_data": false,
+    "teacher_outputs": false,
+    "credentials": false,
+    "signed_urls": false,
+    "model_weights": false,
+    "private_notebook_source": false,
+    "synthetic_fixture_only": true
+  },
+  "training_ready": false,
+  "native_capture": false,
+  "official_score_gain": null,
+  "novelty_claim": false,
+  "limitations": [
+    "Synthetic verification flags do not certify real repair outcomes.",
+    "Canonical identity aliases require upstream provenance.",
+    "Gradients are with respect to log probabilities, not model parameters.",
+    "No native token or action-mask identity and no repair-quality evidence."
+  ]
+}

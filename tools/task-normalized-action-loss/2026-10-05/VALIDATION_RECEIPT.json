@@ -1,0 +1,14 @@
+{
+  "completed_at_utc": "2026-10-05T16:49:41.626055+00:00",
+  "returncode": 0,
+  "wall_seconds": 0.1624670419987524,
+  "child_cpu_seconds": 0.09655599999999999,
+  "stdout": "",
+  "stderr": "test_conflicting_duplicate_identity_fails (test_action_sft_loss.LossContract.test_conflicting_duplicate_identity_fails) ... ok\ntest_duplicate_verbose_trajectory_and_task_rows (test_action_sft_loss.LossContract.test_duplicate_verbose_trajectory_and_task_rows) ... ok\ntest_empty_batch_is_zero_and_not_training_ready (test_action_sft_loss.LossContract.test_empty_batch_is_zero_and_not_training_ready) ... ok\ntest_excluded_task_does_not_dilute_accepted_task (test_action_sft_loss.LossContract.test_excluded_task_does_not_dilute_accepted_task) ... ok\ntest_failed_unknown_and_unverified_success_have_no_supervision (test_action_sft_loss.LossContract.test_failed_unknown_and_unverified_success_have_no_supervision) ... ok\ntest_finite_difference_action_and_padding_gradients (test_action_sft_loss.LossContract.test_finite_difference_action_and_padding_gradients) ... ok\ntest_hierarchical_mass_and_known_loss (test_action_sft_loss.LossContract.test_hierarchical_mass_and_known_loss) ... ok\ntest_input_order_does_not_change_loss_or_identity_mass (test_action_sft_loss.LossContract.test_input_order_does_not_change_loss_or_identity_mass) ... ok\ntest_invalid_outcome_probability_or_integer_tokens_fails (test_action_sft_loss.LossContract.test_invalid_outcome_probability_or_integer_tokens_fails) ... ok\ntest_no_action_success_fails (test_action_sft_loss.LossContract.test_no_action_success_fails) ... ok\ntest_nonboolean_or_misaligned_mask_fails (test_action_sft_loss.LossContract.test_nonboolean_or_misaligned_mask_fails) ... ok\ntest_nonfixture_provenance_cannot_be_admitted (test_action_sft_loss.LossContract.test_nonfixture_provenance_cannot_be_admitted) ... ok\ntest_overlap_mask_fails (test_action_sft_loss.LossContract.test_overlap_mask_fails) ... ok\ntest_prompt_thought_padding_have_exact_zero_gradient (test_action_sft_loss.LossContract.test_prompt_thought_padding_have_exact_zero_gradient) ... ok\ntest_repeated_action_tokens_do_not_increase_trajectory_mass (test_action_sft_loss.LossContract.test_repeated_action_tokens_do_not_increase_trajectory_mass) ... ok\ntest_unclassified_token_fails (test_action_sft_loss.LossContract.test_unclassified_token_fails) ... ok\ntest_unknown_cannot_be_verified (test_action_sft_loss.LossContract.test_unknown_cannot_be_verified) ... ok\n\n----------------------------------------------------------------------\nRan 17 tests in 0.021s\n\nOK\n",
+  "source_freeze_sha256": "ae70da130c4e7329ab519ff5acf8e03b0c0384fc5e2bd794a490ac98c882f816",
+  "source_unchanged": true,
+  "training_ready": false,
+  "native_capture": false,
+  "model_calls": 0,
+  "teacher_requests": 0
+}
