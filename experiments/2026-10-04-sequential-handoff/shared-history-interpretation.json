@@ -1,0 +1,80 @@
+{
+  "audited_utc": "2026-10-05T00:15:41.631208+00:00",
+  "status": "READ_ONLY_INTERPRETATION_OF_PRESERVED_MECHANICS_RECEIPT",
+  "source_receipt_sha256": "373801b490a1326dcb926ac661627a1ceb30b92b540b1ef573765cab78294b63",
+  "source_protocol_sha256": "c66ac9f4e50fe81e9df6e224f20849036fac6ce0319b390a772ca9bc9be2ec68",
+  "portable_source_sha256": "6912ba3778afa87069e463a5e0aa7f07ca435230fb89256056b4f2108ce597b7",
+  "source_inputs_unchanged": true,
+  "real_model_calls_added": 0,
+  "new_fixture_runs": 0,
+  "observations": [
+    {
+      "case": "present_state",
+      "coder_request_constructed": true,
+      "in_session_state": true,
+      "in_coder_system_placeholder": true,
+      "in_coder_user_history": true,
+      "attributed_history_text": "[synthetic_explorer] said: Synthetic source synthetic_module.py: preserve accepted input; check boundary \"λ\".\nNo repository execution.",
+      "coder_history_sha256": "c3f37702f50a471b6875a2dd084738b1ec5a9b056ead01dae9d7172687d81d7d"
+    },
+    {
+      "case": "optional_absent_state",
+      "coder_request_constructed": true,
+      "in_session_state": false,
+      "in_coder_system_placeholder": false,
+      "in_coder_user_history": true,
+      "attributed_history_text": "[synthetic_explorer] said: Synthetic source synthetic_module.py: preserve accepted input; check boundary \"λ\".\nNo repository execution.",
+      "coder_history_sha256": "c3f37702f50a471b6875a2dd084738b1ec5a9b056ead01dae9d7172687d81d7d"
+    },
+    {
+      "case": "required_absent_state",
+      "coder_request_constructed": false,
+      "expected_failure": {
+        "message": "'Context variable not found: `repair_plan`.'",
+        "type": "KeyError"
+      },
+      "in_session_state": false
+    }
+  ],
+  "adk_version": "1.36.1",
+  "source_binding": [
+    {
+      "path": "google/adk/flows/llm_flows/contents.py",
+      "sha256": "f0441e4903e0f9f41cd99b6f8fdbfdac9843923dabc1d998e19112d20d2ce6fa",
+      "lines": [
+        [
+          71,
+          79
+        ],
+        [
+          551,
+          582
+        ],
+        [
+          616,
+          665
+        ]
+      ],
+      "finding": "Default includes full history; other-agent text and serialized tool events become user-role context; none still selects current-turn input."
+    },
+    {
+      "path": "google/adk/agents/llm_agent.py",
+      "sha256": "7d0a8b71724536898ca7f347038dbbc1cf0eeb38d1d6f9e1077b8cfeb9461c0b",
+      "lines": [
+        [
+          319,
+          319
+        ]
+      ],
+      "finding": "include_contents defaults to default."
+    }
+  ],
+  "interpretation": {
+    "verified": "State substitution, optional-empty and required-missing handling, exact shared-history exposure and actual scripted request shapes.",
+    "causal_limit": "Both completed coder cases retain the same explorer plan in history, so they do not isolate the effect of state insertion or plan availability.",
+    "scripted_response_limit": "The coder returns a fixed response independently of the request; there is no repair-quality evidence.",
+    "quality_claim": false,
+    "official_submission_score": null
+  },
+  "documentation_sha256": "f5ebfb2f5032ed43f4d6c40587965b264f01e4d07fd13b0efe74a54aa7a6289d"
+}
