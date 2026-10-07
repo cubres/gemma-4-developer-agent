@@ -1,0 +1,150 @@
+{
+  "candidate_sha256": "1ebbb3e76e2dc2577436f2e52a31f667f750bc26f9139f7fb10098db710808b9",
+  "compiler_source_provenance": "Locally staged official compiler source in wheelhouse_v28_small/src, as recorded by the original CPU receipts; version is not inferred from its directory name.",
+  "contract_test_source": "owned campaign tests/test_bundle.py",
+  "contract_test_source_sha256": "18a3bcd49beefa07633ed4d93ecd2f87b4a757432bf91fc0336ad6f2f6ccdb3e",
+  "cpu_scope_and_limit": "Real local official compiler, model declaration/tool graph validation, prompt templating, archive/layout and evaluation YAML checks; no model inference or score evidence. The original runtime bound test excludes final verification and is not proof of current official batch runtime.",
+  "independent_review": {
+    "benefit_hypothesis": "commands or final grading lasting91–240s can finish instead of timing out; frequency and scoring effect unknown",
+    "evidence_limits": [
+      "no model/native/official evaluation run by this reviewer",
+      "public .18/.15 source comparison not freshly rebound by this review; no causal attribution",
+      "PASS is configuration/package semantic qualification only; root still needs compiler/package gates and fresh submission eligibility",
+      "no score promise or model-quality improvement claim"
+    ],
+    "exact_diff": {
+      "CRC_valid": true,
+      "changed_members": [
+        "eval_config.yaml"
+      ],
+      "evaluation": {
+        "max_time_minutes": 5,
+        "max_tool_calls": 100,
+        "max_turns": 160,
+        "timeout_seconds": 240
+      },
+      "only_text_replacement": "timeout_seconds: 90 -> timeout_seconds: 240",
+      "other_five_members": "byte-identical",
+      "same_six_member_order": true
+    },
+    "observed_utc": "2026-10-07T20:26:11.672776+00:00",
+    "reviewer": "gemma_timeout_semantics_review_oct7",
+    "risk": "longer unsuccessful commands can consume more of the unchanged5-minute model task budget and leave less time for further edits; nominal full evaluation wall-clock may grow",
+    "runtime_effects": [
+      "flat timeout_seconds merges into HarnessLimits.command_timeout_seconds",
+      "agent command cap min(configured timeout, remaining task time), with existing 5-second floor",
+      "code executor/script timeout uses same configured value",
+      "initial harness-injected agent prompt reports new single-command timeout",
+      "final grader pytest uses this timeout independently and still requires exit0 plus valid nonempty passing JUnit with required tests"
+    ],
+    "status": "PASS_TIMEOUT_ONLY_OFFICIAL_EXPERIMENT_CONTRACT",
+    "synthetic_exact_function_probes": {
+      "all_pass": true,
+      "cases": [
+        {
+          "configured": 90,
+          "effective": 90,
+          "remaining": 300
+        },
+        {
+          "configured": 240,
+          "effective": 240,
+          "remaining": 300
+        },
+        {
+          "configured": 240,
+          "effective": 120,
+          "remaining": 120
+        },
+        {
+          "configured": 240,
+          "effective": 5,
+          "remaining": 1
+        },
+        {
+          "configured": 240,
+          "effective": 5,
+          "remaining": 0
+        },
+        {
+          "configured": 240,
+          "effective": 240,
+          "remaining": null
+        }
+      ],
+      "scope": "AST-loaded exact official run_command; fake context/docker, no real commands"
+    }
+  },
+  "normal": {
+    "created_utc": "2026-10-07T20:25:54.686922+00:00",
+    "errors": 0,
+    "failures": 0,
+    "optimization": 0,
+    "skipped": 0,
+    "status": "PASS",
+    "tests_run": 7
+  },
+  "optimized": {
+    "created_utc": "2026-10-07T20:26:11.782208+00:00",
+    "errors": 0,
+    "failures": 0,
+    "optimization": 1,
+    "skipped": 0,
+    "status": "PASS",
+    "tests_run": 7
+  },
+  "reviewed_official_sources": [
+    {
+      "line_end": 192,
+      "line_start": 179,
+      "path": "swegemma/config.py",
+      "sha256": "f035916218f895796c4d39f1f9ec25284152a6df57cf6de1fea4931165d2349f"
+    },
+    {
+      "line_end": 29,
+      "line_start": 24,
+      "path": "swegemma/budget.py",
+      "sha256": "60bd0f73e0fcede68a3024a5e37836b0bcb0d133952044d7dc3e5a4102f2c2f9"
+    },
+    {
+      "line_end": 42,
+      "line_start": 27,
+      "path": "swegemma/tools/execution.py",
+      "sha256": "71b7d4f4d62550ee74722d8551bd3337f64792023fd1a8ff3f64695e4d407374"
+    },
+    {
+      "line_end": 89,
+      "line_start": 85,
+      "path": "swegemma/harness/agent_runner.py",
+      "sha256": "dff7d2505340633c3fe50ba7073f2609fb2b41becd69c356d9af25cc4c1f98dd"
+    },
+    {
+      "line_end": 341,
+      "line_start": 322,
+      "path": "swegemma/harness/agent_runner.py",
+      "sha256": "dff7d2505340633c3fe50ba7073f2609fb2b41becd69c356d9af25cc4c1f98dd"
+    },
+    {
+      "line_end": 542,
+      "line_start": 497,
+      "path": "swegemma/harness/verification.py",
+      "sha256": "5602f33acb49062de8e99073199745679d86445297be9dd075ccec60c41b60dd"
+    }
+  ],
+  "reviewed_official_wheel": {
+    "all_five_distinct_reviewed_source_files_byte_equal_to_wheel": true,
+    "sha256": "b1c10ad18f7fd09074808a7e2b95d265f97ebc8244f73fb26d448786cba660ab"
+  },
+  "reviewed_official_wheel_name": "swegemma-0.2.7-py3-none-any.whl",
+  "scope": "Configuration/package semantic qualification; no local model inference or solve-rate evidence.",
+  "selected_contract_tests": [
+    "test_layout_extensions_and_size",
+    "test_zip_matches_directory_and_is_deterministic",
+    "test_agents_models_tools_and_sampling",
+    "test_prompts_only_use_the_issue_placeholder_and_stay_short",
+    "test_eval_config_is_within_the_twelve_hour_budget_even_if_every_task_hits_the_cap",
+    "test_both_bundles_compile_with_the_official_compiler",
+    "test_instruction_templating_keeps_braces_in_the_issue_literal"
+  ],
+  "third_party_source_republished": false
+}

@@ -1,0 +1,45 @@
+{
+  "accepted_sofia": "2026-10-07T23:27:08.060+03:00",
+  "account": "prvsiyan",
+  "account_best_at_pre_submit": "0.08",
+  "account_list_row_count": 6,
+  "archive_bytes": 3729,
+  "archive_sha256": "1ebbb3e76e2dc2577436f2e52a31f667f750bc26f9139f7fb10098db710808b9",
+  "checked_sofia": "2026-10-07T23:27:54.259922+03:00",
+  "checked_utc": "2026-10-07T20:27:54.259492+00:00",
+  "competition": "gemma-4-developer-agent",
+  "competition_url": "https://www.kaggle.com/competitions/gemma-4-developer-agent",
+  "complete_account_list_pagination": true,
+  "interpretation": "Accepted submission identity and pending evaluation only; no solve-rate or leaderboard improvement is established.",
+  "matching_candidate_rows": 1,
+  "no_improvement_claim": true,
+  "prior_scout_repeat": "0.06",
+  "same_baseline_completed_rows": [
+    {
+      "date": "2026-10-05 18:50:40.163000",
+      "description": "Exact strongest verified A_scout control repeat, previous COMPLETE .08 row56794711; ZIP d43f47063a4df557325d3e9e3cf28fddeb00ddbbcd49150e50a200d50a52d6fa. Strategy unchanged; fresh official reproducibility draw, no novelty claim.",
+      "public_score": "0.06",
+      "ref": "56859742",
+      "status": "COMPLETE"
+    },
+    {
+      "date": "2026-10-03 09:28:03.013000",
+      "description": "A_scout (submit side, 5min/100 calls): read-only scout sub-agent first, NOTE lines survive compaction; sha256 d43f4706...d6fa; CPU contract tests only, first model run",
+      "public_score": "0.08",
+      "ref": "56794711",
+      "status": "COMPLETE"
+    }
+  ],
+  "score_at_snapshot": "UNKNOWN_PENDING",
+  "submission": {
+    "date": "2026-10-07T20:27:08.060Z",
+    "description": "A_scout timeout-only experiment: 90 to 240 seconds for commands/final pytest; 5min/100calls/160turns, model/prompt files/scout/sampling unchanged. CPU contract verified; no prior score for this variant. SHA256 1ebbb3e76e2dc2577436f2e52a31f667f750bc26f9139f7fb10098db710808b9",
+    "errorDescription": null,
+    "fileName": "submission.zip",
+    "privateScore": null,
+    "publicScore": null,
+    "ref": 56921186,
+    "status": "PENDING",
+    "submittedByRef": "prvsiyan"
+  }
+}

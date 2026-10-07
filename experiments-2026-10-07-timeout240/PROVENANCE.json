@@ -1,0 +1,18 @@
+{
+  "authorship": "The six submitted YAML/prompt files are original campaign configurations and prompts, preserved verbatim except the one timeout field. The diagram, rebuild utility and explanations were created for this packet.",
+  "diagram_scope": "Original contract/pipeline illustration; not a measured performance chart.",
+  "excluded_material": "No official harness source, model weights, restricted competition data, hidden predictions, credentials, signed URLs, full tool logs or protected guard files are included.",
+  "licenses": "MIT covers this packet’s original material. Referenced official compiler/harness and model have their own terms and are not redistributed.",
+  "official_recovery_receipt_sha256": "a10183261646d5adea3e1151d2ead15185c038ce53cc3da39564c5c0f483b40a",
+  "pre_submit_receipt_sha256": "34c1aa65e088fc6c669eee00e6eaf4a8e5f5f44ae6507e0afdfb3a8eb2707657",
+  "publication_policy": "Add-only experiment directory; preserve all existing repository entries and notebook identities.",
+  "source_bundle": "codex_gemma_timeout240_candidate_20261007T202409490264Z/A_scout",
+  "source_receipt_sha256": {
+    "BUILD_RECEIPT.json": "cf6ad79d973188aef6b51a7b882073e996197c4971303c6f45941d756af4e31c",
+    "CPU_CONTRACT_NORMAL.json": "01e4ba0744694abacb5009e1ecf41d19f13c8883a666152f89a106164ecff950",
+    "CPU_CONTRACT_OPTIMIZED.json": "c3b7d4dba1994791e2ab005da5fa13ae83affe75384f3e697c71d0f4766df19a",
+    "INDEPENDENT_TIMEOUT_SEMANTICS_REVIEW.json": "0fd39946b08a5d2ff1f236cd7c3295cbdcd72a9432546d1bfc73c77fcd934a16",
+    "QUALIFIED_HANDOFF.json": "0ff500babb8d8602c8d8b588df1381661ca4a151c00ea038c29433d3cd0d07d4",
+    "manifest.json": "e2d058b54ec96b11682c3221b57d715bc701c4bacd04efa808b82bcf277ecdb0"
+  }
+}

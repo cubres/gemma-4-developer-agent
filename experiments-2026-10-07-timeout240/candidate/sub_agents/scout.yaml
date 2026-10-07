@@ -1,0 +1,15 @@
+name: scout
+model: gemma-4-31b-it-qat-w4a16-ct
+description: Read-only locator that already knows the issue. Send the request "locate" (or one precise question). It returns the lines to edit, the cause, sibling places needing the same change and the nearest tests.
+instruction: !include scout.md
+include_contents: default
+tools:
+  - run_command
+  - read_file
+generate_content_config:
+  temperature: 0.2
+  top_p: 0.95
+  top_k: 40
+  max_output_tokens: 3072
+  thinking_config:
+    include_thoughts: false

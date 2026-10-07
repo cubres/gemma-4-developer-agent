@@ -1,0 +1,19 @@
+{
+  "accepted_utc": "2026-10-07T20:27:08.060Z",
+  "archive_sha256": "1ebbb3e76e2dc2577436f2e52a31f667f750bc26f9139f7fb10098db710808b9",
+  "cause": "The local receipt writer attempted a field absent from the SDK response schema; the schema exposed ref and message.",
+  "checked_utc": "2026-10-07T20:27:54.259492+00:00",
+  "client_error_after_submit_return": {
+    "message": "'ApiCreateSubmissionResponse' object has no attribute 'error'",
+    "type": "AttributeError"
+  },
+  "complete_account_list_pagination": true,
+  "interpretation": "This is an offline client-logging failure after an accepted upload; it is not evidence of a Kaggle evaluation failure.",
+  "matching_candidate_rows": 1,
+  "new_upload_on_recovery": false,
+  "notebook_mutation": false,
+  "recovery": "One read-only, completely paginated account-submission listing found the exact candidate row. The local upload copy was rehashed and matched the qualified candidate.",
+  "second_submit_performed": false,
+  "status_at_recovery": "PENDING",
+  "submission_ref": 56921186
+}

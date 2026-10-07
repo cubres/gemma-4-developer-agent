@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1360" height="820" viewBox="0 0 1360 820" role="img" aria-labelledby="title desc">
+<title id="title">A_scout: one timeout field, two execution boundaries</title>
+<desc id="desc">Original contract illustration. Scout and engineer, five-minute budget, tool and turn caps and prompts stay fixed. Command timeout changes from 90 to 240 seconds, capped by remaining task time with the existing five-second floor. Final pytest uses the configured timeout separately and still needs passing JUnit. The accepted submission was pending in the recorded snapshot; no score improvement is claimed.</desc>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#52657b"/></marker></defs>
+<rect width="1360" height="820" rx="24" fill="#f4f6fa"/>
+<g font-family="Arial, Helvetica, sans-serif">
+<text x="52" y="65" font-size="34" font-weight="700" fill="#182b47">Can the verifier finish before the timeout?</text>
+<text x="52" y="101" font-size="19" fill="#52657b">A_scout · October 7, 2026 · one prospective official experiment</text>
+<rect x="52" y="135" width="1256" height="126" rx="16" fill="#182b47"/>
+<text x="78" y="174" font-size="19" font-weight="700" fill="#9ec9ff">THE SINGLE CHANGE</text>
+<text x="78" y="216" font-size="31" font-weight="700" fill="white">timeout_seconds: 90 → 240</text>
+<text x="699" y="179" font-size="19" fill="white">Unchanged: 5-minute task · 100 calls · 160 turns</text>
+<text x="699" y="215" font-size="19" fill="white">Same model, prompts, sampling and scout</text>
+<text x="52" y="309" font-size="18" font-weight="700" fill="#52657b">UNCHANGED REPAIR ROUTE</text>
+<rect x="52" y="332" width="284" height="115" rx="14" fill="white" stroke="#b9c7d9"/>
+<text x="76" y="375" font-size="24" font-weight="700" fill="#182b47">Scout locates</text>
+<text x="76" y="410" font-size="18" fill="#52657b">Read-only prompt; lines + tests</text>
+<path d="M 350 390 H 397" stroke="#52657b" stroke-width="3" marker-end="url(#arrow)"/>
+<rect x="413" y="332" width="285" height="115" rx="14" fill="white" stroke="#b9c7d9"/>
+<text x="437" y="375" font-size="24" font-weight="700" fill="#182b47">Engineer repairs</text>
+<text x="437" y="410" font-size="18" fill="#52657b">Read → edit → compile → test</text>
+<path d="M 712 390 H 759" stroke="#52657b" stroke-width="3" marker-end="url(#arrow)"/>
+<rect x="775" y="332" width="249" height="115" rx="14" fill="white" stroke="#b9c7d9"/>
+<text x="799" y="375" font-size="24" font-weight="700" fill="#182b47">Submit patch</text>
+<text x="799" y="410" font-size="18" fill="#52657b">Source behavior is judged</text>
+<path d="M 1038 390 H 1085" stroke="#52657b" stroke-width="3" marker-end="url(#arrow)"/>
+<rect x="1101" y="332" width="207" height="115" rx="14" fill="#e5edf9" stroke="#b9c7d9"/>
+<text x="1123" y="375" font-size="22" font-weight="700" fill="#182b47">Final pytest</text>
+<text x="1123" y="410" font-size="17" fill="#52657b">Passing JUnit required</text>
+<rect x="52" y="487" width="602" height="190" rx="16" fill="#e6f3f1" stroke="#8ebdb6"/>
+<text x="77" y="527" font-size="23" font-weight="700" fill="#17594f">Agent-command boundary</text>
+<text x="77" y="562" font-size="18" fill="#17594f">Configured timeout: 240 seconds</text>
+<text x="77" y="594" font-size="18" fill="#17594f">Cap: min(configured, remaining task time)</text>
+<text x="77" y="626" font-size="18" fill="#17594f">Existing five-second floor remains</text>
+<text x="77" y="657" font-size="17" fill="#17594f">Risk: fewer opportunities for another edit</text>
+<rect x="682" y="487" width="626" height="190" rx="16" fill="#fff1dc" stroke="#d7b581"/>
+<text x="707" y="527" font-size="23" font-weight="700" fill="#755019">Final-verification boundary</text>
+<text x="707" y="562" font-size="18" fill="#755019">Configured timeout: 240 seconds</text>
+<text x="707" y="594" font-size="18" fill="#755019">Separate from the agent’s remaining command budget</text>
+<text x="707" y="626" font-size="18" fill="#755019">Exit 0 + required passing JUnit tests still needed</text>
+<text x="707" y="657" font-size="17" fill="#755019">Hypothesis: allow a correct but slower verifier to finish</text>
+<rect x="52" y="714" width="1256" height="65" rx="12" fill="white" stroke="#b9c7d9"/>
+<text x="76" y="740" font-size="18" font-weight="700" fill="#182b47">Evidence: exact one-field diff + compiler contracts + independent semantics review</text>
+<text x="76" y="766" font-size="17" fill="#52657b">Submission 56921186 accepted 23:27:08 Sofia · PENDING at 23:27:54 · no measured score gain yet</text>
+</g></svg>

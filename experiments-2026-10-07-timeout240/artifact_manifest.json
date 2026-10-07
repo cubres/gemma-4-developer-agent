@@ -1,0 +1,103 @@
+{
+  "archive_construction": {
+    "archive_comment": "",
+    "compression": "DEFLATE",
+    "create_system": 3,
+    "date_time": [
+      1980,
+      1,
+      1,
+      0,
+      0,
+      0
+    ],
+    "external_attr": 27525120,
+    "member_comments": "",
+    "member_extra_fields": "",
+    "member_order": [
+      "agent.yaml",
+      "configs/sampling.yaml",
+      "eval_config.yaml",
+      "prompts/engineer.md",
+      "sub_agents/scout.md",
+      "sub_agents/scout.yaml"
+    ],
+    "rebuild_compresslevel": 9
+  },
+  "baseline_bytes": 3727,
+  "baseline_members": {
+    "agent.yaml": {
+      "bytes": 446,
+      "sha256": "8328e181b2e9b8215b42d0ef4f442bf8bcb423cae4fe5cb785c9cec5a6afa80f"
+    },
+    "configs/sampling.yaml": {
+      "bytes": 106,
+      "sha256": "ceb1500af4c10ae5dc7eb0862c9d45aba50444e3552759dafbc8864ba383e67e"
+    },
+    "eval_config.yaml": {
+      "bytes": 95,
+      "sha256": "86237f292b98fe79ccfd6fa5a60361577fd482152c891262accb79f13ad7bd4e"
+    },
+    "prompts/engineer.md": {
+      "bytes": 2742,
+      "sha256": "0949bc5b39b56101e92f80bfe2156531e8fc684438aa415a2f33b6ad66933b59"
+    },
+    "sub_agents/scout.md": {
+      "bytes": 1657,
+      "sha256": "9feb1a6a6f7834018500911fa2caae37574c127fcb7224ab205c8800c60507db"
+    },
+    "sub_agents/scout.yaml": {
+      "bytes": 501,
+      "sha256": "eabccb00d3023acbb26624f97de671c501a1dc11fb4d2ba887be008089ab54c0"
+    }
+  },
+  "baseline_sha256": "d43f47063a4df557325d3e9e3cf28fddeb00ddbbcd49150e50a200d50a52d6fa",
+  "candidate_bytes": 3729,
+  "candidate_members": {
+    "agent.yaml": {
+      "bytes": 446,
+      "sha256": "8328e181b2e9b8215b42d0ef4f442bf8bcb423cae4fe5cb785c9cec5a6afa80f"
+    },
+    "configs/sampling.yaml": {
+      "bytes": 106,
+      "sha256": "ceb1500af4c10ae5dc7eb0862c9d45aba50444e3552759dafbc8864ba383e67e"
+    },
+    "eval_config.yaml": {
+      "bytes": 96,
+      "sha256": "3f1f7db31b591b658850288d9c869f378655d94d31e3cbd7fba307fa4c11755f"
+    },
+    "prompts/engineer.md": {
+      "bytes": 2742,
+      "sha256": "0949bc5b39b56101e92f80bfe2156531e8fc684438aa415a2f33b6ad66933b59"
+    },
+    "sub_agents/scout.md": {
+      "bytes": 1657,
+      "sha256": "9feb1a6a6f7834018500911fa2caae37574c127fcb7224ab205c8800c60507db"
+    },
+    "sub_agents/scout.yaml": {
+      "bytes": 501,
+      "sha256": "eabccb00d3023acbb26624f97de671c501a1dc11fb4d2ba887be008089ab54c0"
+    }
+  },
+  "candidate_sha256": "1ebbb3e76e2dc2577436f2e52a31f667f750bc26f9139f7fb10098db710808b9",
+  "changed_member": [
+    "eval_config.yaml"
+  ],
+  "global_budget_unchanged": {
+    "max_time_minutes": 5,
+    "max_tool_calls": 100,
+    "max_turns": 160
+  },
+  "only_semantic_difference": {
+    "evaluation.timeout_seconds": {
+      "baseline": 90,
+      "candidate": 240
+    }
+  },
+  "other_five_members_byte_identical": true,
+  "source_created_utc": "2026-10-07T20:24:09.492701+00:00",
+  "verified_rebuild_environment": {
+    "python": "3.12.14",
+    "zlib_runtime": "1.2.12"
+  }
+}

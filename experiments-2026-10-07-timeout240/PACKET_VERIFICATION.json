@@ -1,0 +1,104 @@
+{
+  "status": "PASS_PUBLICATION_PACKET",
+  "checked_utc": "2026-10-07T20:39:15+00:00",
+  "candidate_rebuild": {
+    "bytes": 3729,
+    "sha256": "1ebbb3e76e2dc2577436f2e52a31f667f750bc26f9139f7fb10098db710808b9"
+  },
+  "baseline_rebuild": {
+    "bytes": 3727,
+    "sha256": "d43f47063a4df557325d3e9e3cf28fddeb00ddbbcd49150e50a200d50a52d6fa"
+  },
+  "independent_review": {
+    "reviewer": "gemma_packet_review_oct7",
+    "status": "PASS",
+    "reviewed_packet_files": 16,
+    "original_candidate_zip_crc": "PASS",
+    "six_original_member_bytes": "PASS",
+    "eight_provenance_receipt_hashes": "PASS",
+    "accepted_and_baseline_row_sanitization": "PASS",
+    "README_SVG_manifest_license_consistency": "PASS",
+    "no_corrections_required": true,
+    "limits": "No current score refresh, model inference, native validation or causal gain established. Source ownership follows the original campaign’s stated authorship."
+  },
+  "publication_checks": {
+    "json_parse": "PASS",
+    "svg_xml": "PASS",
+    "README_local_links": "PASS",
+    "sensitive_pattern_scan": "PASS",
+    "diagram_render": {
+      "renderer": "Sharp",
+      "width": 1360,
+      "height": 820,
+      "visual_result": "PASS_READABLE_COMPLETE"
+    }
+  },
+  "source_file_seals": {
+    "LICENSE": {
+      "bytes": 1296,
+      "sha256": "98593a7bb5db593f46aefff17bbb9145febb43404b9c31195d858e065bed4b69"
+    },
+    "PROVENANCE.json": {
+      "bytes": 1735,
+      "sha256": "7cfade878abb5b759caf45e4e63d1eff6abaec0d8fdbe948442c7a6af8ea180c"
+    },
+    "README.md": {
+      "bytes": 7082,
+      "sha256": "05f4e0aebe7e7ce85f57aa464db10373f5e4ffcf44d3acc3df7981dbab44debb"
+    },
+    "acceptance_recovery.json": {
+      "bytes": 1041,
+      "sha256": "0f9312a75ac97a7d7faa4b0bb5a14027b5c27cbfd6ab60a2617337591516f5e8"
+    },
+    "artifact_manifest.json": {
+      "bytes": 2941,
+      "sha256": "307699dccb3ad5cdb2ea51ba7cca381e7d609514f798bae49fa0ef42e6b5182c"
+    },
+    "baseline/eval_config.yaml": {
+      "bytes": 95,
+      "sha256": "86237f292b98fe79ccfd6fa5a60361577fd482152c891262accb79f13ad7bd4e"
+    },
+    "candidate/agent.yaml": {
+      "bytes": 446,
+      "sha256": "8328e181b2e9b8215b42d0ef4f442bf8bcb423cae4fe5cb785c9cec5a6afa80f"
+    },
+    "candidate/configs/sampling.yaml": {
+      "bytes": 106,
+      "sha256": "ceb1500af4c10ae5dc7eb0862c9d45aba50444e3552759dafbc8864ba383e67e"
+    },
+    "candidate/eval_config.yaml": {
+      "bytes": 96,
+      "sha256": "3f1f7db31b591b658850288d9c869f378655d94d31e3cbd7fba307fa4c11755f"
+    },
+    "candidate/prompts/engineer.md": {
+      "bytes": 2742,
+      "sha256": "0949bc5b39b56101e92f80bfe2156531e8fc684438aa415a2f33b6ad66933b59"
+    },
+    "candidate/sub_agents/scout.md": {
+      "bytes": 1657,
+      "sha256": "9feb1a6a6f7834018500911fa2caae37574c127fcb7224ab205c8800c60507db"
+    },
+    "candidate/sub_agents/scout.yaml": {
+      "bytes": 501,
+      "sha256": "eabccb00d3023acbb26624f97de671c501a1dc11fb4d2ba887be008089ab54c0"
+    },
+    "experiment_contract.svg": {
+      "bytes": 4684,
+      "sha256": "083ad6b6efcc5415c2dbb50a7f4b014720d6fa5b3f505d1c513b0dc93cf450bf"
+    },
+    "official_submission_snapshot.json": {
+      "bytes": 2138,
+      "sha256": "5b4ffee0fc8a12eb6f453e7de2892ea487560a9bee52d6b0ee65ad9ed61d288d"
+    },
+    "rebuild_bundle.py": {
+      "bytes": 3130,
+      "sha256": "9dde2883943df725807813ebf24d00bb6a7ddca8b8ae19d4ddc5bf56ecec3eb4"
+    },
+    "validation_summary.json": {
+      "bytes": 5854,
+      "sha256": "94a7cfea780bdbc0c611417f9826cfde09f35dcb5523480d88ba49632684acee"
+    }
+  },
+  "preservation": "New experiment directory only. No notebook mutation or deletion. Existing repository entries are to be preserved byte-for-byte.",
+  "meaning": "Packaging and documentation checks, not model-quality or leaderboard evidence."
+}
