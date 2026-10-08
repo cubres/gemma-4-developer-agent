@@ -1,0 +1,37 @@
+{
+ "protocol": "V18 single-arm canary: D_budgetfit55 v2 (641e23d4), task rich_3772, 5.5 min / 28 calls / 240 s, thinking 4096, output 8192",
+ "items": {
+  "1_clean_run": {
+   "pass": true,
+   "note": "no surviving processes, NVML empty, preservation passed; overall HOLD comes from item 4"
+  },
+  "2_thinking_every_request": {
+   "pass": true,
+   "requests": 15,
+   "http_400": 0
+  },
+  "3_parsed_tool_calls": {
+   "pass": true,
+   "tool_calls_executed": 13,
+   "malformed": 0,
+   "context_refusals": 0,
+   "compaction_requests": 1
+  },
+  "4_nonempty_diff_and_final_pytest": {
+   "pass": false,
+   "agent_patch_size": 0,
+   "error": "Agent exceeded session timeout (5.5 min)"
+  },
+  "5_timing": {
+   "pass": true,
+   "median_s": 7.2,
+   "p90_s": 45.0,
+   "max_s": 120.0,
+   "completed_requests": 14,
+   "reasoning_budget_hits": 0,
+   "max_reasoning_chars": 4842
+  }
+ },
+ "v17_cause": "HTTP 400 on all 6 requests: thinking_token_budget without --reasoning-config",
+ "v18_change": "organiser default --reasoning-config; compaction 5/2/14336/5; runtime venv under /kaggle/temp"
+}

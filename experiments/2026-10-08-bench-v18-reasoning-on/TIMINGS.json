@@ -1,0 +1,385 @@
+{
+ "v17": {
+  "status": "HOLD",
+  "elapsed_from_first_cell_s": 645.5,
+  "quota_hours_at_2x": 0.425,
+  "survivors": [],
+  "nvml_rows_after_teardown": [],
+  "preservation_passed": true,
+  "weight_inventory_s": 188.8,
+  "vllm": {
+   "vllm_args_logged": 364,
+   "weights_loaded": 455,
+   "weights_loaded_took_seconds": 2.12,
+   "engine_initialised": 464,
+   "engine_initialised_took_seconds": 8.31,
+   "server_listening": 498
+  },
+  "arm_exit_code": 1,
+  "arm_seconds": 141.8,
+  "failure": {
+   "type": "RuntimeError",
+   "message": "Native evaluator arm did not complete; retain failure in the single planned canary denominator"
+  },
+  "requests": [
+   {
+    "index": 1,
+    "start_s_from_first_cell": 550.9,
+    "seconds": 0.1,
+    "status": "ERROR",
+    "http_status": 400,
+    "enable_thinking": true,
+    "thinking_token_budget": 4096,
+    "tools_declared": 6,
+    "returned_tool_names": null,
+    "prompt_tokens": null,
+    "completion_tokens": null,
+    "reasoning_chars": null
+   },
+   {
+    "index": 2,
+    "start_s_from_first_cell": 554.5,
+    "seconds": 0.0,
+    "status": "ERROR",
+    "http_status": 400,
+    "enable_thinking": true,
+    "thinking_token_budget": 4096,
+    "tools_declared": 6,
+    "returned_tool_names": null,
+    "prompt_tokens": null,
+    "completion_tokens": null,
+    "reasoning_chars": null
+   },
+   {
+    "index": 3,
+    "start_s_from_first_cell": 561.1,
+    "seconds": 0.0,
+    "status": "ERROR",
+    "http_status": 400,
+    "enable_thinking": true,
+    "thinking_token_budget": 4096,
+    "tools_declared": 6,
+    "returned_tool_names": null,
+    "prompt_tokens": null,
+    "completion_tokens": null,
+    "reasoning_chars": null
+   },
+   {
+    "index": 4,
+    "start_s_from_first_cell": 571.7,
+    "seconds": 0.0,
+    "status": "ERROR",
+    "http_status": 400,
+    "enable_thinking": true,
+    "thinking_token_budget": 4096,
+    "tools_declared": 6,
+    "returned_tool_names": null,
+    "prompt_tokens": null,
+    "completion_tokens": null,
+    "reasoning_chars": null
+   },
+   {
+    "index": 5,
+    "start_s_from_first_cell": 597.8,
+    "seconds": 0.0,
+    "status": "ERROR",
+    "http_status": 400,
+    "enable_thinking": true,
+    "thinking_token_budget": 4096,
+    "tools_declared": 6,
+    "returned_tool_names": null,
+    "prompt_tokens": null,
+    "completion_tokens": null,
+    "reasoning_chars": null
+   },
+   {
+    "index": 6,
+    "start_s_from_first_cell": 638.0,
+    "seconds": 0.0,
+    "status": "ERROR",
+    "http_status": 400,
+    "enable_thinking": true,
+    "thinking_token_budget": 4096,
+    "tools_declared": 6,
+    "returned_tool_names": null,
+    "prompt_tokens": null,
+    "completion_tokens": null,
+    "reasoning_chars": null
+   }
+  ]
+ },
+ "v18": {
+  "status": "HOLD",
+  "elapsed_from_first_cell_s": 885.2,
+  "quota_hours_at_2x": 0.558,
+  "survivors": [],
+  "nvml_rows_after_teardown": [],
+  "preservation_passed": true,
+  "weight_inventory_s": 179.0,
+  "vllm": {
+   "vllm_args_logged": 363,
+   "weights_loaded": 455,
+   "weights_loaded_took_seconds": 2.11,
+   "engine_initialised": 465,
+   "engine_initialised_took_seconds": 8.73,
+   "server_listening": 500
+  },
+  "arm_exit_code": 1,
+  "arm_seconds": 381.4,
+  "failure": {
+   "type": "RuntimeError",
+   "message": "Native evaluator arm did not complete; retain failure in the single planned canary denominator"
+  },
+  "requests": [
+   {
+    "index": 1,
+    "start_s_from_first_cell": 552.3,
+    "seconds": 21.2,
+    "status": "COMPLETE",
+    "http_status": 200,
+    "enable_thinking": true,
+    "thinking_token_budget": 4096,
+    "tools_declared": 6,
+    "returned_tool_names": [
+     "run_command"
+    ],
+    "prompt_tokens": 3145,
+    "completion_tokens": 160,
+    "reasoning_chars": 537
+   },
+   {
+    "index": 2,
+    "start_s_from_first_cell": 573.6,
+    "seconds": 14.8,
+    "status": "COMPLETE",
+    "http_status": 200,
+    "enable_thinking": true,
+    "thinking_token_budget": 4096,
+    "tools_declared": 6,
+    "returned_tool_names": [
+     "read_file"
+    ],
+    "prompt_tokens": 3349,
+    "completion_tokens": 175,
+    "reasoning_chars": 567
+   },
+   {
+    "index": 3,
+    "start_s_from_first_cell": 588.4,
+    "seconds": 6.2,
+    "status": "COMPLETE",
+    "http_status": 200,
+    "enable_thinking": true,
+    "thinking_token_budget": 4096,
+    "tools_declared": 6,
+    "returned_tool_names": [
+     "read_file"
+    ],
+    "prompt_tokens": 5016,
+    "completion_tokens": 62,
+    "reasoning_chars": 66
+   },
+   {
+    "index": 4,
+    "start_s_from_first_cell": 594.6,
+    "seconds": 7.2,
+    "status": "COMPLETE",
+    "http_status": 200,
+    "enable_thinking": true,
+    "thinking_token_budget": 4096,
+    "tools_declared": 6,
+    "returned_tool_names": [
+     "read_file"
+    ],
+    "prompt_tokens": 6831,
+    "completion_tokens": 72,
+    "reasoning_chars": 116
+   },
+   {
+    "index": 5,
+    "start_s_from_first_cell": 601.8,
+    "seconds": 6.5,
+    "status": "COMPLETE",
+    "http_status": 200,
+    "enable_thinking": true,
+    "thinking_token_budget": 4096,
+    "tools_declared": 6,
+    "returned_tool_names": [
+     "read_file"
+    ],
+    "prompt_tokens": 8751,
+    "completion_tokens": 62,
+    "reasoning_chars": 64
+   },
+   {
+    "index": 6,
+    "start_s_from_first_cell": 608.3,
+    "seconds": 120.0,
+    "status": "COMPLETE",
+    "http_status": 200,
+    "enable_thinking": true,
+    "thinking_token_budget": 4096,
+    "tools_declared": 6,
+    "returned_tool_names": [
+     "write_file"
+    ],
+    "prompt_tokens": 9363,
+    "completion_tokens": 1437,
+    "reasoning_chars": 4842
+   },
+   {
+    "index": 7,
+    "start_s_from_first_cell": 728.3,
+    "seconds": 17.4,
+    "status": "COMPLETE",
+    "http_status": 200,
+    "enable_thinking": true,
+    "thinking_token_budget": 4096,
+    "tools_declared": 6,
+    "returned_tool_names": [
+     "run_command"
+    ],
+    "prompt_tokens": 10851,
+    "completion_tokens": 208,
+    "reasoning_chars": 316
+   },
+   {
+    "index": 8,
+    "start_s_from_first_cell": 746.0,
+    "seconds": 45.0,
+    "status": "COMPLETE",
+    "http_status": 200,
+    "enable_thinking": true,
+    "thinking_token_budget": 4096,
+    "tools_declared": 6,
+    "returned_tool_names": [
+     "run_command"
+    ],
+    "prompt_tokens": 11867,
+    "completion_tokens": 533,
+    "reasoning_chars": 2043
+   },
+   {
+    "index": 9,
+    "start_s_from_first_cell": 791.0,
+    "seconds": 3.0,
+    "status": "COMPLETE",
+    "http_status": 200,
+    "enable_thinking": true,
+    "thinking_token_budget": 4096,
+    "tools_declared": 6,
+    "returned_tool_names": [
+     "read_file"
+    ],
+    "prompt_tokens": 12442,
+    "completion_tokens": 35,
+    "reasoning_chars": 30
+   },
+   {
+    "index": 10,
+    "start_s_from_first_cell": 794.0,
+    "seconds": 6.6,
+    "status": "COMPLETE",
+    "http_status": 200,
+    "enable_thinking": true,
+    "thinking_token_budget": 4096,
+    "tools_declared": 6,
+    "returned_tool_names": [
+     "read_file"
+    ],
+    "prompt_tokens": 13765,
+    "completion_tokens": 67,
+    "reasoning_chars": 114
+   },
+   {
+    "index": 11,
+    "start_s_from_first_cell": 800.6,
+    "seconds": 6.0,
+    "status": "COMPLETE",
+    "http_status": 200,
+    "enable_thinking": true,
+    "thinking_token_budget": 4096,
+    "tools_declared": 6,
+    "returned_tool_names": [
+     "read_file"
+    ],
+    "prompt_tokens": 15530,
+    "completion_tokens": 56,
+    "reasoning_chars": 52
+   },
+   {
+    "index": 12,
+    "start_s_from_first_cell": 806.6,
+    "seconds": 58.6,
+    "status": "COMPLETE",
+    "http_status": 200,
+    "enable_thinking": true,
+    "thinking_token_budget": 4096,
+    "tools_declared": 0,
+    "returned_tool_names": [],
+    "prompt_tokens": 3998,
+    "completion_tokens": 672,
+    "reasoning_chars": 1307
+   },
+   {
+    "index": 13,
+    "start_s_from_first_cell": 865.3,
+    "seconds": 7.1,
+    "status": "COMPLETE",
+    "http_status": 200,
+    "enable_thinking": true,
+    "thinking_token_budget": 4096,
+    "tools_declared": 6,
+    "returned_tool_names": [
+     "run_command"
+    ],
+    "prompt_tokens": 6640,
+    "completion_tokens": 42,
+    "reasoning_chars": 32
+   },
+   {
+    "index": 14,
+    "start_s_from_first_cell": 872.4,
+    "seconds": 4.6,
+    "status": "COMPLETE",
+    "http_status": 200,
+    "enable_thinking": true,
+    "thinking_token_budget": 4096,
+    "tools_declared": 6,
+    "returned_tool_names": [
+     "read_file"
+    ],
+    "prompt_tokens": 6727,
+    "completion_tokens": 54,
+    "reasoning_chars": 50
+   },
+   {
+    "index": 15,
+    "start_s_from_first_cell": 877.0,
+    "seconds": 4.7,
+    "status": "ERROR",
+    "http_status": null,
+    "enable_thinking": true,
+    "thinking_token_budget": 4096,
+    "tools_declared": 6,
+    "returned_tool_names": [
+     "run_command"
+    ],
+    "prompt_tokens": 8232,
+    "completion_tokens": 43,
+    "reasoning_chars": 44
+   }
+  ],
+  "task": {
+   "instance_id": "rich_3772",
+   "resolved": false,
+   "agent_patch_size": 0,
+   "test_exit_code": -1,
+   "duration_seconds": 331.87,
+   "error": "Agent exceeded session timeout (5.5 min)",
+   "tool_calls": 13,
+   "total_llm_calls": 13
+  }
+ },
+ "source": "Private canary receipts of prvsiyan/zz-gpuchk-861737 versions 17 and 18, reduced to timings, statuses and counts. No prompt, task text, tool argument or model output is included."
+}
