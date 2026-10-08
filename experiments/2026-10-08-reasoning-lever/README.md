@@ -7,3 +7,7 @@ Three dated notes from the Gemma 4 Developer Agent campaign.
 - [WHEELHOUSE_DRIFT.md](WHEELHOUSE_DRIFT.md): why versions 21 and 22 of the public notebook failed at the compiler check in 45 seconds (the organiser's wheelhouse moved from adk-submission 0.2.11 to 0.2.12 after 30 September; a dataset-version pin did not change what the notebook saw) and the fix shipped as version 23 (pin updated in the notebook itself).
 
 A separate row submitted on 7 October (the 240-second command-timeout variant, 56921186) ended in a Kaggle-side system error and is therefore unmeasured. Documentation here is MIT like its siblings; model and harness terms are the organisers'.
+
+## Update, 14:40 UTC: the bench canary found its own bug
+
+Bench version 17 (one arm, the direct-route candidate with thinking on) had the model ready 499 s after the first cell, faster than estimated, but every request was refused by vLLM with HTTP 400 because the canary's hand-built server command lacked `--reasoning-config`, which the organisers' launcher adds automatically whenever the Gemma 4 reasoning parser is used. The official scorer is therefore unaffected; the public reasoning payloads scoring 0.15-0.18 are consistent with that. [BENCH_V17_RESULT.md](BENCH_V17_RESULT.md) has the measured phase timings. Version 18, with the organisers' default flag, the scorer's compaction constants and the runtime environment moved out of the output folder, is running. [PLAN_2026-10-09.md](PLAN_2026-10-09.md) is the decision tree for tomorrow's single submission.
