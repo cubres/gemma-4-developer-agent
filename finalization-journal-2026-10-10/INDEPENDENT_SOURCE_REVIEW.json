@@ -1,0 +1,29 @@
+{
+  "status": "PASS_SOURCE_ONLY_NOT_NATIVE",
+  "reviewer": "independent runtime budget evidence reviewer",
+  "reviewed_source_sha256": "de11f5af55a1ddca0a173579bde2dc2d0049bf2258a770c6666239ad6107dfdf",
+  "reviewed_tests_sha256": "e75de617d1ddd36911fb882666f62f19fce53ff3da6a2dcc105ddca71d611d12",
+  "reviewed_readme_sha256": "4ff9fe7c8e2d06d9a475ee6bb251183f86deb0b6a1ea3e15c2a1b7fbc62162bf",
+  "reviewed_source_observations_sha256": "75f852618f52eedb9d7f9be09dff88183ec917582dcf1d1f6746565bce4d61b4",
+  "test_controls_independently_inspected": 33,
+  "independent_fixture_execution": false,
+  "test_execution_receipt_sha256": "96938927028cf3a6880eb9555be9ff165f8918bef388d3d101fc2157cc9db218",
+  "findings": [
+    "Typed schemas and stage-order checks reject isolated commits, arbitrary public status strings, inconsistent capture and cleanup.",
+    "Directory inventory, event count and event bytes are bounded; command cap is rechecked immediately before caller execution.",
+    "Original immutable START and atomically published hash-linked evidence address the specific interrupted-capture source gap.",
+    "README and source observations match the exact prepared packet and distinguish existing outer process/deadline/preservation safeguards."
+  ],
+  "limitations": [
+    "Unkeyed hash chains establish consistency, not authentication.",
+    "Patch, strict-validator and supervisor cleanup observations are adapter-supplied and require actual source-bound native evidence.",
+    "Post-fsync deadline compliance cannot be proved by journal alone if interrupted before revocation; trusted outer watchdog remains mandatory.",
+    "No model, native verifier, API or task-quality evaluation was performed."
+  ],
+  "corrected_prior_review_findings": [
+    "Reader initially accepted unsupported isolated COMMIT and arbitrary status text; final typed state machine and tests reject both.",
+    "Initial unbounded directory inventory and ambiguous START cap were corrected; historical source retained privately."
+  ],
+  "native_compatibility": "HOLD_UNVERIFIED",
+  "official_score": null
+}

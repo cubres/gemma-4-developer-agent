@@ -1,0 +1,69 @@
+{
+  "scope": "prepared_source_binding_not_accepted_launch_or_native_execution",
+  "candidate": "V21 offload r6 D_v4 calibration",
+  "payload_zip_sha256": "b54331170e0b9b885c651eac50d62715166e1c1ade2122da45db8535b1391549",
+  "protocol_sha256": "ee5c91a9916e028b864fb7b85fa26d772f47dac7d2cf1415b40dabed09e581a2",
+  "agent_budget_seconds": 480,
+  "external_verification_allowance_seconds": 240,
+  "arm_cap_seconds": 825,
+  "observations": [
+    {
+      "role": "original_capture_helper",
+      "logical_source": "private_junit_receipts.py",
+      "sha256": "dd9eb12b6a0cb71d7f902806cebf04c039a124e3960a7757407203154ce6e839",
+      "line_start": 70,
+      "line_end": 95,
+      "finding": "START events live in memory until after original execution/capture; exclusive event/blob creation is not atomic completed-record publication."
+    },
+    {
+      "role": "original_capture_xml",
+      "logical_source": "private_junit_receipts.py",
+      "sha256": "dd9eb12b6a0cb71d7f902806cebf04c039a124e3960a7757407203154ce6e839",
+      "line_start": 107,
+      "line_end": 125,
+      "finding": "Capture is byte-bounded but has no remaining absolute wall-time admission."
+    },
+    {
+      "role": "owned_supervisor",
+      "logical_source": "native_supervisor.py",
+      "sha256": "59fae5dd64f9aee16b307906cb5c154b0e1a02571b0ac4ec79af8eb36852ccf9",
+      "line_start": 43,
+      "line_end": 103,
+      "finding": "Owned process creation times/groups, TERM/KILL waits and survivor receipts are already present and remain mandatory."
+    },
+    {
+      "role": "owned_watchdog",
+      "logical_source": "native_watchdog.py",
+      "sha256": "58196860ad8b029ab88f0b4969a140b6501975ec22128e55e589ccbf5c96c0e8",
+      "line_start": 70,
+      "line_end": 108,
+      "finding": "Outer teardown/GPU survivor/preservation/deadline checks remain distinct from verifier exit and XML capture."
+    },
+    {
+      "role": "official_verification",
+      "logical_source": "swegemma/harness/verification.py",
+      "sha256": "5602f33acb49062de8e99073199745679d86445297be9dd075ccec60c41b60dd",
+      "line_start": 498,
+      "line_end": 512,
+      "finding": "Pytest uses the configured 240-second command cap; subsequent cat uses the manager default, not a total finalization remaining-time clamp."
+    },
+    {
+      "role": "owned_manager_config",
+      "logical_source": "run_gpu_validation_candidate.py",
+      "sha256": "5c924a07baeb5e50eda77158e0e215d99715f47361dfe9fa39074bb6dcee8d12",
+      "line_start": 615,
+      "line_end": 621,
+      "finding": "Manager default command timeout is the same configured 240 seconds."
+    },
+    {
+      "role": "official_process_helper",
+      "logical_source": "adk_eval_core/sandbox/subprocess_sandbox.py",
+      "sha256": "09dc213bd71f4ad33a2a403732271efbc78bd09db2d2999817d55f4e630ac6fc",
+      "line_start": 110,
+      "line_end": 144,
+      "finding": "Command helper sends group SIGKILL and attempts bounded communicate; returned command object does not prove survivor clearance."
+    }
+  ],
+  "native_compatibility": "HOLD_UNVERIFIED",
+  "official_score": null
+}

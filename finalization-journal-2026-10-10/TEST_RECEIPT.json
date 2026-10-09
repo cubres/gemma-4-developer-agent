@@ -1,0 +1,33 @@
+{
+  "status": "PASS_OFFLINE_ONLY",
+  "tests_per_mode": 33,
+  "modes": [
+    "normal -B",
+    "optimized -B -O"
+  ],
+  "python": "3.12.14",
+  "local_worker_nice": 5,
+  "test_child_cpu_seconds": 0.308423,
+  "test_child_cpu_limit_seconds": 120,
+  "elapsed_wall_seconds": 0.345143,
+  "model_calls": 0,
+  "network_calls": 0,
+  "source_sha256": {
+    "finalization_journal.py": "de11f5af55a1ddca0a173579bde2dc2d0049bf2258a770c6666239ad6107dfdf",
+    "test_finalization_journal.py": "e75de617d1ddd36911fb882666f62f19fce53ff3da6a2dcc105ddca71d611d12",
+    "render_finalization.py": "cfa9cfe88e7e6eaf5303ea71d4d66eafe6da95106ae0ec500796b8cbbfeac8fd"
+  },
+  "test_output_sha256": {
+    "TEST_OUTPUT.txt": "31b2737fddae990629cf4efafe25f83c252d6622f75c79325f35d088d8dfd829",
+    "OPTIMIZED_TEST_OUTPUT.txt": "fd47e978152b91ac0172f67ec3e15a520716a11f7d87a9542cbb76c17c168e1b"
+  },
+  "visual_review": {
+    "original_svg_rendered_and_inspected": true,
+    "scientific_chart": false,
+    "svg_sha256": "a589031d58df5ceaa1119d02cfe432f5d55b9fd97ca3528729c6b77b8064808f",
+    "png_sha256": "948b64d8d1b188bac42e69a65378196ea056c6dfd55e213147c718e27461074a"
+  },
+  "native_compatibility": "HOLD_UNVERIFIED",
+  "official_score": null,
+  "native_verifier_or_task_command_calls": 0
+}
