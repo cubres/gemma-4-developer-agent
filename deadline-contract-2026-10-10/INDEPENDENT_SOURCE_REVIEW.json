@@ -1,0 +1,25 @@
+{
+  "status": "PASS_SOURCE_ONLY_NOT_NATIVE",
+  "reviewer": "independent runtime budget evidence reviewer",
+  "reviewed_source_sha256": "f6e3e0967bd4aac12abe2558b382dff9f4a71a0b7caea63c399d1e9b97b8e8bb",
+  "reviewed_test_sha256": "8baa0c7f965d4b20deb36f522f6ea1197e2530f7420c34deb773f2d2a3465ef3",
+  "tests_per_mode": 30,
+  "independent_modes": [
+    "normal -B",
+    "optimized -B -O"
+  ],
+  "findings": [
+    "Cancellation settlement is charged at admission; a settled timeout within the charged allowance retains downstream reserve.",
+    "Incomplete and failed calls never become success or scientific quality evidence.",
+    "README and public source observations match pinned runtime hashes and distinguish existing external verification reserve.",
+    "Public package excludes private binding files, callback return values, exception text, task IDs, prompts and patches."
+  ],
+  "limitations": [
+    "Only cancellation-cooperative async adapters and an unstalled event loop can honor the wrapper.",
+    "Native adapter compatibility remains HOLD; no models, APIs, billed jobs, patch-quality or official score evaluation was performed.",
+    "Chosen 90-second reserve is illustrative and requires paired native evaluation."
+  ],
+  "reviewed_readme_sha256": "c7d6569175497692386b7602202fe3b9179f138e8ef053877bbe9f8deabb4e98",
+  "reviewed_source_observations_sha256": "633f060ed16ef825ff46baedcf89011717f325aa5bd32bfb69bfcec899f324de",
+  "official_score": null
+}

@@ -1,0 +1,35 @@
+test_blocked_cooperative_call_unfinished (test_deadline_contract.AsyncTests) ... ok
+test_cancellation_grace_is_budgeted_before_admission (test_deadline_contract.AsyncTests) ... ok
+test_cancellation_late_beyond_budgeted_grace_holds (test_deadline_contract.AsyncTests) ... ok
+test_cancellation_survivor_holds_and_stays_unfinished (test_deadline_contract.AsyncTests) ... ok
+test_clamped_timeout_is_passed_and_value_private (test_deadline_contract.AsyncTests) ... ok
+test_denied_operation_is_never_called (test_deadline_contract.AsyncTests) ... ok
+test_external_cancellation_fences_and_propagates (test_deadline_contract.AsyncTests) ... ok
+test_failure_receipt_redacts_exception (test_deadline_contract.AsyncTests) ... ok
+test_settlement_that_does_not_fit_is_denied (test_deadline_contract.AsyncTests) ... ok
+test_synchronous_callback_creation_error_is_failed (test_deadline_contract.AsyncTests) ... ok
+test_actual_failure_is_counted (test_deadline_contract.ContractTests) ... ok
+test_bad_kind_cannot_escape_fixed_public_vocabulary (test_deadline_contract.ContractTests) ... ok
+test_bad_numbers_are_rejected_under_optimized_python (test_deadline_contract.ContractTests) ... ok
+test_completed_operations_never_claim_quality (test_deadline_contract.ContractTests) ... ok
+test_earlier_finish_stops_optional (test_deadline_contract.ContractTests) ... ok
+test_exact_reserve_denies_every_optional (test_deadline_contract.ContractTests) ... ok
+test_final_failure_does_not_mark_phase_complete (test_deadline_contract.ContractTests) ... ok
+test_finish_order_retains_tests_capture_and_settle (test_deadline_contract.ContractTests) ... ok
+test_invalid_reserve_rejected (test_deadline_contract.ContractTests) ... ok
+test_long_model_preserves_full_reserve (test_deadline_contract.ContractTests) ... ok
+test_near_deadline_no_five_second_floor (test_deadline_contract.ContractTests) ... ok
+test_out_of_order_final_is_denied (test_deadline_contract.ContractTests) ... ok
+test_regressing_clock_fences (test_deadline_contract.ContractTests) ... ok
+test_request_is_never_inflated (test_deadline_contract.ContractTests) ... ok
+test_return_after_deadline_never_counts_success (test_deadline_contract.ContractTests) ... ok
+test_single_flight (test_deadline_contract.ContractTests) ... ok
+test_subminimum_is_denied (test_deadline_contract.ContractTests) ... ok
+test_unfinished_is_not_completion (test_deadline_contract.ContractTests) ... ok
+test_unsettled_operation_fences (test_deadline_contract.ContractTests) ... ok
+test_wrong_ticket_does_not_settle_active (test_deadline_contract.ContractTests) ... ok
+
+----------------------------------------------------------------------
+Ran 30 tests in 0.035s
+
+OK

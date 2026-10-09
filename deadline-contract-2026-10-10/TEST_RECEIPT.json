@@ -1,0 +1,28 @@
+{
+  "status": "PASS_OFFLINE_ONLY",
+  "tests_per_mode": 30,
+  "modes": [
+    "normal",
+    "optimized -O"
+  ],
+  "model_calls": 0,
+  "api_calls": 0,
+  "billed_jobs": 0,
+  "native_compatibility": "HOLD_UNVERIFIED",
+  "official_score": null,
+  "source_sha256": {
+    "deadline_contract.py": "f6e3e0967bd4aac12abe2558b382dff9f4a71a0b7caea63c399d1e9b97b8e8bb",
+    "test_deadline_contract.py": "8baa0c7f965d4b20deb36f522f6ea1197e2530f7420c34deb773f2d2a3465ef3",
+    "render_contract.py": "c820c3063e135161e8cfd258b81d7914baf8b08c5efac65e84dffa16860bdc70"
+  },
+  "output_sha256": {
+    "TEST_OUTPUT.txt": "e662731084489a7c9998bb024bd257f7fe2cde029df59fd730a28229da5d5fcc",
+    "OPTIMIZED_TEST_OUTPUT.txt": "e662731084489a7c9998bb024bd257f7fe2cde029df59fd730a28229da5d5fcc"
+  },
+  "visual_review": {
+    "original_svg_rendered_and_inspected": true,
+    "scientific_chart": false,
+    "svg_sha256": "a12199da8de48fd15b3dab961ead795597339f857c2a7918163641fab2465b95",
+    "png_sha256": "62cc48033acf2b72dbf280a6385b39f8b5a5a577cb99d630534d03073eb700e9"
+  }
+}

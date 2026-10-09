@@ -1,0 +1,67 @@
+{
+  "scope": "prepared_source_observations_not_accepted_launch",
+  "candidate": "V21 offload r6 D_v4 calibration",
+  "agent_budget_seconds": 480,
+  "max_tool_calls": 28,
+  "max_turns": 80,
+  "command_timeout_seconds": 240,
+  "payload_zip_sha256": "b54331170e0b9b885c651eac50d62715166e1c1ade2122da45db8535b1391549",
+  "protocol_sha256": "ee5c91a9916e028b864fb7b85fa26d772f47dac7d2cf1415b40dabed09e581a2",
+  "external_verification_reserve_seconds": 240,
+  "arm_allowance_seconds": 825,
+  "arm_components_seconds": {
+    "setup": 48,
+    "agent": 480,
+    "final_verification": 240,
+    "margin": 57
+  },
+  "observations": [
+    {
+      "role": "prepared_wire_proxy",
+      "logical_source": "wire_proxy.py",
+      "sha256": "b73fd478c23be577db0199d7b90a791dc110d6e42d17c5935c298aef6cb87a9d",
+      "line_start": 247,
+      "line_end": 260,
+      "finding": "Transport uses global pilot deadline and 420-second cap, not agent remainder or finish reserve.",
+      "protocol_pin_matches": null
+    },
+    {
+      "role": "official_agent_runner",
+      "logical_source": "swegemma/harness/agent_runner.py",
+      "sha256": "dff7d2505340633c3fe50ba7073f2609fb2b41becd69c356d9af25cc4c1f98dd",
+      "line_start": 433,
+      "line_end": 498,
+      "finding": "480-second asyncio agent timeout has no reserved final edit/test/capture phase.",
+      "protocol_pin_matches": true
+    },
+    {
+      "role": "official_command_tool",
+      "logical_source": "swegemma/tools/execution.py",
+      "sha256": "f2ce1cefb41edddaeffeacbff910a54bcd0174b548efa9c6c283320e5a509912",
+      "line_start": 32,
+      "line_end": 41,
+      "finding": "Timeout is min(command cap, max(5,int(agent remaining))); sub-5-second remainder can be exceeded.",
+      "protocol_pin_matches": true
+    },
+    {
+      "role": "official_evaluate",
+      "logical_source": "swegemma/evaluate.py",
+      "sha256": "96a46f49267ffcf861f7f90b98efbe828d03f27553ceefce745819028589de1e",
+      "line_start": 324,
+      "line_end": 378,
+      "finding": "Agent error plus empty patch returns early; final verification is outside agent timeout.",
+      "protocol_pin_matches": true
+    },
+    {
+      "role": "official_verification",
+      "logical_source": "swegemma/harness/verification.py",
+      "sha256": "5602f33acb49062de8e99073199745679d86445297be9dd075ccec60c41b60dd",
+      "line_start": 498,
+      "line_end": 502,
+      "finding": "Final pytest retains separate configured command timeout.",
+      "protocol_pin_matches": true
+    }
+  ],
+  "native_compatibility": "HOLD_UNVERIFIED",
+  "official_score": null
+}
