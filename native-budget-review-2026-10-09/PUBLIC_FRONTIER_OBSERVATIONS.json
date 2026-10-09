@@ -1,0 +1,44 @@
+{
+  "observed_utc": "2026-10-09T18:15:00.543590+00:00",
+  "method": "Visible Kaggle UI via cua_repl. No hidden state. License and best-score links read on each notebook.",
+  "scope": "Public notebook scorecards; not our official submission rows.",
+  "code_list_sort": "Public Score",
+  "code_list_filter": "excludeNonAccessedDatasources=true; this is not a census of all private submissions",
+  "notebooks": [
+    {
+      "ref": "verracodeguacas/gemma-4-agent-budget-fit-single-agent",
+      "scored_version": 5,
+      "script_version_id": 355310852,
+      "visible_score": 0.18,
+      "license": "Apache-2.0",
+      "latest_version": 5
+    },
+    {
+      "ref": "matterhorn3838/gemma-4-superagent",
+      "scored_version": 5,
+      "script_version_id": 355922587,
+      "visible_score": 0.17,
+      "license": "Apache-2.0",
+      "latest_version": 8,
+      "latest_script_version_id": 356708976,
+      "latest_prompt_changes_not_score_bound": true
+    },
+    {
+      "ref": "yiyu0716/g4-pack-yiyu-v19-fixed-trace-t7p5",
+      "scored_version": 1,
+      "script_version_id": 356344238,
+      "visible_score": 0.17,
+      "license": "Apache-2.0",
+      "latest_version": 2,
+      "latest_script_version_id": 356724093,
+      "latest_has_error": true,
+      "visible_expected_payload_sha256": "7515f0d89f26218f0f88caf336fbb5ecaf9db967b3e78ec74870cadd11c54040",
+      "visible_package_member_count": 11,
+      "member_contents_verified": false,
+      "public_source_read_http_status": 403
+    }
+  ],
+  "discussion": "https://www.kaggle.com/competitions/gemma-4-developer-agent/discussion/746250",
+  "no_competitor_code_bundled": true,
+  "no_remote_mutations": true
+}

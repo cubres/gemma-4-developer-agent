@@ -1,0 +1,23 @@
+{
+  "reviewed_utc": "2026-10-09T18:17:27.950676+00:00",
+  "reviewer": "independent delegated reviewer runtime_budget_evidence_review",
+  "verdict": "PASS_SOURCE_ONLY_AND_ACTUAL_NATIVE_PROJECTIONS",
+  "source_sha256": "688bbf1913f0c51f433472e548b012c8e099475af01165c7cca1b4b4da7ccb1f",
+  "checks": [
+    "actual V19 and V20 V3 aggregate reconstruction from all five original input hashes",
+    "arm binds the verification receipt hash",
+    "no private task contents identities patches or URLs emitted",
+    "failed and unfinished requests remain in denominators",
+    "compaction included",
+    "unfinished durations labeled clock estimates",
+    "explicit required task identities counters and integer/null test exits",
+    "native execution/capture completeness distinct from native test success",
+    "no official score or quality gain inferred"
+  ],
+  "limitations": [
+    "Single prior-exposed native task for each version; not independent task-panel quality evidence",
+    "No native V21 execution performed",
+    "No official submission or external mutation performed",
+    "Independent review received as agent report; reviewer did not modify source"
+  ]
+}

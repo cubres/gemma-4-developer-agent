@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="440" viewBox="0 0 1120 440">
+<defs><pattern id="censored" width="8" height="8" patternUnits="userSpaceOnUse"><rect width="8" height="8" fill="#e2e8f0"/><path d="M0 8 L8 0" stroke="#64748b" stroke-width="2"/></pattern></defs>
+<rect width="1120" height="440" fill="#f8fafc"/>
+<g font-family="Arial, sans-serif" fill="#0f172a">
+<text x="42" y="42" font-size="25" font-weight="bold">A healthy median can hide an exhausted task budget</text>
+<text x="42" y="70" font-size="15" fill="#475569">Two native canaries; 480-second active budget; both produced no patch or final JUnit.</text>
+<text x="42" y="156" font-size="18" font-weight="bold">V19</text>
+<rect x="145.000" y="128" width="82.525" height="42" fill="#3b82f6"/>
+<rect x="227.525" y="128" width="528.171" height="42" fill="#f97316"/>
+<text x="491.610" y="155" font-size="15" text-anchor="middle">300.1s</text>
+<rect x="755.696" y="128" width="0.000" height="42" fill="#a78bfa"/>
+<rect x="755.696" y="128" width="213.732" height="42" fill="url(#censored)"/>
+<text x="862.562" y="155" font-size="15" text-anchor="middle">121.4s</text>
+<text x="145" y="195" font-size="14" fill="#475569">Completed-root median 11.5s; longest finished root 150.1s (31.3% of budget)</text>
+<text x="42" y="276" font-size="18" font-weight="bold">V20</text>
+<rect x="145.000" y="248" width="727.048" height="42" fill="#3b82f6"/>
+<text x="508.524" y="275" font-size="15" text-anchor="middle">413.1s</text>
+<rect x="872.048" y="248" width="0.000" height="42" fill="#f97316"/>
+<rect x="872.048" y="248" width="82.173" height="42" fill="#a78bfa"/>
+<rect x="954.221" y="248" width="31.905" height="42" fill="url(#censored)"/>
+<text x="145" y="315" font-size="14" fill="#475569">Completed-root median 18.0s; longest finished root 323.0s (67.3% of budget)</text>
+<path d="M989.800 108 V305" stroke="#0f172a" stroke-width="2" stroke-dasharray="5 4"/>
+<text x="989.800" y="101" text-anchor="middle" font-size="13">480s cap</text>
+<text x="145.000" y="334" text-anchor="middle" font-size="13">0s</text>
+<text x="321.000" y="334" text-anchor="middle" font-size="13">100s</text>
+<text x="497.000" y="334" text-anchor="middle" font-size="13">200s</text>
+<text x="673.000" y="334" text-anchor="middle" font-size="13">300s</text>
+<text x="849.000" y="334" text-anchor="middle" font-size="13">400s</text>
+<text x="1025.000" y="334" text-anchor="middle" font-size="13">500s</text>
+<rect x="42" y="359" width="18" height="18" fill="#3b82f6"/><text x="68" y="373" font-size="13">Completed root</text>
+<rect x="312" y="359" width="18" height="18" fill="#f97316"/><text x="338" y="373" font-size="13">Failed root</text>
+<rect x="582" y="359" width="18" height="18" fill="#a78bfa"/><text x="608" y="373" font-size="13">Completed compaction</text>
+<rect x="852" y="359" width="18" height="18" fill="url(#censored)"/><text x="878" y="373" font-size="13">Unfinished (clock estimate)</text>
+<text x="42" y="410" font-size="13" fill="#64748b">Unfinished duration uses the arm clock and is approximate. Latency is not an official score or a quality comparison.</text>
+</g></svg>

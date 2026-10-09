@@ -1,0 +1,75 @@
+{
+  "diagnostic_warnings": [
+    "UNFINISHED_REQUESTS_RETAINED_IN_DENOMINATOR",
+    "COMPLETED_ONLY_MEDIAN_EXCLUDES_FAILED_REQUESTS",
+    "ONE_REQUEST_EXCEEDS_QUARTER_OF_TASK_BUDGET",
+    "NO_PATCH_WHILE_MODEL_TIME_DOMINATES",
+    "PATCH_VERIFICATION_OR_PRESERVATION_EVIDENCE_INCOMPLETE"
+  ],
+  "input_sha256_by_role": {
+    "arm": "db7494a68385c3f76f8030f4be509236acd92dd56701e867143c4b6badf73aab",
+    "ledger": "f2f57deac2aa115895d95121ec6b31a90dd37fade0c0dd5ad35b0fdece5e5d02",
+    "task": "40f36284d69717fb4bfa1f9cbd94f191f7ac31630ef1efb578f1c70efa1db472",
+    "verification": "24addacb4faf1e161ea279ec1cff8064b728cc716d066009edaafc3871dab234",
+    "watchdog": "7aa58ac9b415f89896b310a1cd4793856c0f7420e1bb1d5bc0fdd614b139a6cc"
+  },
+  "outcome": {
+    "expected_native_process_return_evidence": false,
+    "finalpytest_invocations": 0,
+    "junit_reads": 0,
+    "native_execution_and_capture_evidence_complete": false,
+    "native_tests_passed": false,
+    "notebook_preservation_evidence": true,
+    "official_score": null,
+    "owned_cleanup_evidence": true,
+    "patch_and_verification_evidence_complete": false,
+    "patch_characters": 0,
+    "resolved_in_native_task": false,
+    "verification_capture_errors": 0
+  },
+  "quality_promotion": "UNPROVEN_REQUIRES_PAIRED_TASK_EVIDENCE_AND_EXACT_COMPLETED_OFFICIAL_ROW",
+  "schema": "gemma-native-budget-audit-v1",
+  "scope": "ONE_NATIVE_CANARY_NOT_OFFICIAL_SCORE_OR_QUALITY_GAIN",
+  "task_denominator": 1,
+  "timing": {
+    "budget_seconds": 480.0,
+    "censored_model_seconds_arm_clock_estimate": 121.438383,
+    "censored_timing_basis": "arm started_utc plus task duration; task end timestamp absent",
+    "completed_compaction_seconds": 0.0,
+    "completed_model_seconds_including_compaction": 46.889034,
+    "completed_root_median_seconds": 11.468793,
+    "failed_model_seconds": 300.097203,
+    "finished_model_budget_fraction": 0.722888,
+    "finished_model_seconds": 346.986237,
+    "longest_finished_root_budget_fraction": 0.312684,
+    "longest_finished_root_seconds": 150.088243,
+    "model_budget_fraction_including_censored_estimate": 0.975885,
+    "model_seconds_including_censored_estimate": 468.42462,
+    "observed_requests": 7,
+    "request_counts": {
+      "root_complete": 4,
+      "root_error": 2,
+      "root_started": 1
+    },
+    "task_elapsed_seconds": 482.26
+  },
+  "tokens": {
+    "completed_root_usage_count": 4,
+    "declared_thinking_budget": 4096,
+    "declared_thinking_budget_decode_seconds_if_fully_used": null,
+    "full_budget_decode_projection_is_inference": true,
+    "max_reported_completion_tokens": 153,
+    "measured_server_decode_median_tokens_per_second": null,
+    "reason": "Native usage has no separate reasoning-token or cap-hit evidence",
+    "reasoning_cap_hit_rate": null,
+    "reasoning_tokens": null
+  },
+  "tools": {
+    "known_returned_tool_counts": {
+      "read_file": 3,
+      "run_command": 1
+    },
+    "returned_tool_names_do_not_prove_successful_edits": true,
+    "unknown_returned_tools": 0
+  }
+}

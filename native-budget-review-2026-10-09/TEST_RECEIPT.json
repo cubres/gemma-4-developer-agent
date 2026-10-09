@@ -1,0 +1,8 @@
+{
+  "normal_tests": 21,
+  "normal_exit_code": 0,
+  "optimized_exit_code": 0,
+  "optimized_tests": 21,
+  "scope": "scalar projection and adversarial evidence/privacy contracts; no model execution",
+  "code_sha256": "688bbf1913f0c51f433472e548b012c8e099475af01165c7cca1b4b4da7ccb1f"
+}

@@ -1,0 +1,26 @@
+test_boolean_exit_is_invalid_evidence (test_native_budget_audit.EvidenceTests.test_boolean_exit_is_invalid_evidence) ... ok
+test_boolean_patch_count_rejected (test_native_budget_audit.EvidenceTests.test_boolean_patch_count_rejected) ... ok
+test_different_task_rejected (test_native_budget_audit.EvidenceTests.test_different_task_rejected) ... ok
+test_duplicate_index_rejected (test_native_budget_audit.EvidenceTests.test_duplicate_index_rejected) ... ok
+test_execution_capture_complete_does_not_mean_task_resolved (test_native_budget_audit.EvidenceTests.test_execution_capture_complete_does_not_mean_task_resolved) ... ok
+test_finish_outside_task_window_rejected (test_native_budget_audit.EvidenceTests.test_finish_outside_task_window_rejected) ... ok
+test_long_tail_compaction_failure_and_censor_all_count (test_native_budget_audit.EvidenceTests.test_long_tail_compaction_failure_and_censor_all_count) ... ok
+test_missing_both_task_counter_fields_is_rejected (test_native_budget_audit.EvidenceTests.test_missing_both_task_counter_fields_is_rejected) ... ok
+test_missing_both_task_identities_is_rejected (test_native_budget_audit.EvidenceTests.test_missing_both_task_identities_is_rejected) ... ok
+test_missing_root_class_rejected (test_native_budget_audit.EvidenceTests.test_missing_root_class_rejected) ... ok
+test_multiple_task_denominator_rejected (test_native_budget_audit.EvidenceTests.test_multiple_task_denominator_rejected) ... ok
+test_nan_rejected (test_native_budget_audit.EvidenceTests.test_nan_rejected) ... ok
+test_no_junit_does_not_qualify (test_native_budget_audit.EvidenceTests.test_no_junit_does_not_qualify) ... ok
+test_overlap_rejected_instead_of_double_counting (test_native_budget_audit.EvidenceTests.test_overlap_rejected_instead_of_double_counting) ... ok
+test_privacy_projection_omits_arbitrary_strings (test_native_budget_audit.EvidenceTests.test_privacy_projection_omits_arbitrary_strings) ... ok
+test_process_error_is_not_qualified_despite_patch_and_tests (test_native_budget_audit.EvidenceTests.test_process_error_is_not_qualified_despite_patch_and_tests) ... ok
+test_reasoning_cap_rate_is_unknown_with_completion_counts_only (test_native_budget_audit.EvidenceTests.test_reasoning_cap_rate_is_unknown_with_completion_counts_only) ... ok
+test_returned_edit_does_not_prove_a_patch (test_native_budget_audit.EvidenceTests.test_returned_edit_does_not_prove_a_patch) ... ok
+test_timestamp_and_monotonic_drift_rejected (test_native_budget_audit.EvidenceTests.test_timestamp_and_monotonic_drift_rejected) ... ok
+test_unknown_status_rejected (test_native_budget_audit.EvidenceTests.test_unknown_status_rejected) ... ok
+test_valid_native_evidence_still_has_no_official_score (test_native_budget_audit.EvidenceTests.test_valid_native_evidence_still_has_no_official_score) ... ok
+
+----------------------------------------------------------------------
+Ran 21 tests in 0.001s
+
+OK
