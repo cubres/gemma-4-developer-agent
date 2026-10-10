@@ -31,7 +31,7 @@ Findings:
 ## Decision tree for 10-11 (keyed to the D v4 public score, row 57039340)
 
 - **Score 0.14 or higher:** the D v5a call-cap arm is the next candidate, after the canary's speed reading. D v5a is D v4k with a
-  lower call cap and the guard edits. Its gate is the mean per-call time of 9.8 s from the strategy sweep.
+  higher call cap (30 in the strategy sweep; 32 in its L3 notes, to be reconciled) and guard edits. Its gate is the mean per-call time of 9.8 s from the strategy sweep.
 - **Score 0.10 or lower:** return to the A_think variants.
 - **Score 0.11 to 0.13:** not covered by this tree. No arm is chosen.
 - **No score yet on 10-11:** no branch applies, and the D v4 row stays the only official measurement for this slot.
