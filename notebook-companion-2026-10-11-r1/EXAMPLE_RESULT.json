@@ -1,0 +1,24 @@
+{
+  "status": "INVENTED_FLATPACK_ONLY",
+  "verified": {
+    "schema": "flatpack-verification-1",
+    "status": "PASS_PINNED_BYTES",
+    "manifest_sha256": "7e68d08c792341324625c100068514f082e409335a6d9e66c3fd9434b66fb3c6",
+    "manifest_dialect": "path-bearing-list",
+    "verified_files": 2,
+    "verified_bytes": 93,
+    "ignored_unverified_names": [],
+    "layout_status": "PASS_EXPLICIT_MAP",
+    "layout_plan": {
+      "demo____main__.txt": "demo/__main__.txt",
+      "experiment__config.json": "experiment/config.json"
+    },
+    "authentication": "EXTERNAL_PIN_REQUIRED",
+    "runtime_compatibility": "NOT_TESTED",
+    "scientific_validity": "NOT_TESTED"
+  },
+  "wrong_manifest_pin": "MANIFEST_PIN_MISMATCH",
+  "files_restored_or_executed": 0,
+  "agent_package_or_prompt_included": false,
+  "official_score": null
+}

@@ -1,0 +1,17 @@
+{
+  "schema": "notebook-companion-opening-art/1",
+  "campaign": "gemma",
+  "version": "2026-10-11-v1",
+  "relative_path": "assets/hero-gemma-2026-10-11-v1.png",
+  "sha256": "756c84aaa09492c56c30fb772de7f8458594c92bca7ba3a9b32971b7adc72e08",
+  "bytes": 2607901,
+  "width": 1672,
+  "height": 941,
+  "source": "built-in imagegen",
+  "prompt": "Use case: stylized-concept. Asset type: wide opening illustration for a public Gemma developer-agent notebook. Primary request: beautiful original art illustrating an AI developer thoughtfully inspecting, editing and verifying code. Subject: an intricate architectural workshop made of folded paper and translucent geometric modules, connected by elegant paths; three stations suggest reading source, assembling a small precise patch, and checking a result, with a luminous crystalline core. Style/medium: meticulous paper-cut editorial illustration with tactile cream paper, cobalt blue, soft violet and a small warm gold accent, nuanced studio shadows. Composition: wide 16:9 banner, coherent detailed focal scene, ample negative space. Include the word 'Gemma' as small elegant original typography integrated into the composition, spelled exactly G-e-m-m-a. Constraints: no other text, no code gibberish, no leaderboard or score, no watermark. Conceptual artwork, not a factual flowchart. High-end design, human-crafted feel, visually useful as a notebook cover.",
+  "concept_art": true,
+  "measured_scientific_figure": false,
+  "official_branding": false,
+  "caption": "AI-generated concept art: a paper workshop for reading, building and checking. The typography is original, not an official Gemma logo.",
+  "refresh_guidance": "Preserve current artwork and all older assets until the user requests a change."
+}

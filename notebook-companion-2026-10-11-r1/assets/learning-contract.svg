@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1260" height="570" viewBox="0 0 1260 570" role="img">
+<title>Verify before constructing a workspace</title>
+<desc>Invented two-file flatpack · all payload text stays inert</desc>
+<rect width="1260" height="570" rx="22" fill="#f5f8fa"/>
+<g font-family="Arial, sans-serif" fill="#172a38">
+<text x="34" y="48" font-size="27" font-weight="700">Verify before constructing a workspace</text>
+<text x="34" y="78" font-size="16" fill="#526572">Invented two-file flatpack · all payload text stays inert</text>
+<rect x="34" y="110" width="271" height="169" rx="15" fill="#fff" stroke="#d8e4e9"/>
+<rect x="34" y="110" width="271" height="5" rx="2" fill="#7259ba"/>
+<text x="51" y="141" font-size="14" font-weight="700" fill="#7259ba">01 · PIN</text>
+<text x="51" y="181" font-size="20" font-weight="700" fill="#172a38">Known manifest</text>
+<text x="51" y="218" font-size="16" font-weight="400" fill="#172a38">Compare exact bytes with</text>
+<text x="51" y="243" font-size="16" font-weight="400" fill="#172a38">an externally checked digest.</text>
+<path d="M312,194 h20 m-5,-5 l5,5 l-5,5" fill="none" stroke="#7259ba" stroke-width="2.5"/>
+<rect x="341" y="110" width="271" height="169" rx="15" fill="#fff" stroke="#d8e4e9"/>
+<rect x="341" y="110" width="271" height="5" rx="2" fill="#7259ba"/>
+<text x="358" y="141" font-size="14" font-weight="700" fill="#7259ba">02 · INVENTORY</text>
+<text x="358" y="181" font-size="20" font-weight="700" fill="#172a38">All payload files</text>
+<text x="358" y="218" font-size="16" font-weight="400" fill="#172a38">Count, size and hash each</text>
+<text x="358" y="243" font-size="16" font-weight="400" fill="#172a38">manifested regular file.</text>
+<path d="M619,194 h20 m-5,-5 l5,5 l-5,5" fill="none" stroke="#7259ba" stroke-width="2.5"/>
+<rect x="648" y="110" width="271" height="169" rx="15" fill="#fff" stroke="#d8e4e9"/>
+<rect x="648" y="110" width="271" height="5" rx="2" fill="#7259ba"/>
+<text x="665" y="141" font-size="14" font-weight="700" fill="#7259ba">03 · PATH PLAN</text>
+<text x="665" y="181" font-size="20" font-weight="700" fill="#172a38">Explicit complete map</text>
+<text x="665" y="218" font-size="16" font-weight="400" fill="#172a38">Preserve literal __main__.</text>
+<text x="665" y="243" font-size="16" font-weight="400" fill="#172a38">Do not guess from underscores.</text>
+<path d="M926,194 h20 m-5,-5 l5,5 l-5,5" fill="none" stroke="#7259ba" stroke-width="2.5"/>
+<rect x="955" y="110" width="271" height="169" rx="15" fill="#fff" stroke="#d8e4e9"/>
+<rect x="955" y="110" width="271" height="5" rx="2" fill="#7259ba"/>
+<text x="972" y="141" font-size="14" font-weight="700" fill="#7259ba">04 · OBSERVE</text>
+<text x="972" y="181" font-size="20" font-weight="700" fill="#172a38">PASS_PINNED_BYTES</text>
+<text x="972" y="218" font-size="16" font-weight="400" fill="#172a38">Wrong pin yields HOLD.</text>
+<text x="972" y="243" font-size="16" font-weight="400" fill="#172a38">No files are restored or run.</text>
+<text x="34" y="320" font-size="21" font-weight="700">Separate gates after a byte check</text>
+<circle cx="46" cy="353" r="5" fill="#7259ba"/>
+<text x="64" y="359" font-size="18" font-weight="700">Permission</text>
+<text x="285" y="359" font-size="17" fill="#526572">Terms and package release need review.</text>
+<circle cx="46" cy="405" r="5" fill="#7259ba"/>
+<text x="64" y="411" font-size="18" font-weight="700">Native execution</text>
+<text x="285" y="411" font-size="17" fill="#526572">Adapter, deadline and cleanup need receipts.</text>
+<circle cx="46" cy="457" r="5" fill="#7259ba"/>
+<text x="64" y="463" font-size="18" font-weight="700">Official outcome</text>
+<text x="285" y="463" font-size="17" fill="#526572">Only the exact completed row supplies a score.</text>
+<path d="M34,503 H1226" stroke="#d8e4e9"/>
+<text x="34" y="537" font-size="16" fill="#526572">Consistency is not authentication or an atomic snapshot. Agent-package publication remains held.</text>
+</g></svg>

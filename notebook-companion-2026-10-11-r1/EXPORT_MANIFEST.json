@@ -1,0 +1,164 @@
+{
+  "schema": "notebook-companion-export/1",
+  "campaign": "gemma",
+  "revision": 1,
+  "repository": "cubres/gemma-4-developer-agent",
+  "prospective_prefix": "notebook-companion-2026-10-11-r1",
+  "files_except_this_manifest": [
+    {
+      "path": "ARTWORK_PROVENANCE.json",
+      "encoding": "utf-8",
+      "bytes": 1758,
+      "sha256": "8b774cc528288e3f81021ef9efa07e7735272437bb36db76dc73fd83335911a5",
+      "git_blob_sha": "30f842798b53e61bedd8bb316e0d07f26e027d6a"
+    },
+    {
+      "path": "COMPANION.html",
+      "encoding": "utf-8",
+      "bytes": 6245,
+      "sha256": "d3171992e93541c2b2c4997f0a0862175ca57c76dc0d306eff96d059cd72ed80",
+      "git_blob_sha": "0e43d62c6d7933c730ba382595a648572390e2ca"
+    },
+    {
+      "path": "COMPANION.md",
+      "encoding": "utf-8",
+      "bytes": 5603,
+      "sha256": "cbb3bc1c33e8e06e4ac273c3a1c906f5f70688e96fce9f0c277375d3504a4fc8",
+      "git_blob_sha": "6f2879a1fcfef6ff7026d0bc66d021130115dd05"
+    },
+    {
+      "path": "DEPENDENCIES.json",
+      "encoding": "utf-8",
+      "bytes": 820,
+      "sha256": "f5020185582cf01eca9c26d707cb9c4b32cb560fc2724637af49957011bdaa34",
+      "git_blob_sha": "e0a26c9ce22ea70d9e0a7fea157ccbbbccac8cc1"
+    },
+    {
+      "path": "EXAMPLE_EXECUTION.json",
+      "encoding": "utf-8",
+      "bytes": 475,
+      "sha256": "33eb20d9424e872fe8e0cd1f5f1e98d7c50892d90bb72bc4e42f6f55a7909138",
+      "git_blob_sha": "8c2fdba077fa1646b37f1b9e733b6213a34c0b76"
+    },
+    {
+      "path": "EXAMPLE_RESULT.json",
+      "encoding": "utf-8",
+      "bytes": 823,
+      "sha256": "f37337c0a8541cf8c823d65f56fd1945248691c9b27dd3cfe09dbc0eb435f8c9",
+      "git_blob_sha": "2ddf0780887680943795ebc29deb291d69f5294f"
+    },
+    {
+      "path": "LICENSE",
+      "encoding": "utf-8",
+      "bytes": 1063,
+      "sha256": "eed854701ae3433dccb0da2fc34fb3a8b70460bb4cad7f9e1abb4145a6cdbf0e",
+      "git_blob_sha": "f6371c8975e87d01580c5f3779471f7da51335df"
+    },
+    {
+      "path": "PREVIEW.html",
+      "encoding": "utf-8",
+      "bytes": 7588,
+      "sha256": "9693203db42637efc3e9eb41a74a140af68c62985ed9908b72a8e0696e4f9e7b",
+      "git_blob_sha": "80265f4666f19ef6e04f8fdaf83f8f52030f9167"
+    },
+    {
+      "path": "README.md",
+      "encoding": "utf-8",
+      "bytes": 1450,
+      "sha256": "960bc23c2a8c43e2497be10248a8ce050bd75634913e9350724edfe237c785a1",
+      "git_blob_sha": "8369465824479d50e70407efcae208cf493143ba"
+    },
+    {
+      "path": "assets/hero-gemma-2026-10-11-v1.png",
+      "encoding": "binary",
+      "bytes": 2607901,
+      "sha256": "756c84aaa09492c56c30fb772de7f8458594c92bca7ba3a9b32971b7adc72e08",
+      "git_blob_sha": "1a35dbea99d6df34101bcf427b0305d808c458ea"
+    },
+    {
+      "path": "assets/learning-contract.svg",
+      "encoding": "utf-8",
+      "bytes": 3999,
+      "sha256": "5c15ac357d67b64d6f5f34df37b98e8d6e9b43afcdd2170367171715e0b2182b",
+      "git_blob_sha": "19702fec79b0a74a34f11097f5c8e81e20db7b8b"
+    },
+    {
+      "path": "demo/MANIFEST.json",
+      "encoding": "utf-8",
+      "bytes": 367,
+      "sha256": "7e68d08c792341324625c100068514f082e409335a6d9e66c3fd9434b66fb3c6",
+      "git_blob_sha": "c0de52e30fcd2a3d8abd2e88e23426b7a3bb1210"
+    },
+    {
+      "path": "demo/demo____main__.txt",
+      "encoding": "utf-8",
+      "bytes": 56,
+      "sha256": "5dfda500339141205435bc02e9de3d3aad57a5f2146c160a52b2f16ef623944b",
+      "git_blob_sha": "c32266fd52575ca384a900be1961b0376508c4eb"
+    },
+    {
+      "path": "demo/experiment__config.json",
+      "encoding": "utf-8",
+      "bytes": 37,
+      "sha256": "a3bd107555c1dd04033b35419fee083353d9742a1d0a810a376c08bab0f45ead",
+      "git_blob_sha": "194f71d22fb527c8f9106208e90ed478edb9467a"
+    },
+    {
+      "path": "demo-layout.json",
+      "encoding": "utf-8",
+      "bytes": 246,
+      "sha256": "9b3ceb69830c13bd5812993cb86b80cc85b423216f6bf7c0bee3b0c5b7767ff7",
+      "git_blob_sha": "21c0c3581ea86c2c1e99696704d6cd218abcf26f"
+    },
+    {
+      "path": "demo-manifest-pin.txt",
+      "encoding": "utf-8",
+      "bytes": 65,
+      "sha256": "a0e82337e40e0c680aa2d0dc6a7800079ece73fb2fdfa8bb90f43d5d6c1fb8f9",
+      "git_blob_sha": "7f59dcddf33a28aac293015ed82cc47d173456f6"
+    },
+    {
+      "path": "make_diagram.py",
+      "encoding": "utf-8",
+      "bytes": 4060,
+      "sha256": "c37902d54ecfbab7411ced745714de0801542cdcde2633fcd43a24980dd44ff7",
+      "git_blob_sha": "f602c0afd4ed37ab8f75e73517d86b6fdd0f0fcf"
+    },
+    {
+      "path": "toy_example.py",
+      "encoding": "utf-8",
+      "bytes": 2335,
+      "sha256": "d0ad32c86fa7259f5c631ecb6f07dbc51302a3fcaf11c6877ac34e44c2959b12",
+      "git_blob_sha": "d0ee1eaf90e6301b6e96137fd2a1a6a01f3222f2"
+    }
+  ],
+  "manifest_self_excluded": true,
+  "opening_art": {
+    "path": "assets/hero-gemma-2026-10-11-v1.png",
+    "sha256": "756c84aaa09492c56c30fb772de7f8458594c92bca7ba3a9b32971b7adc72e08",
+    "git_blob_sha": "1a35dbea99d6df34101bcf427b0305d808c458ea",
+    "bytes": 2607901,
+    "concept_art": true,
+    "measured_figure": false,
+    "keep_until_user_requests_change": true
+  },
+  "dependency": {
+    "repo": "cubres/gemma-4-developer-agent",
+    "commit": "764878bd6d214ef8aedea18a3027793bb9b65273",
+    "path": "dataset-flatpack-verifier-2026-10-11/verify_flatpack.py",
+    "source_sha256": "560eed0c11f1f76a12f8f447d80bbb7130e796aa51fb8854160bd919aabd1b81",
+    "source_bytes": 9688,
+    "url": "https://github.com/cubres/gemma-4-developer-agent/blob/764878bd6d214ef8aedea18a3027793bb9b65273/dataset-flatpack-verifier-2026-10-11/verify_flatpack.py",
+    "license": "MIT"
+  },
+  "example_result_sha256": "f37337c0a8541cf8c823d65f56fd1945248691c9b27dd3cfe09dbc0eb435f8c9",
+  "example_execution_sha256": "33eb20d9424e872fe8e0cd1f5f1e98d7c50892d90bb72bc4e42f6f55a7909138",
+  "official_score_snapshot_utc": "2026-10-11T18:27:45.053803+00:00",
+  "official_scalar_row": {
+    "submission": 56949760,
+    "status": "COMPLETE",
+    "public_score": "0.12"
+  },
+  "browser_or_kaggle_layout_qualified": false,
+  "live_notebook_changed": false
+}

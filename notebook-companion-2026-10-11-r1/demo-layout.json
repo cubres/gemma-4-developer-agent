@@ -1,0 +1,8 @@
+{
+  "schema": "flatpack-layout-1",
+  "manifest_sha256": "7e68d08c792341324625c100068514f082e409335a6d9e66c3fd9434b66fb3c6",
+  "paths": {
+    "demo____main__.txt": "demo/__main__.txt",
+    "experiment__config.json": "experiment/config.json"
+  }
+}

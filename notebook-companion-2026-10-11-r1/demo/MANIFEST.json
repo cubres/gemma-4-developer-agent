@@ -1,0 +1,16 @@
+{
+  "file_count": 2,
+  "total_bytes": 93,
+  "files": [
+    {
+      "path": "demo____main__.txt",
+      "bytes": 56,
+      "sha256": "5dfda500339141205435bc02e9de3d3aad57a5f2146c160a52b2f16ef623944b"
+    },
+    {
+      "path": "experiment__config.json",
+      "bytes": 37,
+      "sha256": "a3bd107555c1dd04033b35419fee083353d9742a1d0a810a376c08bab0f45ead"
+    }
+  ]
+}

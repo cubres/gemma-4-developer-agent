@@ -1,0 +1,19 @@
+{
+  "schema": "notebook-companion-dependencies/1",
+  "campaign": "gemma",
+  "revision": 1,
+  "helper": {
+    "repo": "cubres/gemma-4-developer-agent",
+    "commit": "764878bd6d214ef8aedea18a3027793bb9b65273",
+    "path": "dataset-flatpack-verifier-2026-10-11/verify_flatpack.py",
+    "source_sha256": "560eed0c11f1f76a12f8f447d80bbb7130e796aa51fb8854160bd919aabd1b81",
+    "source_bytes": 9688,
+    "url": "https://github.com/cubres/gemma-4-developer-agent/blob/764878bd6d214ef8aedea18a3027793bb9b65273/dataset-flatpack-verifier-2026-10-11/verify_flatpack.py",
+    "license": "MIT"
+  },
+  "example_runtime": "Python 3.10+ standard library; POSIX",
+  "tool_is_separate_pinned_dependency": true,
+  "network_used_by_example": false,
+  "model_checkpoint_or_competition_data": false,
+  "native_compatibility": "NOT_TESTED"
+}
