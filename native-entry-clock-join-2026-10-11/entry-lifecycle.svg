@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="890" viewBox="0 0 1200 890" role="img" aria-labelledby="title desc">
+<title id="title">Preserve the arm, join the clocks</title>
+<desc id="desc">Three lanes show sealed source planning, a restoration lifecycle around the retained owned native arm, and raw receipt plus create-only policy-clock sidecar. Admission still requires full native evidence. A prepared parent deadline conflict remains unexecuted source evidence.</desc>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0 0L10 5L0 10Z" fill="#72d4cc"/></marker></defs>
+<rect width="1200" height="890" rx="22" fill="#111b2a"/>
+<g font-family="Arial,Helvetica,sans-serif">
+<text x="50" y="65" font-size="33" font-weight="700" fill="#f3f7fb">Preserve the arm, join the clocks</text>
+<text x="50" y="99" font-size="17" fill="#b6c8da">Original external integration • exact byte pins • observed clocks • honest HOLD states</text>
+<g fill="#18283c" stroke="#35536d"><rect x="40" y="133" width="345" height="504" rx="15"/><rect x="426" y="133" width="345" height="504" rx="15"/><rect x="812" y="133" width="345" height="504" rx="15"/></g>
+<g font-size="18" font-weight="700" fill="#91e5d8"><text x="64" y="168">1 · Review the sealed route</text><text x="450" y="168">2 · Preserve the lifecycle</text><text x="836" y="168">3 · Join actual receipts</text></g>
+<g fill="#203b52" stroke="#52778f"><rect x="64" y="192" width="297" height="94" rx="10"/><rect x="64" y="321" width="297" height="112" rx="10"/><rect x="64" y="468" width="297" height="132" rx="10"/>
+<rect x="450" y="192" width="297" height="94" rx="10"/><rect x="450" y="321" width="297" height="112" rx="10"/><rect x="450" y="468" width="297" height="132" rx="10"/>
+<rect x="836" y="192" width="297" height="94" rx="10"/><rect x="836" y="321" width="297" height="112" rx="10"/><rect x="836" y="468" width="297" height="132" rx="10"/></g>
+<g font-size="16" fill="#eff6fc">
+<text x="82" y="220" font-weight="700">Pinned protocol + full denominator</text><text x="82" y="245">Owned arm / helper stay intact</text><text x="82" y="269" fill="#bed0df">Future entry + collector pins required</text>
+<text x="82" y="351" font-weight="700">Read-only packaging planner</text><text x="82" y="377">Equal-length loader projection</text><text x="82" y="402" fill="#bed0df">Fresh SDK wire + identity still owed</text>
+<text x="82" y="498" font-weight="700">One original first-cell origin</text><text x="82" y="524">Pinned protocol-derived envelope</text><text x="82" y="550">Explicit, bounded parent cleanup tail</text><text x="82" y="576" fill="#bed0df">Never reset T0 at loader / entry</text>
+<text x="468" y="220" font-weight="700">Save all four prior callables</text><text x="468" y="245">Invoke retained owned installer</text><text x="468" y="269" fill="#bed0df">Partial install failures remain visible</text>
+<text x="468" y="351" font-weight="700">One ordered async task at a time</text><text x="468" y="377">Passive perf_counter observation</text><text x="468" y="402" fill="#bed0df">Exact original return / exception</text>
+<text x="468" y="498" font-weight="700">Restore every saved boundary</text><text x="468" y="524">Normal / exception / cancellation</text><text x="468" y="550">Do not mask the original outcome</text><text x="468" y="576" fill="#bed0df">Restoration failures force HOLD</text>
+<text x="854" y="220" font-weight="700">Original raw arm must exist</text><text x="854" y="245">Raw receipt and captures preserved</text><text x="854" y="269" fill="#bed0df">No raw receipt → no new sidecar</text>
+<text x="854" y="351" font-weight="700">Exclusively create clock sidecar</text><text x="854" y="377">Raw protocol / arm / source hashes</text><text x="854" y="402" fill="#bed0df">Missing marks → UNKNOWN / HOLD</text>
+<text x="854" y="498" font-weight="700">R3 adapter → R4 receipt gate</text><text x="854" y="524">Actual final XML + strict verifier</text><text x="854" y="550">Complete ordered task denominator</text><text x="854" y="576" fill="#bed0df">Native attestation still required</text>
+</g>
+<g stroke="#72d4cc" stroke-width="2.5" fill="none" marker-end="url(#arrow)"><path d="M212 287V313"/><path d="M212 434V460"/><path d="M598 287V313"/><path d="M598 434V460"/><path d="M984 287V313"/><path d="M984 434V460"/><path d="M386 238H418"/><path d="M772 238H804"/></g>
+<rect x="40" y="662" width="1117" height="113" rx="14" fill="#3b3028" stroke="#a98558"/>
+<text x="64" y="694" font-size="18" font-weight="700" fill="#ffe3b6">Prepared source finding: outer cap can preempt inner cleanup and final receipts</text>
+<text x="64" y="725" font-size="17" fill="#f1d7b4">Nominal parent +2,175 s · protocol +8,700 s · source gap 6,525 s · saved wire spare 17 bytes</text>
+<text x="64" y="752" font-size="15" fill="#dcc3a5">No accepted successor, observed native failure, measured cleanup guarantee or future wire qualification is inferred.</text>
+<text x="50" y="819" font-size="18" font-weight="700" fill="#dce8f2">Software controls ≠ native execution ≠ full exposed validation ≠ exact completed official score</text>
+<text x="50" y="851" font-size="16" fill="#a7bbce">Coordinator alone executes a reviewed route. Every notebook, version, identity and prior receipt remains preserved.</text>
+</g></svg>
