@@ -1,0 +1,21 @@
+{
+  "schema": "own-campaign-public-status-projection/1",
+  "campaign": "gemma-4-developer-agent",
+  "dated_utc": "2026-10-11",
+  "observed_run": {
+    "version": 26,
+    "status": "CANCEL_ACKNOWLEDGED",
+    "identity_and_version_preserved": true,
+    "new_official_submission": false,
+    "scope": "Operational budget review outcome; returned trace did not establish source-changing behavior"
+  },
+  "generic_next_hypothesis": {
+    "name": "E02",
+    "status_at_bound_audit": "PROPOSED_UNEXECUTED",
+    "effectiveness": "UNQUALIFIED",
+    "official_score": null
+  },
+  "private_task_trace_prompt_or_artifact_published": false,
+  "new_score_rank_medal_or_vote_gain_claimed": false,
+  "current_opening_art_changed": false
+}
