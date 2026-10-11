@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="470" viewBox="0 0 1100 470" role="img" aria-labelledby="title desc">
+<title id="title">Short test logs need an honest exit status</title>
+<desc id="desc">The baseline loses producer exit one when tail returns zero. The corrected pipeline retains failure while keeping the same bounded feedback. This concerns the agent's local check, separate from the official grader.</desc>
+<rect width="1100" height="470" rx="24" fill="#101c30"/>
+<g font-family="Arial, sans-serif">
+<text x="45" y="58" font-size="28" fill="#f5f8fc">Short test logs need an honest exit status</text>
+<text x="45" y="92" font-size="17" fill="#b6c8df">Original command controls • no model calls • no competition score claim</text>
+<text x="45" y="143" font-size="18" fill="#f3a7a4">Default pipeline</text>
+<rect x="45" y="164" width="265" height="82" rx="12" fill="#26374f"/>
+<text x="65" y="196" font-size="18" fill="#ffffff">Focused test fails</text><text x="65" y="225" font-size="18" fill="#f6aaa6">producer exit = 1</text>
+<path d="M315 205h58" stroke="#a7bed9" stroke-width="3"/><path d="M373 205l-9-6v12z" fill="#a7bed9"/>
+<rect x="385" y="164" width="265" height="82" rx="12" fill="#26374f"/><text x="405" y="196" font-size="18" fill="#ffffff">tail succeeds</text><text x="405" y="225" font-size="18" fill="#b6c8df">final pipeline exit = 0</text>
+<path d="M655 205h58" stroke="#a7bed9" stroke-width="3"/><path d="M713 205l-9-6v12z" fill="#a7bed9"/>
+<rect x="725" y="164" width="330" height="82" rx="12" fill="#572d37"/><text x="745" y="196" font-size="18" fill="#ffffff">Tool reports ok</text><text x="745" y="225" font-size="17" fill="#f6c7c4">text can still describe the failure</text>
+<text x="45" y="290" font-size="18" fill="#84dcd4">Preserve the producer status</text>
+<rect x="45" y="311" width="265" height="82" rx="12" fill="#26374f"/><text x="65" y="343" font-size="18" fill="#ffffff">Same focused test</text><text x="65" y="372" font-size="18" fill="#f6aaa6">producer exit = 1</text>
+<path d="M315 352h58" stroke="#a7bed9" stroke-width="3"/><path d="M373 352l-9-6v12z" fill="#a7bed9"/>
+<rect x="385" y="311" width="265" height="82" rx="12" fill="#26374f"/><text x="405" y="343" font-size="18" fill="#ffffff">Bound text + retain status</text><text x="405" y="372" font-size="18" fill="#84dcd4">final command exit = 1</text>
+<path d="M655 352h58" stroke="#a7bed9" stroke-width="3"/><path d="M713 352l-9-6v12z" fill="#a7bed9"/>
+<rect x="725" y="311" width="330" height="82" rx="12" fill="#214e53"/><text x="745" y="343" font-size="18" fill="#ffffff">Tool exposes the failed check</text><text x="745" y="372" font-size="17" fill="#c0e5e1">agent can repair or note the limit</text>
+<text x="45" y="438" font-size="17" fill="#b6c8df">The organizer's hidden-test grader remains a separate, later evaluation.</text>
+</g></svg>

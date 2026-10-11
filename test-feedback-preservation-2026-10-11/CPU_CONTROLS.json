@@ -1,0 +1,18 @@
+{
+  "scope": "Invented CPU command controls; no organizer harness, competition task, model, native run, or official submission",
+  "status": "PASS_CPU_ONLY",
+  "python": "3.9.6",
+  "normal": {
+    "tests": 18,
+    "wall_seconds": 0.365441708
+  },
+  "optimized": {
+    "tests": 18,
+    "wall_seconds": 0.38659404199999997
+  },
+  "source_sha256": "542344a493276119b4c6360bc8b8b0c06309c3ad0b1f90fe325a372b0e68a4a9",
+  "tests_sha256": "d533387dff4e4a71b8bb640286fcaca8c9502776f4674daba54d6c5c51692ca5",
+  "native_qualification": "UNQUALIFIED",
+  "score_gain": "UNMEASURED",
+  "diagram_qa": "SVG XML passed; complete original geometry visually inspected using a private padded render; public SVG unchanged"
+}
