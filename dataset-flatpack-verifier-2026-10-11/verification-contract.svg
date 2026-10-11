@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="600" viewBox="0 0 1200 600">
+<rect width="1200" height="600" fill="#f6f8fc"/>
+<g font-family="Arial, sans-serif">
+<text x="54" y="65" fill="#15243d" font-size="34" font-weight="700">A dataset you can inspect before you run</text>
+<text x="54" y="99" fill="#435570" font-size="18">Conceptual contract: a pinned byte check, an explicit layout, and a narrow result.</text>
+<g fill="white" stroke="#d8e1ee" stroke-width="2">
+<rect x="54" y="153" width="302" height="205" rx="20"/><rect x="449" y="153" width="302" height="205" rx="20"/><rect x="844" y="153" width="302" height="205" rx="20"/>
+</g>
+<g font-size="22" font-weight="700" fill="#15243d"><text x="79" y="196">1. Bind the release</text><text x="474" y="196">2. Verify regular files</text><text x="869" y="196">3. Inspect the plan</text></g>
+<g font-size="18" fill="#435570">
+<text x="79" y="236">Trusted manifest SHA-256</text><text x="79" y="269">List or object schema</text><text x="79" y="302">Counts, sizes, safe names</text>
+<text x="474" y="236">Read-only, bounded chunks</text><text x="474" y="269">Exact size and SHA-256</text><text x="474" y="302">No code or model execution</text>
+<text x="869" y="236">Explicit source-to-path map</text><text x="869" y="269">Literal __ stays literal</text><text x="869" y="302">No restoration or renaming</text>
+</g>
+<g stroke="#4779c6" stroke-width="4" fill="none"><path d="M373 255h58m-13-12 13 12-13 12"/><path d="M768 255h58m-13-12 13 12-13 12"/></g>
+<rect x="54" y="403" width="522" height="132" rx="16" fill="#e8f4ed"/><rect x="604" y="403" width="542" height="132" rx="16" fill="#fff0e1"/>
+<g font-size="21" font-weight="700"><text x="78" y="444" fill="#226143">PASS_PINNED_BYTES</text><text x="628" y="444" fill="#87521f">HOLD on inconsistency</text></g>
+<g font-size="18" fill="#435570"><text x="78" y="479">Byte identity under the supplied pin.</text><text x="78" y="509">Runtime, science and score remain untested.</text><text x="628" y="479">Wrong pins, corruption, extra files, unsafe paths.</text><text x="628" y="509">Fix the binding; preserve every source artifact.</text></g>
+<text x="54" y="573" fill="#62718a" font-size="15">Original illustration • no measured score improvement is represented • MIT, 2026 cubres</text>
+</g></svg>

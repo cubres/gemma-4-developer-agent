@@ -1,0 +1,65 @@
+{
+  "schema": "flatpack-author-test-report-1",
+  "recorded_utc": "2026-10-11T17:04:08.543827+00:00",
+  "source_sha256": "560eed0c11f1f76a12f8f447d80bbb7130e796aa51fb8854160bd919aabd1b81",
+  "test_source_sha256": "2d64ca9fd8a8eb97cbd3d01222d1c19b4eabdb27a2d2bf6af0024faa852ed0c7",
+  "scope": "Author-run invented controls only; independent review and native Kaggle execution not claimed",
+  "test_count_per_run": 48,
+  "runs": [
+    {
+      "python": "3.9.6",
+      "optimization": false,
+      "exit_code": 0,
+      "unittest_reported_seconds": 0.012
+    },
+    {
+      "python": "3.9.6",
+      "optimization": true,
+      "exit_code": 0,
+      "unittest_reported_seconds": 0.011
+    },
+    {
+      "python": "3.12.14",
+      "optimization": false,
+      "exit_code": 0,
+      "unittest_reported_seconds": 0.009,
+      "cpu_limit_seconds": 20,
+      "cpu_seconds": 0.057420000000000006,
+      "nice": 5
+    },
+    {
+      "python": "3.12.14",
+      "optimization": true,
+      "exit_code": 0,
+      "unittest_reported_seconds": 0.011,
+      "cpu_limit_seconds": 20,
+      "cpu_seconds": 0.16225599999999998,
+      "nice": 5
+    }
+  ],
+  "initial_fixture_expectation_error": {
+    "test": "test_01_list",
+    "expected_initially": 34,
+    "actual_and_corrected": 35,
+    "first_run": {
+      "tests": 40,
+      "failures": 1
+    },
+    "verifier_fault": false
+  },
+  "demo_cli": {
+    "exit_code": 0,
+    "verified_files": 2,
+    "verified_bytes": 74,
+    "layout_status": "PASS_EXPLICIT_MAP"
+  },
+  "source_mutations": 0,
+  "native_runs": 0,
+  "kaggle_mutations": 0,
+  "diagram_preview": {
+    "original_svg": "verification-contract.svg",
+    "geometry": "1200x600",
+    "inspection": "Full-width subset-render preview visually inspected; all three cards and both outcomes fit",
+    "limitation": "macOS Quick Look produced a clipped square preview; this is not the public diagram"
+  }
+}

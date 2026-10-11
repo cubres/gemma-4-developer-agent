@@ -1,0 +1,16 @@
+{
+  "file_count": 2,
+  "total_bytes": 74,
+  "files": [
+    {
+      "path": "pkg____main__.py",
+      "bytes": 51,
+      "sha256": "e6c55c06b29840b74cd8e1d787a233b5d7dbecdf5e198821f80df619d1adffca"
+    },
+    {
+      "path": "pkg__config__demo.json",
+      "bytes": 23,
+      "sha256": "569be2ce58703aeed530415090074faf3a0518dd21ade5f7c840f67bbb9cac21"
+    }
+  ]
+}

@@ -1,0 +1,89 @@
+{
+  "created_date": "2026-10-11",
+  "scope": "Original read-only receipt admission checker; source review and invented controls only; not integrated, executed natively or submitted",
+  "original_files": [
+    "screen_gate.py",
+    "test_screen_gate.py",
+    "README.md",
+    "SOURCE_OBSERVATIONS.md",
+    "receipt-admission.svg",
+    "LICENSE",
+    "PROVENANCE.json"
+  ],
+  "third_party_source_redistributed": false,
+  "model_weights_or_private_task_outputs_bundled": false,
+  "reviewed_source_and_observation_pins": [
+    {
+      "role": "prepared_v26_protocol",
+      "filename": "PROTOCOL.json",
+      "sha256": "5a6ba6cf61035276dd5559fde71d85d0a441e44075d1ee937c8163e33badf980",
+      "bytes": 39251
+    },
+    {
+      "role": "prepared_v26_arm_source",
+      "filename": "native_arm.py",
+      "sha256": "d0134b99e2544bed8f8a3d24d1d00cf1f74e19be691e315e08474fb7716012e2",
+      "bytes": 10845
+    },
+    {
+      "role": "prepared_v26_supervisor_source",
+      "filename": "native_supervisor.py",
+      "sha256": "cc6af511606fd4bad6411f11cec6579e464491827e065fe348868202b1edf4d7",
+      "bytes": 37605
+    },
+    {
+      "role": "private_junit_capture_source",
+      "filename": "private_junit_receipts.py",
+      "sha256": "dd9eb12b6a0cb71d7f902806cebf04c039a124e3960a7757407203154ce6e839",
+      "bytes": 14987
+    },
+    {
+      "role": "organiser_evaluator_source",
+      "filename": "evaluate.py",
+      "sha256": "96a46f49267ffcf861f7f90b98efbe828d03f27553ceefce745819028589de1e",
+      "bytes": 25197
+    },
+    {
+      "role": "predecessor_native_hold_receipt",
+      "filename": "PRIVATE_NATIVE_PILOT_RECEIPT.json",
+      "sha256": "9167c3ea528f0292f5b2bb3a82087f279cc7aec6bd4470a5e981adea4bcacc71",
+      "bytes": 127713
+    },
+    {
+      "role": "full_exposed_gate_preregistration",
+      "filename": "gate16_preregistration.json",
+      "sha256": "454892086e60f4da26d66a745a1b644359701969eeba03bb18b3b6de7ae2afd6",
+      "bytes": 1474
+    },
+    {
+      "role": "successor_launch_output",
+      "filename": "launch_gemma_v26_r1_20261010.out",
+      "sha256": "c62f6640e49aec3659399859e5dc7702c1c7f057399e5e871212cc4c25052728",
+      "bytes": 2582
+    },
+    {
+      "role": "organiser_verifier_source",
+      "filename": "verification.py",
+      "sha256": "766e52c34da16cfdc73fc6df22848ab5b9d6b80943d61e7173a844e8efc6c1d9",
+      "bytes": 26984
+    }
+  ],
+  "tests": {
+    "controls": 34,
+    "cpu_limit_seconds": 60,
+    "nice": 5,
+    "elapsed_seconds": 0.4014165420012432,
+    "source_sha256": "511518072a7ddc236867ae96d653f1be37b371959efc81a78fe4535359d378a8",
+    "tests_sha256": "00b222195492ce2e93ec96fe7fea96d3ea9f8b730836325682a0eff288773efa",
+    "normal": "PASS",
+    "optimized": "PASS",
+    "python": "3.12.14"
+  },
+  "limits": [
+    "Hash binding is not native authenticity",
+    "Runtime counts and timeout envelopes are declared assumptions, not freshly verified competition rules",
+    "Eight-task screens do not certify the sixteen-task exposed gate or the hidden leaderboard",
+    "No author score gain is claimed"
+  ],
+  "review_correction": "Final pytest exits only0/1; exact integer attempt denominator; invalid-manifest fallback retains limits; cat/validator captures require positive equal byte counts and matching hashes."
+}

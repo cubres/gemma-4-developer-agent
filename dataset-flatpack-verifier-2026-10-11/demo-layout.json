@@ -1,0 +1,8 @@
+{
+  "schema": "flatpack-layout-1",
+  "manifest_sha256": "e819545a30f33a3238aa51fcbc946adb4a8ccc0fd7ea45aa0b6840c42efab2dd",
+  "paths": {
+    "pkg____main__.py": "pkg/__main__.py",
+    "pkg__config__demo.json": "pkg/config/demo.json"
+  }
+}

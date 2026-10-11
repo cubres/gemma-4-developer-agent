@@ -1,0 +1,69 @@
+{
+  "schema": "flatpack-staged-readonly-check-1",
+  "cpu_seconds": 0.006063000000000006,
+  "cpu_limit_seconds": 30,
+  "source_sha256": "560eed0c11f1f76a12f8f447d80bbb7130e796aa51fb8854160bd919aabd1b81",
+  "rows": [
+    {
+      "dataset_ref": "prvsiyan/rsna-knee-reader-code-pack",
+      "source_scope": "local staged upload snapshot; not a live-account receipt",
+      "source_manifest_sha256": "f053dcecce930d6ece08ca00d4a8706b2c6d4193cf7371a40e715687893ce254",
+      "report": {
+        "schema": "flatpack-verification-1",
+        "status": "PASS_PINNED_BYTES",
+        "manifest_sha256": "f053dcecce930d6ece08ca00d4a8706b2c6d4193cf7371a40e715687893ce254",
+        "manifest_dialect": "path-bearing-list",
+        "verified_files": 21,
+        "verified_bytes": 369430,
+        "ignored_unverified_names": [],
+        "layout_status": "NOT_CHECKED",
+        "layout_plan": null,
+        "authentication": "EXTERNAL_PIN_REQUIRED",
+        "runtime_compatibility": "NOT_TESTED",
+        "scientific_validity": "NOT_TESTED"
+      }
+    },
+    {
+      "dataset_ref": "prvsiyan/gemma-4-developer-agent-packages",
+      "source_scope": "local staged upload snapshot; not a live-account receipt",
+      "source_manifest_sha256": "72452d923e640c5392a2d26f5f7391ebfb42ec56a164a1ae1eb217dd810fa27c",
+      "report": {
+        "schema": "flatpack-verification-1",
+        "status": "PASS_PINNED_BYTES",
+        "manifest_sha256": "72452d923e640c5392a2d26f5f7391ebfb42ec56a164a1ae1eb217dd810fa27c",
+        "manifest_dialect": "name-keyed-object",
+        "verified_files": 42,
+        "verified_bytes": 95326,
+        "ignored_unverified_names": [
+          "dataset-metadata.json"
+        ],
+        "layout_status": "NOT_CHECKED",
+        "layout_plan": null,
+        "authentication": "EXTERNAL_PIN_REQUIRED",
+        "runtime_compatibility": "NOT_TESTED",
+        "scientific_validity": "NOT_TESTED"
+      }
+    },
+    {
+      "dataset_ref": "prvsiyan/kaggle-hidden-rerun-safety-kit",
+      "source_scope": "local staged upload snapshot; not a live-account receipt",
+      "source_manifest_sha256": "0cb4bd97842c329dcdbabc89e29bb6226cbbb95058016bf8987021d33f90b88e",
+      "report": {
+        "schema": "flatpack-verification-1",
+        "status": "PASS_PINNED_BYTES",
+        "manifest_sha256": "0cb4bd97842c329dcdbabc89e29bb6226cbbb95058016bf8987021d33f90b88e",
+        "manifest_dialect": "path-bearing-list",
+        "verified_files": 19,
+        "verified_bytes": 158955,
+        "ignored_unverified_names": [
+          "dataset-metadata.json"
+        ],
+        "layout_status": "NOT_CHECKED",
+        "layout_plan": null,
+        "authentication": "EXTERNAL_PIN_REQUIRED",
+        "runtime_compatibility": "NOT_TESTED",
+        "scientific_validity": "NOT_TESTED"
+      }
+    }
+  ]
+}

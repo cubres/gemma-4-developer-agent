@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="640" viewBox="0 0 1100 640">
+<rect width="1100" height="640" fill="#f5f2ea"/>
+<g font-family="Arial, sans-serif" fill="#162d39">
+<text x="56" y="68" font-size="30" font-weight="700">A completed arm still needs complete evidence</text>
+<text x="56" y="103" font-size="17">Read retained receipts. Keep every planned task in the denominator.</text>
+<rect x="56" y="145" width="290" height="225" rx="18" fill="#ffffff" stroke="#8aabb4" stroke-width="2"/>
+<text x="78" y="178" font-size="20" font-weight="700">1. Bind the artifacts</text>
+<text x="78" y="215" font-size="17">Frozen protocol and task order</text>
+<text x="78" y="245" font-size="17">Pilot, arm, capture, watchdog</text>
+<text x="78" y="275" font-size="17">File hashes and snapshot hashes</text>
+<text x="78" y="315" font-size="15" fill="#57727c">Hashes detect drift.</text>
+<text x="78" y="340" font-size="15" fill="#57727c">Native authenticity stays external.</text>
+<rect x="405" y="145" width="290" height="225" rx="18" fill="#ffffff" stroke="#8aabb4" stroke-width="2"/>
+<text x="427" y="178" font-size="20" font-weight="700">2. Check every task</text>
+<text x="427" y="215" font-size="17">Result and timing rows</text>
+<text x="427" y="245" font-size="17">Final pytest and retained XML</text>
+<text x="427" y="275" font-size="17">Actual cat and strict validator</text>
+<text x="427" y="315" font-size="15" fill="#57727c">An outer success flag can miss</text>
+<text x="427" y="340" font-size="15" fill="#57727c">a caught task exception.</text>
+<rect x="754" y="145" width="290" height="225" rx="18" fill="#ffffff" stroke="#8aabb4" stroke-width="2"/>
+<text x="776" y="178" font-size="20" font-weight="700">3. Count the whole wall</text>
+<text x="776" y="215" font-size="17">Readiness and arm overhead</text>
+<text x="776" y="245" font-size="17">Nominal and buffered runtime</text>
+<text x="776" y="275" font-size="17">Declared caps and missing tasks</text>
+<text x="776" y="315" font-size="15" fill="#57727c">A partial screen cannot certify</text>
+<text x="776" y="340" font-size="15" fill="#57727c">hidden runtime or a full gate.</text>
+<path d="M350 257H393 M387 250L394 257L387 264 M699 257H742 M736 250L743 257L736 264" fill="none" stroke="#527d89" stroke-width="3"/>
+<rect x="56" y="414" width="988" height="166" rx="18" fill="#193a47"/>
+<text x="82" y="450" fill="#ffffff" font-size="21" font-weight="700">Return a review decision, not a submission permission</text>
+<text x="82" y="488" fill="#d6e7e9" font-size="17">HOLD on missing evidence, task errors, drift, preservation failure, or the declared runtime envelope.</text>
+<text x="82" y="520" fill="#d6e7e9" font-size="17">A passing check remains local receipt consistency. Account, native session and source attestation come next.</text>
+<text x="82" y="552" fill="#ffe2a9" font-size="17">No launch · No model execution · No notebook edit · No official score claim</text>
+</g></svg>
