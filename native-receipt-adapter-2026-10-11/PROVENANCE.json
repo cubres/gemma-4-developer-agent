@@ -1,0 +1,78 @@
+{
+  "adoption_status": "HOLD_NATIVE_ATTESTATION_REQUIRED",
+  "artifact_scope": "original tools, invented fixtures, original explanation and original diagram; no third-party implementation copied",
+  "author_validation": {
+    "cpu_cap_seconds": 45,
+    "elapsed_seconds": 0.48991333400044823,
+    "invented_unittest_methods": 46,
+    "nice_priority": 5,
+    "normal_passed": true,
+    "optimized_passed": true,
+    "organizer_model_task_network_execution": false,
+    "python": "3.12.14",
+    "saved_cases_all_hold": true,
+    "saved_real_receipt_cases": 5,
+    "subprocess_timeout_seconds": 30
+  },
+  "created_utc": "2026-10-11T18:09:36.537115+00:00",
+  "diagram_validation": {
+    "fullwidth_sharp_raster_height": 760,
+    "fullwidth_sharp_raster_width": 1180,
+    "preview_is_private": true,
+    "svg_xml_parsed": true,
+    "visual_inspection": "full diagram legible; no cropped elements or overlapping labels"
+  },
+  "hidden_runtime_guaranteed": false,
+  "independent_review_scope": "Separate private source controls and public allowlist review; required before coordinator adoption. No native qualification.",
+  "license": "MIT",
+  "native_authenticity_established": false,
+  "native_run_qualified": false,
+  "official_score": null,
+  "owner": "cubres",
+  "package": "original Gemma native receipt adapter",
+  "public_file_pins": {
+    "LICENSE": {
+      "bytes": 1064,
+      "sha256": "24eee08930f03bfaabb4198cacf7616f47242ff22029d777aaa45b284fe610a1"
+    },
+    "README.md": {
+      "bytes": 7328,
+      "sha256": "951cfae3103f3b54d6f1ff48a6ce03440ed16570fe6258901472aa06231c9e08"
+    },
+    "SOURCE_BOUND_CONTRACT.md": {
+      "bytes": 3357,
+      "sha256": "f42a59c261f623f96ccea0010a57bdf419c38fb6b4f6e8cf3984f5fa70dcffff"
+    },
+    "clock_collector.py": {
+      "bytes": 3512,
+      "sha256": "316dfa7a05dd54ce51b54e616e4cfe9b58d7fe1e95c7355df521b62fa55810eb"
+    },
+    "receipt-adapter.svg": {
+      "bytes": 4116,
+      "sha256": "3db3eb95b20561ec39539aa3aaac2d79553df454d3cba55140caf67119d6b605"
+    },
+    "receipt_adapter.py": {
+      "bytes": 21794,
+      "sha256": "80931c14191502008be59fb0a3a4ef46a9373edfe64f61fd39c224744ec7c8f0"
+    },
+    "test_receipt_adapter.py": {
+      "bytes": 22794,
+      "sha256": "111960e2ca7f76833b40274d59ee3d03ea0aede90c24627d9deb08c43382648c"
+    }
+  },
+  "raw_object_type_binding": "Canonical JSON preserves bool/int and int/float distinctions; capture counters are exact integers.",
+  "reviewed_r4_dependency_sha256": "511518072a7ddc236867ae96d653f1be37b371959efc81a78fe4535359d378a8",
+  "schema_version": 1,
+  "source_contract_sha256": {
+    "adk_eval_core/models/base.py": "bdedef267b1022ffac970c7bc18c2d0a53753ce1f120a3c355b91c9b7b666a0d",
+    "clock_collector.py": "316dfa7a05dd54ce51b54e616e4cfe9b58d7fe1e95c7355df521b62fa55810eb",
+    "native_arm.py": "d0134b99e2544bed8f8a3d24d1d00cf1f74e19be691e315e08474fb7716012e2",
+    "private_junit_receipts.py": "dd9eb12b6a0cb71d7f902806cebf04c039a124e3960a7757407203154ce6e839",
+    "swegemma/context.py": "97f06280c50df3132d1af7ef6126884b66b48887a1cf94b293af01e5907dc2a7",
+    "swegemma/evaluate.py": "96a46f49267ffcf861f7f90b98efbe828d03f27553ceefce745819028589de1e",
+    "swegemma/harness/agent_runner.py": "4d7eccabd203c26f7c39e882684d2fd851f383f6a5c76c4a75b0e559cd5d6a18",
+    "swegemma/harness/verification.py": "766e52c34da16cfdc73fc6df22848ab5b9d6b80943d61e7173a844e8efc6c1d9",
+    "swegemma/models/task.py": "0b9d705ce759645bd1ee59bb28662a25a951990c024bfeb1e00a41f08350812a"
+  },
+  "submission_authorized": false
+}
