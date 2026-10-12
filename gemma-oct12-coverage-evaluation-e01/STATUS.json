@@ -1,0 +1,112 @@
+{
+  "aggregate_evidence_sha256": {
+    "UI_matching_description": "7ff35d31235bca08b35ee58c69cea3c5714bbc2be2717760c8c5d0dacd3408a7",
+    "create_reference": "676512ed7de0984fd56e3a748256ac7e5926402926139e4e9e4c83e3bb5a2e83",
+    "readonly_row_identity_receipt": "03e740f648a3bd95a41b0778f4e0a1d67d681f2c7049f1213e1afa5c3d54e53e",
+    "root_result": "3ca869c7d85fb79eb3859cea41204850acc624994df45422606b5da97db65cad",
+    "storage_PUT_receipt": "501d57821aa50ba54515338d53e7a1d139533c4ec269d826779b968aaa81eff4"
+  },
+  "candidate": {
+    "bytes": 8055,
+    "experiment": "original bounded post-edit sibling/public-registration coverage checkpoint",
+    "sha256": "0311b8a71ff9498aaaca30a8a6d22be5622a62539eaef0360dd585d401fe3af9"
+  },
+  "outcome": {
+    "SDK_default_status_used": false,
+    "causal_gain_claim": false,
+    "exact_reference_to_native_server_row": "VERIFIED_SEVEN_IDENTITY_FIELDS",
+    "observed_native_public_score": "UNAVAILABLE",
+    "observed_native_status": "UNAVAILABLE",
+    "official_public_score": null,
+    "original_attempt_result_changed": false,
+    "retained_transport_status": "UNKNOWN_NEVER_REPEAT",
+    "terminal_error": null
+  },
+  "public_reproduction": {
+    "immutable_source_and_builder": "https://github.com/cubres/gemma-4-developer-agent/tree/072969d3b7fb175550e355690b4fb1f7c6d2e9d3/bfv5-coverage-2026-10-12",
+    "styled_notebook": "https://www.kaggle.com/code/prvsiyan/gemma-and-the-shape-of-doubt/27"
+  },
+  "qualification_boundary": {
+    "first_organizer_evaluation_attempt": true,
+    "model_free_mechanics_not_task_quality": true,
+    "native_agent_quality": "UNMEASURED",
+    "native_local_qualification": "NOT_PERFORMED",
+    "target_model_calls_before_upload": 0
+  },
+  "readonly_row_identity": {
+    "account_identity_match": "EXACT",
+    "description_match": "EXACT",
+    "file_name": "submission.zip",
+    "identity_fields_unavailable": [],
+    "matched_identity_fields": [
+      "ref",
+      "date",
+      "description",
+      "fileName",
+      "submittedBy",
+      "submittedByRef",
+      "teamName"
+    ],
+    "matched_identity_fields_count": 7,
+    "mutations": 0,
+    "observed_public_score": "UNAVAILABLE",
+    "observed_status": "UNAVAILABLE",
+    "observed_utc": "2026-10-12T15:53:35.798083+00:00",
+    "privacy_redacted_known_fields": [
+      "url"
+    ],
+    "private_receipt_raw_new_row_exact": false,
+    "raw_full_row_preserved_in_public_record": false,
+    "ref": 57111761,
+    "server_submission_date_utc": "2026-10-12T15:36:36.663Z",
+    "status": "RAW_ROW_IDENTITY_VERIFIED"
+  },
+  "record_policy": {
+    "earlier_public_staging_record_preserved": true,
+    "earlier_readme_sha256": "2306f2a5410bc8eaca95f65687cdb237c723ea20af1f91e57dbe42c7fa2348b7",
+    "earlier_status_sha256": "6fefd5d9deb750765f330400b3f3dd7dc865f68c36c7e3c993e148208339e9ac",
+    "frozen_observation_not_current_live_poll": true,
+    "later_completed_row_or_error_recorded_additively": true,
+    "notebook_source_art_and_metadata_unchanged": true,
+    "raw_responses_tasks_arrays_auth_and_signed_URLs_excluded": true
+  },
+  "record_revision": 2,
+  "recorded_date_utc": "2026-10-12",
+  "reference": {
+    "author": "Wilmer E. Henao (verracodeguacas)",
+    "inert_license_and_notice_retained": true,
+    "prompt_addition_original": true,
+    "recipe": "Budget-Fit Single Agent V5",
+    "source_license": "Apache-2.0",
+    "three_runtime_YAML_members_byte_identical": true
+  },
+  "runtime_contract": {
+    "charged_calls": 28,
+    "coder_roles": 1,
+    "command_timeout_seconds": 240,
+    "declared_tools": 9,
+    "minutes": 8,
+    "model": "gemma-4-31b-it-qat-w4a16-ct",
+    "sampling_unchanged_from_reference": true,
+    "turns": 80
+  },
+  "schema": "gemma_coverage_e01_immutable_public_evaluation_record_v2",
+  "scope": "Actual one-attempt upload, earlier matching-description UI observation, and seven-field native server-row identity verification; status, score and archive-byte identity remain unverified.",
+  "ui_observation": {
+    "description_match": "EXACT",
+    "earlier_observation_separate_from_later_server_read": true,
+    "observed_utc": "2026-10-12T15:39:18.835Z",
+    "reference_origin": "CreateSubmission response; not visible UI ID",
+    "visible_state": "Notebook Running"
+  },
+  "upload": {
+    "created_reference": 57111761,
+    "created_reference_utc": "2026-10-12T15:36:38.685407+00:00",
+    "local_upload_bytes": 8055,
+    "local_upload_sha256": "0311b8a71ff9498aaaca30a8a6d22be5622a62539eaef0360dd585d401fe3af9",
+    "maximum_attempts": 1,
+    "never_repeat_upload": true,
+    "server_archive_byte_identity_verified": false,
+    "storage_PUT_http_status": 200
+  }
+}
