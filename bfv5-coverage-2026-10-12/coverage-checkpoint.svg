@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1180" height="440" viewBox="0 0 1180 440" role="img" aria-labelledby="title desc">
+<title id="title">One bounded source-coverage checkpoint</title>
+<desc id="desc">After the first source edit, read the real budget. Late tasks finish verification and submission. Otherwise inspect one relevant sibling or registration when the issue can span another path. A second edit requires source evidence. These are prompt instructions, not measured model behavior.</desc>
+<defs><marker id="arrow" markerWidth="9" markerHeight="9" refX="8" refY="4.5" orient="auto"><path d="M0 0L9 4.5L0 9" fill="#4a706e"/></marker></defs>
+<rect width="1180" height="440" rx="18" fill="#f5f3ed"/>
+<g font-family="DejaVu Sans, sans-serif" fill="#243d3a">
+<text x="36" y="43" font-size="26" font-weight="600">One bounded checkpoint after the first source edit</text>
+<text x="36" y="72" font-size="17">Exact V5 recipe: one 31B coder · 8 minutes · 28 calls · 80 turns · 240-second commands</text>
+<g fill="#ffffff" stroke="#4a706e" stroke-width="1.5">
+<rect x="36" y="116" width="186" height="88" rx="12"/>
+<rect x="278" y="116" width="220" height="88" rx="12"/>
+<rect x="563" y="116" width="261" height="88" rx="12"/>
+<rect x="882" y="116" width="261" height="88" rx="12"/>
+<rect x="278" y="281" width="865" height="76" rx="12" fill="#dce7df"/>
+</g>
+<g text-anchor="middle" font-size="18">
+<text x="129" y="151">First source edit</text><text x="129" y="179" font-size="16">existing V5 route</text>
+<text x="388" y="150">Read get_status</text><text x="388" y="179" font-size="16">time and calls remain?</text>
+<text x="693" y="150">One relevant path</text><text x="693" y="179" font-size="16">grep ≤20 lines; read ≤80</text>
+<text x="1012" y="150">Evidence justifies edit?</text><text x="1012" y="179" font-size="16">sibling fault or registration</text>
+<text x="710" y="312">Compile changed source · nearest targeted check · submit</text>
+<text x="710" y="338" font-size="16">No justified extra site: keep the first patch and report unresolved coverage.</text>
+</g>
+<g stroke="#4a706e" stroke-width="2" fill="none" marker-end="url(#arrow)">
+<path d="M225 160H270"/><path d="M502 160H553"/><path d="M828 160H872"/>
+<path d="M1012 208V272"/><path d="M388 208V272"/>
+</g>
+<text x="402" y="238" font-size="15">≤60 seconds, ≤3 calls left, or ≥20 used: skip new reading</text>
+<text x="525" y="109" font-size="14">Only if issue may span another path</text>
+<text x="36" y="395" font-size="17">Original schematic. Compiler and scripted loop passed; native model adherence and quality are unmeasured.</text>
+</g>
+</svg>

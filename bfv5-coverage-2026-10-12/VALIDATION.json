@@ -1,0 +1,69 @@
+{
+  "scope": "Model-free compiler/template/format and invented scripted mechanics only; not native target-model quality.",
+  "source_freeze_date": "2026-10-12",
+  "candidate_archive": {
+    "bytes": 8055,
+    "sha256": "0311b8a71ff9498aaaca30a8a6d22be5622a62539eaef0360dd585d401fe3af9"
+  },
+  "source_members": {
+    "agent.yaml": {
+      "bytes": 314,
+      "sha256": "680799291cc7d156d06fb7bfb5577f683ccc0d555b00e8ddb662d577f9bfa5e4"
+    },
+    "configs/sampling.yaml": {
+      "bytes": 119,
+      "sha256": "571a934e89911734927533f1d36cbcc7b8d493592febe63b217e911cf7ed4926"
+    },
+    "eval_config.yaml": {
+      "bytes": 94,
+      "sha256": "916cf6cb34a6cc3de39837fa72cac681599b9ac2a3ee0b893adadfd36474c531"
+    },
+    "prompts/system.md": {
+      "bytes": 6075,
+      "sha256": "c993fb556ac819f2d891149b8ff284893f4c932f0280c5c40b21e6f2c493e474"
+    },
+    "LICENSE.txt": {
+      "bytes": 10142,
+      "sha256": "09e8a9bcec8067104652c168685ab0931e7868f9c8284b66f5ae6edae5f1130b"
+    },
+    "NOTICE.txt": {
+      "bytes": 1150,
+      "sha256": "8c3af5d4307a5554f2db473e453da33223243b2246a9b9b9283eecc81230903e"
+    }
+  },
+  "upstream_original_archive_sha256": "1cb73986bd9ad1682896d56516cfd3df7f4d5729c7ecfe7afda109c175dbbb94",
+  "upstream_source_sha256": "9f17d9f4ecd6c267a37bf0321f62d5762f0b598d8205b0efc63eb1dda709deee",
+  "upstream_V5_public_notebook_scorecard": 0.18,
+  "own_separate_Dv4_completed_score": 0.13,
+  "original_source_status": "Exact notebook FILES literal equals all four published V5 archive members; Apache-2.0 observed on public UI; credited and modified source marked.",
+  "three_runtime_configuration_members_byte_equal": true,
+  "five_nonprompt_paired_members_byte_equal": true,
+  "compiler_receipt_sha256": "ff8cb721b682ff56f1e8bf81eee79de36c28381e4b68e3326cf9d5cd3db81515",
+  "compiler_templates": "PASS_BOTH_ARMS",
+  "scripted_real_loop": "PASS_MECHANICS_ONLY_BOTH_ARMS",
+  "charged_calls_each": 5,
+  "scripted_llm_calls_each": 9,
+  "target_model_calls": 0,
+  "scripted_contract": {
+    "timeout_seconds": 240,
+    "minutes": 8,
+    "charged_calls": 28,
+    "turns": 80
+  },
+  "negative_controls": {
+    "unknown_tool": "PASS_REJECTED_EXPECTED_INVALID_INPUT",
+    "unknown_model": "PASS_REJECTED_EXPECTED_INVALID_INPUT",
+    "six_members_counted": "PASS_REJECTED_EXPECTED_INVALID_INPUT"
+  },
+  "license_notice_not_in_model_instructions": true,
+  "native_local_qualification": "NOT_PERFORMED",
+  "native_agent_quality": "UNMEASURED",
+  "official_status_at_source_freeze": "NOT_ATTEMPTED",
+  "official_score_at_source_freeze": null,
+  "preregistration_sha256": "597013aece4709d8749453707f4a06fc9900d82c0f52c6ac5a4e713c9fec8c26",
+  "maximum_official_attempts": 1,
+  "repeat_consumed_attempt": false,
+  "missing_trace_endpoints": "UNAVAILABLE unless authoritative traces expose full denominators",
+  "calibrated_gain_claim": false,
+  "organizer_source_or_private_tasks_distributed": false
+}

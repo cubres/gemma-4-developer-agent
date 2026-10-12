@@ -1,0 +1,18 @@
+Budget-Fit V5 with an original bounded source-coverage checkpoint
+
+Upstream author: Wilmer E. Henao (verracodeguacas).
+Upstream notebook: Gemma 4 Agent: Budget-Fit Single Agent, Version 5.
+Source: https://www.kaggle.com/code/verracodeguacas/gemma-4-agent-budget-fit-single-agent
+Source SHA256: 9f17d9f4ecd6c267a37bf0321f62d5762f0b598d8205b0efc63eb1dda709deee
+Published original archive SHA256:
+1cb73986bd9ad1682896d56516cfd3df7f4d5729c7ecfe7afda109c175dbbb94
+Upstream license: Apache License 2.0, observed on its public notebook UI.
+The complete license terms are included as LICENSE.txt.
+
+The treatment appends the marked Original bounded coverage checkpoint section
+to prompts/system.md, written by cubres contributors in 2026 under Apache-2.0.
+All three runtime configuration members remain unchanged. A paired control
+retains all four original members. This identical notice and license are inert
+compliance documents in both packages and are not included in model instructions.
+No organizer source, task snapshot, weights, credentials or private IDs are included.
+The upstream .18 is its public notebook scorecard, not this derivative's result.
