@@ -1,0 +1,32 @@
+{
+  "schema": "bfv5_faithful_reproduction_public_evidence_v1",
+  "archive_bytes": 7469,
+  "archive_sha256": "50804cdc0be576e364f93f0154fa3b6dbff66ec559bf24e4343432dedfed5501",
+  "upstream_source_sha256": "9f17d9f4ecd6c267a37bf0321f62d5762f0b598d8205b0efc63eb1dda709deee",
+  "upstream_original_archive_sha256": "1cb73986bd9ad1682896d56516cfd3df7f4d5729c7ecfe7afda109c175dbbb94",
+  "four_runtime_member_hashes": {
+    "agent.yaml": "680799291cc7d156d06fb7bfb5577f683ccc0d555b00e8ddb662d577f9bfa5e4",
+    "configs/sampling.yaml": "571a934e89911734927533f1d36cbcc7b8d493592febe63b217e911cf7ed4926",
+    "eval_config.yaml": "916cf6cb34a6cc3de39837fa72cac681599b9ac2a3ee0b893adadfd36474c531",
+    "prompts/system.md": "475cc9b7fcc0dc295532f5cb5e1928f26a491f501837ad08b1c79bdbe1a3eaa4"
+  },
+  "all_four_runtime_bytes_equal_upstream": true,
+  "source_literal_archive_equality": "PASS_PARSE_ONLY",
+  "stdlib_CPU_rebuild": "PASS_EXACT_BYTES",
+  "target_model_calls": 0,
+  "tasks_executed": 0,
+  "new_organizer_qualification_at_source_freeze": "NOT_PERFORMED",
+  "native_agent_quality": "UNMEASURED",
+  "official_status_at_source_freeze": "NOT_ATTEMPTED",
+  "official_score_at_source_freeze": null,
+  "upstream_score": 0.18,
+  "upstream_score_scope": "FOREIGN_PUBLIC_V5_NOTEBOOK_SCORECARD",
+  "own_historical_best": 0.13,
+  "own_best_scope": "SEPARATE_COMPLETED_D_V4_CONFIGURATION",
+  "maximum_official_attempts": 1,
+  "limitations": [
+    "No native task completion or model adherence measured",
+    "No score equivalence or calibrated improvement established",
+    "No remote archive bytes recovered by local source checks"
+  ]
+}

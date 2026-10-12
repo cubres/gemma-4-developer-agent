@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="270" viewBox="0 0 1080 270" role="img" aria-labelledby="route-title route-desc">
+<title id="route-title">Shape of Doubt: faithful V5 repair route and budget</title>
+<desc id="route-desc">Issue, targeted source read, minimal source patch, focused check and submission. Unchanged V5 budgets are eight minutes, twenty-eight charged calls, eighty turns and two-hundred-forty-second commands. This is a protocol diagram, not a measured result.</desc>
+<!-- Original cubres contributors, 2026. Apache-2.0. -->
+<rect width="1080" height="270" rx="18" fill="#f4f7f5"/>
+<g font-family="DejaVu Sans, Arial, sans-serif" fill="#173e3a">
+<text x="30" y="33" font-size="19" font-weight="bold">One issue. A small source patch. Evidence before the final claim.</text>
+<defs><marker id="route-arrow" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto"><path d="M0,0 L7,3.5 L0,7" fill="#507b78"/></marker></defs>
+<g stroke="#507b78" stroke-width="2" fill="#ffffff">
+<rect x="30" y="57" width="174" height="84" rx="12"/><rect x="241" y="57" width="174" height="84" rx="12"/><rect x="452" y="57" width="174" height="84" rx="12"/><rect x="663" y="57" width="174" height="84" rx="12"/><rect x="874" y="57" width="174" height="84" rx="12"/>
+<path d="M205,99 H237 M416,99 H448 M627,99 H659 M838,99 H870" marker-end="url(#route-arrow)" fill="none"/>
+</g>
+<g font-size="18" font-weight="bold"><text x="48" y="84">Issue</text><text x="259" y="84">Read</text><text x="470" y="84">Patch</text><text x="681" y="84">Check</text><text x="892" y="84">Submit</text></g>
+<g font-size="13"><text x="48" y="110">Concrete requirement</text><text x="259" y="110">Relevant source only</text><text x="470" y="110">Minimal source edit</text><text x="681" y="110">Compile or focused test</text><text x="892" y="110">Nonempty patch</text><text x="470" y="130">First edit by call 12</text></g>
+<rect x="30" y="159" width="1018" height="39" rx="10" fill="#deebe7"/>
+<text x="47" y="184" font-size="16">8 min / task</text><text x="262" y="184" font-size="16">28 charged calls</text><text x="515" y="184" font-size="16">80 turns</text><text x="732" y="184" font-size="16">240 s / command</text>
+<text x="30" y="225" font-size="14">Unchanged coder: 31B, 4-bit weights · thinking budget 4096 · output cap 8192</text>
+<text x="30" y="249" font-size="12" fill="#46635f">Legend: arrows show the intended route; bands show configuration limits. Neither reports measured task success.</text>
+</g></svg>

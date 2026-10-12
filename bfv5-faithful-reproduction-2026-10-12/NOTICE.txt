@@ -1,0 +1,18 @@
+Faithful licensed reproduction of Budget-Fit Single Agent, Version 5
+
+Upstream author: Wilmer E. Henao (verracodeguacas).
+Upstream notebook: Gemma 4 Agent: Budget-Fit Single Agent, Version 5.
+Source: https://www.kaggle.com/code/verracodeguacas/gemma-4-agent-budget-fit-single-agent
+Source SHA256: 9f17d9f4ecd6c267a37bf0321f62d5762f0b598d8205b0efc63eb1dda709deee
+Published original four-member archive SHA256:
+1cb73986bd9ad1682896d56516cfd3df7f4d5729c7ecfe7afda109c175dbbb94
+Upstream license: Apache License 2.0, observed on its public notebook UI.
+The complete license terms are retained as LICENSE.txt.
+
+All four runtime members are unchanged UTF-8 bytes from the published V5 archive.
+No coverage checkpoint, prompt appendix, model, tool, sampling or clock change is made.
+Only this inert credit notice and license document are added to the archive.
+They are not included in model instructions. The portable builder and documentation
+are original cubres contributions, 2026, under Apache-2.0.
+No organizer code, task snapshots, private IDs, credentials or weights are distributed.
+The upstream 0.18 is a foreign public notebook scorecard, not our official result.
