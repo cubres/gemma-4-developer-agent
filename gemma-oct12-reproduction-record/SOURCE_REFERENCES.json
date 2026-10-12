@@ -1,0 +1,31 @@
+{
+  "schema": "gemma_oct12_public_source_references_v1",
+  "upstream": {
+    "author": "Wilmer E. Henao (verracodeguacas)",
+    "title": "Gemma 4 Agent: Budget-Fit Single Agent",
+    "version_reproduced": 5,
+    "notebook_url": "https://www.kaggle.com/code/verracodeguacas/gemma-4-agent-budget-fit-single-agent",
+    "license": "Apache-2.0"
+  },
+  "public_notebook_v26": "https://www.kaggle.com/code/prvsiyan/gemma-and-the-shape-of-doubt/26",
+  "faithful": {
+    "commit": "3cad9792f90dd846d0d89b4d2cd5514fc8323775",
+    "folder": "https://github.com/cubres/gemma-4-developer-agent/tree/3cad9792f90dd846d0d89b4d2cd5514fc8323775/bfv5-faithful-reproduction-2026-10-12",
+    "readme": "https://github.com/cubres/gemma-4-developer-agent/blob/3cad9792f90dd846d0d89b4d2cd5514fc8323775/bfv5-faithful-reproduction-2026-10-12/README.md",
+    "builder": "https://github.com/cubres/gemma-4-developer-agent/blob/3cad9792f90dd846d0d89b4d2cd5514fc8323775/bfv5-faithful-reproduction-2026-10-12/rebuild.py",
+    "agent": "https://github.com/cubres/gemma-4-developer-agent/blob/3cad9792f90dd846d0d89b4d2cd5514fc8323775/bfv5-faithful-reproduction-2026-10-12/agent.yaml",
+    "sampling": "https://github.com/cubres/gemma-4-developer-agent/blob/3cad9792f90dd846d0d89b4d2cd5514fc8323775/bfv5-faithful-reproduction-2026-10-12/configs/sampling.yaml",
+    "evaluation": "https://github.com/cubres/gemma-4-developer-agent/blob/3cad9792f90dd846d0d89b4d2cd5514fc8323775/bfv5-faithful-reproduction-2026-10-12/eval_config.yaml",
+    "unchanged_prompt": "https://github.com/cubres/gemma-4-developer-agent/blob/3cad9792f90dd846d0d89b4d2cd5514fc8323775/bfv5-faithful-reproduction-2026-10-12/prompts/system.md",
+    "license": "https://github.com/cubres/gemma-4-developer-agent/blob/3cad9792f90dd846d0d89b4d2cd5514fc8323775/bfv5-faithful-reproduction-2026-10-12/LICENSE.txt",
+    "notice": "https://github.com/cubres/gemma-4-developer-agent/blob/3cad9792f90dd846d0d89b4d2cd5514fc8323775/bfv5-faithful-reproduction-2026-10-12/NOTICE.txt",
+    "original_workflow_svg": "https://github.com/cubres/gemma-4-developer-agent/blob/3cad9792f90dd846d0d89b4d2cd5514fc8323775/bfv5-faithful-reproduction-2026-10-12/faithful-runtime-route.svg"
+  },
+  "coverage": {
+    "commit": "072969d3b7fb175550e355690b4fb1f7c6d2e9d3",
+    "folder": "https://github.com/cubres/gemma-4-developer-agent/tree/072969d3b7fb175550e355690b4fb1f7c6d2e9d3/bfv5-coverage-2026-10-12",
+    "relation": "Separately marked prompt modification, preserved and unattempted."
+  },
+  "reference_policy": "Existing immutable public source links only; no copied source, images, organizer files, task snapshots or private evidence paths.",
+  "public_notebook_current_v27": "https://www.kaggle.com/code/prvsiyan/gemma-and-the-shape-of-doubt/27"
+}

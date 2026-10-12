@@ -1,0 +1,118 @@
+{
+  "schema": "gemma_oct12_aggregate_reproduction_record_v1",
+  "record_date_utc": "2026-10-12",
+  "record_scope": "Verified V26 presentation and V27 current quickstart, faithful model-free qualification and consumed official transport attempt.",
+  "purpose": "Useful public reproduction and current outcome record; no frontier-quality or score-gain claim.",
+  "public_notebook": {
+    "url": "https://www.kaggle.com/code/prvsiyan/gemma-and-the-shape-of-doubt/27",
+    "version": 27,
+    "full_identity_metadata_typed_json_readback": "PASS",
+    "complete_cells": 48,
+    "retained_complete_v26_cells": 47,
+    "semantic_json_sha256": "979cd3f26bbc53c67f4d7bf87517207cf9a6b7b124eff592120d1151e664af95",
+    "actual_visible_quickstart": "PASS",
+    "actual_three_preformatted_yaml_blocks": "PASS",
+    "yaml_source_characters": [
+      314,
+      119,
+      94
+    ],
+    "actual_visible_hero": "PASS",
+    "existing_hero_unchanged": true,
+    "hero_pixels": [
+      1672,
+      941
+    ],
+    "original_workflow_svg_preserved": true,
+    "workflow_svg_actual_visual_receipt_version": 26,
+    "notebook_run_role": "CPU_SOURCE_PACKAGING_ONLY",
+    "observed_successful_run_seconds": 30.3,
+    "observed_output_files": 6,
+    "hardware_claim": null,
+    "source_receipt_sha256": "a88b486e8a9a32fa84f5c3a586c9c9cc1baab2d28e0b77894a7900376d446516",
+    "render_receipt_sha256": "42d25b16b1a220a143ffa0e029ce00100b0331d2488e567ba79179ddc0664fba"
+  },
+  "faithful_reproduction": {
+    "local_archive_sha256": "50804cdc0be576e364f93f0154fa3b6dbff66ec559bf24e4343432dedfed5501",
+    "local_archive_bytes": 7469,
+    "runtime_member_count": 4,
+    "runtime_bytes_equal_upstream": true,
+    "inert_members_added": [
+      "LICENSE.txt",
+      "NOTICE.txt"
+    ],
+    "model": "gemma-4-31b-it-qat-w4a16-ct",
+    "declared_tools": 9,
+    "prompt_prohibits_graph_calls": true,
+    "budget": {
+      "minutes": 8,
+      "charged_calls": 28,
+      "turns": 80,
+      "command_timeout_seconds": 240
+    },
+    "actual_compiler_parity": "PASS",
+    "actual_template_parity": "PASS",
+    "actual_tool_declaration_parity": "PASS",
+    "target_model_calls": 0,
+    "agent_or_synthetic_tasks_executed": 0,
+    "native_local_qualification": "NOT_PERFORMED",
+    "native_agent_quality": "UNMEASURED",
+    "qualification_receipt_sha256": "b4ee9cd3d6a1aef67e8bd9a39cc936226995702405bd272a87391fd9d342e72b"
+  },
+  "official_attempt": {
+    "outcome": "UNKNOWN_NEVER_REPEAT",
+    "local_archive_sha256": "50804cdc0be576e364f93f0154fa3b6dbff66ec559bf24e4343432dedfed5501",
+    "start_http_status": 200,
+    "recorded_put_request": false,
+    "recorded_create_request": false,
+    "returned_accepted_ref": null,
+    "exact_failure_predicate": "UNKNOWN_NOT_RETAINED",
+    "server_stored_archive_hash_verified": false,
+    "never_repeat": true,
+    "reconciliation": {
+      "observed_utc": "2026-10-12T13:18:11.108130+00:00",
+      "outcome": "NO_ACCEPTED_REF",
+      "row_count": 8,
+      "inventory_unchanged": true,
+      "new_rows": 0,
+      "matching_rows": 0,
+      "official_score": null,
+      "receipt_sha256": "9cecd4421d17cb2da1732716c23f328d1e09811203bece783b28d4e19189852d"
+    },
+    "attempt_receipt_sha256": "867b3a08f57640263b8446b462c5998e061e7a9f90b26c04c3214912d8330841"
+  },
+  "coverage_experiment": {
+    "role": "Separate modified source; not the faithful reference",
+    "official_attempt": "NOT_PERFORMED",
+    "native_agent_quality": "UNMEASURED",
+    "public_source_url": "https://github.com/cubres/gemma-4-developer-agent/tree/072969d3b7fb175550e355690b4fb1f7c6d2e9d3/bfv5-coverage-2026-10-12"
+  },
+  "official_score_attribution": {
+    "new_score": null,
+    "earlier_own_account_score": 0.13,
+    "earlier_score_origin": "Separate private D configuration; not attributable to this reproduction, coverage experiment or presentation work."
+  },
+  "source_packages_already_public": {
+    "faithful_commit": "3cad9792f90dd846d0d89b4d2cd5514fc8323775",
+    "coverage_commit": "072969d3b7fb175550e355690b4fb1f7c6d2e9d3",
+    "source_readback_receipt_sha256": "ec047766c51b3792ac993ead4f23077d1a4a24a619e4b56ed67970ba3a1ab908"
+  },
+  "this_documentation_packet": {
+    "files": [
+      "README.md",
+      "STATUS.json",
+      "SOURCE_REFERENCES.json"
+    ],
+    "asset_image_code_duplicates": false,
+    "raw_responses_or_private_task_data": false,
+    "github_publication_verification_not_included": true
+  },
+  "prior_v26_presentation": {
+    "url": "https://www.kaggle.com/code/prvsiyan/gemma-and-the-shape-of-doubt/26",
+    "actual_visible_hero": "PASS",
+    "actual_visible_original_workflow_svg": "PASS",
+    "existing_hero_unchanged": true,
+    "source_receipt_sha256": "170905771f09e7f78134f0162e86037dd3c4f05f1eac50d7998d34fecb5ee3d2",
+    "render_receipt_sha256": "3915e84015a49ecbabf523397f5d90e2aa302c0e7183f9487ad1e32fa4c912fb"
+  }
+}
