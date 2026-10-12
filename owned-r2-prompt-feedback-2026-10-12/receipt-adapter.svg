@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1180" height="760" viewBox="0 0 1180 760" role="img" aria-labelledby="title desc">
+  <title id="title">Receipt evidence before agent comparisons</title>
+  <desc id="desc">Raw pinned receipts and complete task denominator feed explicit alias normalization, retained XML byte checks, observed policy clocks and the independently reviewed R4 consistency gate. Native attestation and official scores remain separate.</desc>
+  <defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M0 0L10 5L0 10" fill="#8fa9c4"/></marker></defs>
+  <rect width="1180" height="760" rx="18" fill="#0d1828"/>
+  <g font-family="system-ui,Segoe UI,sans-serif">
+    <text x="55" y="65" fill="#edf6ff" font-size="29" font-weight="650">Evidence before agent comparisons</text>
+    <text x="55" y="101" fill="#adc1d7" font-size="18">Original local tools • complete ordered tasks • no model or task execution</text>
+    <g fill="#182d44" stroke="#355673" stroke-width="2">
+      <rect x="55" y="140" width="335" height="165" rx="14"/>
+      <rect x="455" y="140" width="335" height="165" rx="14"/>
+      <rect x="855" y="140" width="270" height="165" rx="14"/>
+    </g>
+    <g fill="#eef6ff" font-size="21" font-weight="620">
+      <text x="78" y="180">1. Bind original receipts</text>
+      <text x="478" y="180">2. Normalize explicit fields</text>
+      <text x="878" y="180">3. Review with R4</text>
+    </g>
+    <g fill="#b9cee1" font-size="17">
+      <text x="78" y="220">Raw bytes + SHA256 + embedded links</text>
+      <text x="78" y="249">Every planned task stays in order</text>
+      <text x="78" y="278">Missing evidence stays HOLD</text>
+      <text x="478" y="220">task_id → instance_id</text>
+      <text x="478" y="249">error_message → error</text>
+      <text x="478" y="278">Conflicts and caught errors survive</text>
+      <text x="878" y="220">Derived consistency</text>
+      <text x="878" y="249">Separate original pins</text>
+      <text x="878" y="278">External attestation required</text>
+    </g>
+    <g stroke="#8fa9c4" stroke-width="2.5" fill="none" marker-end="url(#arrow)"><path d="M394 222H447"/><path d="M794 222H847"/></g>
+    <text x="55" y="355" fill="#edf6ff" font-size="22" font-weight="620">Retained test evidence</text>
+    <g fill="#182d44" stroke="#355673" stroke-width="2"><rect x="55" y="378" width="335" height="92" rx="12"/><rect x="455" y="378" width="335" height="92" rx="12"/><rect x="855" y="378" width="270" height="92" rx="12"/></g>
+    <g fill="#dfeefd" font-size="19"><text x="78" y="414">Final pytest → retained XML</text><text x="478" y="414">Actual cat stdout → same bytes</text><text x="878" y="414">Original strict verifier</text></g>
+    <g fill="#a9c3d9" font-size="16"><text x="78" y="445">Ordinary executed-test exits: 0 / 1</text><text x="478" y="445">Exact positive length and SHA256</text><text x="878" y="445">Ordered window + same bytes</text></g>
+    <g stroke="#8fa9c4" stroke-width="2.5" fill="none" marker-end="url(#arrow)"><path d="M394 423H447"/><path d="M794 423H847"/></g>
+    <text x="55" y="522" fill="#edf6ff" font-size="22" font-weight="620">Observe distinct clocks; never infer a missing policy timer</text>
+    <rect x="55" y="550" width="1070" height="65" rx="12" fill="#1e344a"/>
+    <path d="M325 551V614M855 551V614" stroke="#0d1828" stroke-width="4"/>
+    <rect x="327" y="552" width="526" height="61" fill="#27695b"/>
+    <g fill="#effaf8" font-size="19" text-anchor="middle"><text x="190" y="590">Preparation</text><text x="590" y="590">Observed frozen policy session</text><text x="990" y="590">Completion</text></g>
+    <text x="590" y="646" text-anchor="middle" fill="#adc1d7" font-size="17">Entire bar = sandbox wall; policy cap applies only to the observed middle interval</text>
+    <rect x="55" y="677" width="1070" height="47" rx="10" fill="#503e24"/>
+    <text x="590" y="707" text-anchor="middle" fill="#ffe0a9" font-size="18">Consistency review is local evidence. Native qualification and official scores remain separate.</text>
+  </g>
+</svg>
+

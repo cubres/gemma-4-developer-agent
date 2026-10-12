@@ -1,0 +1,71 @@
+{
+  "scope": "Seven original companion publication files; this manifest is pinned separately by the private publication allowlist.",
+  "files": [
+    {
+      "file": "MECHANICS.md",
+      "bytes": 2576,
+      "sha256": "6df764633b5a74737e3628f8c6024ed766c65191835907c3aa088e83bd493616"
+    },
+    {
+      "file": "ORIGINAL_PROMPT_APPENDIX.md",
+      "bytes": 2311,
+      "sha256": "cf914c7f59ea457c81e78137a3920fafec9b0912689536413dbdfec966a54a78"
+    },
+    {
+      "file": "PROVENANCE.md",
+      "bytes": 2588,
+      "sha256": "8c145ce9abbd53c29adc65392688178a6c7fa334b5f94b1065b96adab3f05348"
+    },
+    {
+      "file": "README.md",
+      "bytes": 2567,
+      "sha256": "3b9632e06c75a909fea4d2baa5835d34e8b0fa3cd851b34035d1c9a1a1943341"
+    },
+    {
+      "file": "VALIDATION.json",
+      "bytes": 2738,
+      "sha256": "a365b6a96614ac0871501eb9ff07e673fcbe60f39c508acc876509154f658fcd"
+    },
+    {
+      "file": "rebuild_owned_r2.py",
+      "bytes": 15591,
+      "sha256": "de626d5adfd4d285685ac54b666cdacb963a2143ea066da47a09631ceeb98908"
+    },
+    {
+      "file": "receipt-adapter.svg",
+      "bytes": 4116,
+      "sha256": "3db3eb95b20561ec39539aa3aaac2d79553df454d3cba55140caf67119d6b605"
+    }
+  ],
+  "candidate_zip": {
+    "bytes": 4715,
+    "sha256": "dc486da0c341fd57672ca39c7e2ce8d0b492748512fbb12e284d65ac89fe50fd"
+  },
+  "candidate_source_sha256_campaign_convention": "0bc8ad7c74c3fccfcdbb05df5769105b06236fd4b1b53e6a0f7ef7383999a1f3",
+  "source_members": {
+    "agent.yaml": {
+      "bytes": 446,
+      "sha256": "8328e181b2e9b8215b42d0ef4f442bf8bcb423cae4fe5cb785c9cec5a6afa80f"
+    },
+    "configs/sampling.yaml": {
+      "bytes": 129,
+      "sha256": "8686c6eecddc4ecf864d0f18180a4335d82840df50786f2087831ca9d3c5098a"
+    },
+    "eval_config.yaml": {
+      "bytes": 95,
+      "sha256": "86237f292b98fe79ccfd6fa5a60361577fd482152c891262accb79f13ad7bd4e"
+    },
+    "prompts/engineer.md": {
+      "bytes": 5053,
+      "sha256": "07f5f4df9a381e7b3279902c0f8f15e2fb3829443f79e3cba8d5b967fc8bf8a8"
+    },
+    "sub_agents/scout.md": {
+      "bytes": 1657,
+      "sha256": "9feb1a6a6f7834018500911fa2caae37574c127fcb7224ab205c8800c60507db"
+    },
+    "sub_agents/scout.yaml": {
+      "bytes": 501,
+      "sha256": "eabccb00d3023acbb26624f97de671c501a1dc11fb4d2ba887be008089ab54c0"
+    }
+  }
+}

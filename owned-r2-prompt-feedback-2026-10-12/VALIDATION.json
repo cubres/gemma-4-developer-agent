@@ -1,0 +1,77 @@
+{
+  "scope": "Original source/format, reviewed model-free compiler/template and synthetic mechanics only; no agent quality claim.",
+  "snapshot_date": "2026-10-12",
+  "source_format": "PASS",
+  "archive_layout": "PASS",
+  "narrow_source_privacy_scan": "PASS",
+  "changed_member": "prompts/engineer.md",
+  "unchanged_member_byte_equality": {
+    "agent.yaml": true,
+    "configs/sampling.yaml": true,
+    "eval_config.yaml": true,
+    "sub_agents/scout.md": true,
+    "sub_agents/scout.yaml": true
+  },
+  "compiler": "PASS",
+  "prompt_templates": "PASS",
+  "literal_bash_PIPESTATUS_preserved": "PASS",
+  "synthetic_real_loop": {
+    "baseline": "PASS_MECHANICS_ONLY",
+    "treatment": "PASS_MECHANICS_ONLY",
+    "charged_calls_each": 4,
+    "model_outputs": "Scripted original controls, not target-model output"
+  },
+  "bash_controls": [
+    {
+      "control": "producer_pass",
+      "exit_code": 0,
+      "status": "PASS_ORIGINAL_MECHANICS_CONTROL"
+    },
+    {
+      "control": "producer_fail",
+      "exit_code": 7,
+      "status": "PASS_ORIGINAL_MECHANICS_CONTROL"
+    },
+    {
+      "control": "tail_failure_is_separate",
+      "exit_code": 0,
+      "status": "PASS_ORIGINAL_MECHANICS_CONTROL"
+    },
+    {
+      "control": "negative_tail_only_loses_failure",
+      "exit_code": 0,
+      "status": "PASS_ORIGINAL_MECHANICS_CONTROL"
+    },
+    {
+      "control": "negative_delayed_capture_loses_failure",
+      "exit_code": 0,
+      "status": "PASS_ORIGINAL_MECHANICS_CONTROL"
+    }
+  ],
+  "compiler_receipt_sha256": "def43683ae634df9053cd7fbdf64ebcf1c6e0c777108825278cde77dbbcff0ba",
+  "native_agent_quality": "UNMEASURED",
+  "native_local_qualification": "NOT_PERFORMED",
+  "qualification_target_model_calls": 0,
+  "verified_campaign_best_completed_score": 0.13,
+  "controlled_baseline_completed_score": 0.12,
+  "source_score_binding": "Local upload/acceptance/completed-row binding only; independent server archive byte identity unverified.",
+  "r2_attempt": {
+    "status": "UPLOAD_START_REJECTED_HTTP401_NEVER_REPEAT",
+    "campaign_marker_status": "UNKNOWN_NEVER_REPEAT",
+    "upload_start_http_status": 401,
+    "zip_bytes_transferred": 0,
+    "submission_creation_attempted": false,
+    "read_only_reconciliation_http_status": 200,
+    "candidate_rows_found": 0,
+    "acceptance": "NO_ACCEPTED_CANDIDATE_ROW_OBSERVED",
+    "evaluation": "NO_EVALUATION_ESTABLISHED",
+    "official_score": null,
+    "terminal_model_execution_error": null,
+    "maximum_campaign_attempts": 1,
+    "repeat_allowed": false
+  },
+  "agent_task_completion_evidence": false,
+  "malformed_call_endpoint": "UNAVAILABLE_WITHOUT_AUTHORITATIVE_TRACE",
+  "time_failure_endpoint": "UNAVAILABLE_WITHOUT_AUTHORITATIVE_TRACE",
+  "calibrated_gain_claim": false
+}
