@@ -1,5 +1,11 @@
 # Gemma 4 Developer Agent: experiments and public notebook
 
+## Latest reproducible experiment · 12 October
+
+The latest verified completed campaign score is **0.13**, from the separate D configuration. [Owned prompt feedback](owned-r2-prompt-feedback-2026-10-12/README.md) provides an exact CPU rebuild of a controlled A_think prompt change, practical Bash mechanics and validation evidence. Compiler and scripted-loop checks passed; upload start returned HTTP 401, so the new candidate has no evaluation or score.
+
+![Original evidence and receipt diagram](owned-r2-prompt-feedback-2026-10-12/receipt-adapter.svg)
+
 ## Earlier experiments worth reading
 
 Existing public campaign notebook: [Gemma and the Shape of Doubt](https://www.kaggle.com/code/prvsiyan/gemma-and-the-shape-of-doubt). This stable identity was observed public in the retained 11 October snapshot; the guide makes no current run-status or score claim.
