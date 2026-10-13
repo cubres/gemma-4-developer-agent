@@ -1,0 +1,48 @@
+{
+  "account": "prvsiyan",
+  "downloaded_bytes": 8055,
+  "downloaded_sha256": "0311b8a71ff9498aaaca30a8a6d22be5622a62539eaef0360dd585d401fe3af9",
+  "entries": [
+    {
+      "bytes": 314,
+      "compressed_bytes": 195,
+      "name": "agent.yaml",
+      "sha256": "680799291cc7d156d06fb7bfb5577f683ccc0d555b00e8ddb662d577f9bfa5e4"
+    },
+    {
+      "bytes": 119,
+      "compressed_bytes": 101,
+      "name": "configs/sampling.yaml",
+      "sha256": "571a934e89911734927533f1d36cbcc7b8d493592febe63b217e911cf7ed4926"
+    },
+    {
+      "bytes": 94,
+      "compressed_bytes": 75,
+      "name": "eval_config.yaml",
+      "sha256": "916cf6cb34a6cc3de39837fa72cac681599b9ac2a3ee0b893adadfd36474c531"
+    },
+    {
+      "bytes": 6075,
+      "compressed_bytes": 2799,
+      "name": "prompts/system.md",
+      "sha256": "c993fb556ac819f2d891149b8ff284893f4c932f0280c5c40b21e6f2c493e474"
+    },
+    {
+      "bytes": 10142,
+      "compressed_bytes": 3552,
+      "name": "LICENSE.txt",
+      "sha256": "09e8a9bcec8067104652c168685ab0931e7868f9c8284b66f5ae6edae5f1130b"
+    },
+    {
+      "bytes": 1150,
+      "compressed_bytes": 685,
+      "name": "NOTICE.txt",
+      "sha256": "8c3af5d4307a5554f2db473e453da33223243b2246a9b9b9283eecc81230903e"
+    }
+  ],
+  "original_candidate_sha256": "0311b8a71ff9498aaaca30a8a6d22be5622a62539eaef0360dd585d401fe3af9",
+  "physical_archive_matches_original_candidate": true,
+  "read_only_inspection": true,
+  "submission_id": 57111761,
+  "uncompressed_bytes_sum": 17894
+}

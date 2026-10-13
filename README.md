@@ -1,8 +1,14 @@
 # Gemma 4 Developer Agent: experiments and public notebook
 
-## Latest reproducible experiment · 12 October
+## Completed official result · 14 October
 
-The latest verified completed campaign score is **0.13**, from the separate D configuration. [Owned prompt feedback](owned-r2-prompt-feedback-2026-10-12/README.md) provides an exact CPU rebuild of a controlled A_think prompt change, practical Bash mechanics and validation evidence. Compiler and scripted-loop checks passed; upload start returned HTTP 401, so the new candidate has no evaluation or score.
+The Budget-Fit V5 coverage-checkpoint experiment completed with **public score 0.18**, above the account's earlier **0.13** best from a different configuration. [Read the completed result and exact archive proof](bfv5-coverage-2026-10-12/RESULT.md): Kaggle submission **57111761**, COMPLETE, with the downloaded scored ZIP matching the original 8,055-byte candidate byte for byte.
+
+The recipe credits Wilmer E. Henao (verracodeguacas), whose upstream V5 scorecard also showed 0.18. Our bounded post-edit checkpoint is an exploratory addition; this single result does not isolate its causal effect. The package includes attribution, runtime settings, a diagram and an exact CPU rebuild. Earlier failed and pending native experiments remain documented separately.
+
+## Earlier snapshot · 12 October
+
+At that snapshot, the latest verified completed campaign score was **0.13**, from the separate D configuration. [Owned prompt feedback](owned-r2-prompt-feedback-2026-10-12/README.md) provides an exact CPU rebuild of a controlled A_think prompt change, practical Bash mechanics and validation evidence. Compiler and scripted-loop checks passed; upload start returned HTTP 401, so the new candidate has no evaluation or score.
 
 ![Original evidence and receipt diagram](owned-r2-prompt-feedback-2026-10-12/receipt-adapter.svg)
 
