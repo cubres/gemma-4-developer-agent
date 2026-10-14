@@ -1,0 +1,121 @@
+{
+  "actual_original_receipt_bytes": 18953,
+  "actual_original_receipt_sha256": "bf6ecaafc49c7ca3421b1f4bb05bed51ef7686025c8a97d0188cfed9f9c45361",
+  "arms": {
+    "control": {
+      "compiled_generation_config": {
+        "max_output_tokens": 8192,
+        "temperature": 0.2,
+        "thinking_config": {
+          "include_thoughts": true,
+          "thinking_budget": 4096
+        },
+        "top_p": 0.95
+      },
+      "compiled_prompt_sha256": "c993fb556ac819f2d891149b8ff284893f4c932f0280c5c40b21e6f2c493e474",
+      "compiler": "PASS",
+      "declared_tool_count": 9,
+      "declared_tool_names": [
+        "run_command",
+        "read_file",
+        "edit_file",
+        "write_file",
+        "get_status",
+        "submit_patch",
+        "get_code_neighbors",
+        "search_similar_code",
+        "get_code_subgraph"
+      ],
+      "license_notice_not_in_model_instructions": true,
+      "scripted_loop_mechanics": {
+        "charged_calls": 5,
+        "contract": {
+          "charged_calls": 28,
+          "minutes": 8,
+          "timeout_seconds": 240,
+          "turns": 80
+        },
+        "limitation": "Invented scripted routing; no model decision, contract adherence or agent quality measured.",
+        "patch_sha256": "34b09637451c3c01b92b27685de384ec4055c1b157d6e5d23260c647edd07115",
+        "scripted_llm_calls": 9,
+        "status": "PASS_MECHANICS_ONLY",
+        "target_model_calls": 0
+      },
+      "templates": "PASS"
+    },
+    "treatment": {
+      "compiled_generation_config": {
+        "max_output_tokens": 8192,
+        "temperature": 0.2,
+        "thinking_config": {
+          "include_thoughts": true,
+          "thinking_budget": 4096
+        },
+        "top_p": 0.95
+      },
+      "compiled_prompt_sha256": "480c0f7582c6ba83f9ea5f3314124a912a516b616706164d8dd9b9db51a30a2e",
+      "compiler": "PASS",
+      "declared_tool_count": 9,
+      "declared_tool_names": [
+        "run_command",
+        "read_file",
+        "edit_file",
+        "write_file",
+        "get_status",
+        "submit_patch",
+        "get_code_neighbors",
+        "search_similar_code",
+        "get_code_subgraph"
+      ],
+      "license_notice_not_in_model_instructions": true,
+      "scripted_loop_mechanics": {
+        "charged_calls": 5,
+        "contract": {
+          "charged_calls": 28,
+          "minutes": 8,
+          "timeout_seconds": 240,
+          "turns": 80
+        },
+        "limitation": "Invented scripted routing; no model decision, contract adherence or agent quality measured.",
+        "patch_sha256": "34b09637451c3c01b92b27685de384ec4055c1b157d6e5d23260c647edd07115",
+        "scripted_llm_calls": 9,
+        "status": "PASS_MECHANICS_ONLY",
+        "target_model_calls": 0
+      },
+      "templates": "PASS"
+    }
+  },
+  "candidate_bytes": 8525,
+  "candidate_sha256": "e97d9072134b8217cccfc6511d9f2180f911c6169f6464118977eb2964f7abd9",
+  "competition_submission_made": false,
+  "competition_task_snapshots_used": false,
+  "compiler_profile_scope": "Retained E01-successful local profile; current compatibility separate",
+  "control_bytes": 8055,
+  "control_sha256": "0311b8a71ff9498aaaca30a8a6d22be5622a62539eaef0360dd585d401fe3af9",
+  "current_organizer_ABI_verified": false,
+  "local_protocol_sha256": "474b3052d16cff07d69700e2dba34f72cbfe2a9b5a5231384ea2930024cab6a4",
+  "native_agent_quality": "UNMEASURED",
+  "native_local_qualification": "NOT_PERFORMED",
+  "negative_controls": {
+    "six_members_counted": "PASS_REJECTED_EXPECTED_INVALID_INPUT",
+    "unknown_model": "PASS_REJECTED_EXPECTED_INVALID_INPUT",
+    "unknown_tool": "PASS_REJECTED_EXPECTED_INVALID_INPUT"
+  },
+  "network_permitted": false,
+  "official_score": null,
+  "publication_scope": "Sanitized measured compiler/template/scripted-loop outcomes; no descriptions, invented task transcripts or private paths",
+  "qualification_executions": 1,
+  "qualifier_sha256": "b7189b0b22ed6da304f89d7ad84706f5315a7286c7884a379f00a926ecc7ae23",
+  "repeat_this_consumed_qualification": false,
+  "replay_source_sha256": "a818818b459ffdc5ab3ed6fd0b46fce76a26a85ccc89d5c38384868ec09ced40",
+  "root_reported_external_exit_code": 0,
+  "root_submission_admission": "NOT_GRANTED",
+  "schema": "gemma-e03-public-actual-model-free-mechanics-result/1",
+  "status": "PASS_MODEL_FREE_COMPILER_TEMPLATE_REAL_LOOP_MECHANICS__NO_NATIVE_QUALITY_CLAIM",
+  "target_model_calls": 0,
+  "wheels": {
+    "adk_eval_core-0.1.0-py3-none-any.whl": "194dd8f9aab154857bfa0db9d9ec382db856ee124529e072509634d3071d8643",
+    "adk_submission-0.2.12-py3-none-any.whl": "077c438c426e625b9f722081694e1d32856e6f7e932ef625002fc4a11aabdc10",
+    "swegemma-0.2.7-py3-none-any.whl": "27a2f60f8db46c8fef5defc16df722dac0402446c9a6252e7e6b4c280e843c81"
+  }
+}
