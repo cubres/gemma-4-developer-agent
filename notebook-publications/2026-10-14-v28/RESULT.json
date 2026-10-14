@@ -1,0 +1,40 @@
+{
+  "E03": {
+    "official_score": null,
+    "quality": "UNMEASURED",
+    "source_url": "https://github.com/cubres/gemma-4-developer-agent/tree/206027a6bde96c0b26b28c931d73b52e2f77ebc1/e03-issue-contract-2026-10-14",
+    "submission_performed": false
+  },
+  "account": "prvsiyan",
+  "all_17_runtime_metadata_fields_preserved": true,
+  "candidate_source_bytes": 935798,
+  "candidate_source_sha256": "dc93b3c3bdf827bca3d1f7f5e2cd4504956f2a6835cd3996fa48fdbf52d1fed4",
+  "current_opening_artwork_preserved": true,
+  "license": "Apache-2.0",
+  "native_execution_is_not_a_new_competition_submission": true,
+  "native_script_version_id": 358292256,
+  "new_markdown_cells": 2,
+  "new_score_panel_and_corrected_diagram_visibly_rendered": true,
+  "notebook": "https://www.kaggle.com/code/prvsiyan/gemma-and-the-shape-of-doubt",
+  "notebook_id": 135663039,
+  "official_E01_result": {
+    "public_score": "0.18",
+    "result_url": "https://github.com/cubres/gemma-4-developer-agent/blob/e4e612afb6c25b0778d33134e368e3330aef2a2c/bfv5-coverage-2026-10-12/RESULT.md",
+    "scored_zip_bytes": 8055,
+    "scored_zip_sha256": "0311b8a71ff9498aaaca30a8a6d22be5622a62539eaef0360dd585d401fe3af9",
+    "status": "COMPLETE",
+    "submission_id": 57111761,
+    "verified_utc": "2026-10-13T23:35:30.661910Z"
+  },
+  "prior_code_cells_preserved": 24,
+  "prior_whole_cells_preserved": 48,
+  "repeat_publication_run": false,
+  "runtime_seconds_UI": 26.0,
+  "schema": "gemma-notebook-publication/1",
+  "scope": "Documentation only; unchanged CPU/offline source rebuild.",
+  "status": "COMPLETE_BY_EXACT_PUBLIC_VERSION_UI",
+  "status_evidence": "Exact Version 28 of 28 public page; 26.0 second run - successful. Initial raw post-push status was RUNNING; this completion comes from the later exact public UI, not a raw-terminal API read.",
+  "total_cells": 50,
+  "version": 28,
+  "visibility": "PUBLIC"
+}
