@@ -1,0 +1,7 @@
+
+Original pre-edit issue-contract prefix (cubres contributors, 2026), Apache-2.0.
+Method acknowledgement: Dmitrii Gluzdov, Measure Before You Tune V15 (D1 issue-contract idea), credited therein to matterhorn3838 SuperAgent.
+https://www.kaggle.com/code/dmitriigluzdov/gemma-4-measure-before-you-tune?scriptVersionId=357369769
+https://www.kaggle.com/code/matterhorn3838/gemma-4-superagent
+This prefix is independently written; no D1 or SuperAgent prompt text is copied. D1 has no independently established score in this audit.
+The three runtime YAML files and full scored E01 prompt, including its coverage checkpoint, are unchanged. This E03 candidate has no native, model or official quality result.

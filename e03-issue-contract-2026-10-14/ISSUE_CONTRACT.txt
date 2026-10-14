@@ -1,0 +1,3 @@
+## Issue contract
+Before your first tool invocation, state an ISSUE CONTRACT in the same action, using at most 50 words: triggering condition, required outcome, and one behavior to preserve. Copy exact names/messages/types supplied by the issue; mark unspecified details unknown. Then continue the existing workflow without another tool call.
+

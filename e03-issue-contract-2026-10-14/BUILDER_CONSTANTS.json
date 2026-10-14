@@ -1,0 +1,28 @@
+{
+  "accepted": {
+    "LICENSE.txt": "09e8a9bcec8067104652c168685ab0931e7868f9c8284b66f5ae6edae5f1130b",
+    "NOTICE.txt": "8c3af5d4307a5554f2db473e453da33223243b2246a9b9b9283eecc81230903e",
+    "agent.yaml": "680799291cc7d156d06fb7bfb5577f683ccc0d555b00e8ddb662d577f9bfa5e4",
+    "configs/sampling.yaml": "571a934e89911734927533f1d36cbcc7b8d493592febe63b217e911cf7ed4926",
+    "eval_config.yaml": "916cf6cb34a6cc3de39837fa72cac681599b9ac2a3ee0b893adadfd36474c531",
+    "prompts/system.md": "c993fb556ac819f2d891149b8ff284893f4c932f0280c5c40b21e6f2c493e474"
+  },
+  "candidate": {
+    "LICENSE.txt": "09e8a9bcec8067104652c168685ab0931e7868f9c8284b66f5ae6edae5f1130b",
+    "NOTICE.txt": "fffaa18c77f0568eae3efd4ecb0ad6ed00934b2356205537612303e99002f468",
+    "agent.yaml": "680799291cc7d156d06fb7bfb5577f683ccc0d555b00e8ddb662d577f9bfa5e4",
+    "configs/sampling.yaml": "571a934e89911734927533f1d36cbcc7b8d493592febe63b217e911cf7ed4926",
+    "eval_config.yaml": "916cf6cb34a6cc3de39837fa72cac681599b9ac2a3ee0b893adadfd36474c531",
+    "prompts/system.md": "480c0f7582c6ba83f9ea5f3314124a912a516b616706164d8dd9b9db51a30a2e"
+  },
+  "notice_sha": "cc16e16a3dfe64cc83d061d9165a67ab4d2abf41987632c7e694f86831b50aaa",
+  "order": [
+    "agent.yaml",
+    "configs/sampling.yaml",
+    "eval_config.yaml",
+    "prompts/system.md",
+    "LICENSE.txt",
+    "NOTICE.txt"
+  ],
+  "prefix_sha": "d3b280dd12cfa2d37696b7f40c1e81804fb62ab8c30decb240092f6967fb3593"
+}

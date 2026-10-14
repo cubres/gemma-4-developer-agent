@@ -1,0 +1,84 @@
+{
+  "candidate_quality": "UNMEASURED",
+  "excluded": "private SOURCE_FREEZE/local root CLI bindings; private peer evidence; root build directories; ZIP binaries; tokens/signed or private URLs/credentials/tasks/traces/model weights/notebooks",
+  "files": {
+    "BUILDER_CONSTANTS.json": {
+      "bytes": 1444,
+      "sha256": "d186041bad9caed422b483a15cad116385bc526f15a01c1b48e305f646738e2f"
+    },
+    "CPU_BUILD_RECEIPT.json": {
+      "bytes": 1828,
+      "sha256": "5143714ff7db80a174b9c7481d11143b4e55654f3c55c88e0f9528a20bb0be34"
+    },
+    "ISSUE_CONTRACT.txt": {
+      "bytes": 344,
+      "sha256": "d3b280dd12cfa2d37696b7f40c1e81804fb62ab8c30decb240092f6967fb3593"
+    },
+    "NOTICE_ADDITION.txt": {
+      "bytes": 700,
+      "sha256": "cc16e16a3dfe64cc83d061d9165a67ab4d2abf41987632c7e694f86831b50aaa"
+    },
+    "NOTICE_DELTA.diff": {
+      "bytes": 1035,
+      "sha256": "11c6f07c844be8b5b62d1d1ba225f1085ab3d466f9e0b59bc624feb22a5acf86"
+    },
+    "PAIRED_PROTOCOL.json": {
+      "bytes": 2276,
+      "sha256": "a3d6876b07636ddeb14228055d98612df444bc88c878978725a3c6d9576422ea"
+    },
+    "PROMPT_DELTA.diff": {
+      "bytes": 610,
+      "sha256": "7ad4b086f4d2582b523a24e1fa61596458c49dcb59c769c16e0d9c74320bbd48"
+    },
+    "README.md": {
+      "bytes": 5296,
+      "sha256": "c3c39eef3a0b9fc98726d6526171d1da70972971b0a7321c5323546edcaf855b"
+    },
+    "REBUILD_RESULT.json": {
+      "bytes": 2307,
+      "sha256": "c6d5d201b3c00579fcdf6f830163af26587cd7d768ca1ee6a8bc9b71cb26a15b"
+    },
+    "SOURCE_MANIFEST.json": {
+      "bytes": 2782,
+      "sha256": "96f3f617f67a6f3617a1cd4cb833ca6755650338488912b98e7a3008a0623a33"
+    },
+    "candidate/LICENSE.txt": {
+      "bytes": 10142,
+      "sha256": "09e8a9bcec8067104652c168685ab0931e7868f9c8284b66f5ae6edae5f1130b"
+    },
+    "candidate/NOTICE.txt": {
+      "bytes": 1850,
+      "sha256": "fffaa18c77f0568eae3efd4ecb0ad6ed00934b2356205537612303e99002f468"
+    },
+    "candidate/agent.yaml": {
+      "bytes": 314,
+      "sha256": "680799291cc7d156d06fb7bfb5577f683ccc0d555b00e8ddb662d577f9bfa5e4"
+    },
+    "candidate/configs/sampling.yaml": {
+      "bytes": 119,
+      "sha256": "571a934e89911734927533f1d36cbcc7b8d493592febe63b217e911cf7ed4926"
+    },
+    "candidate/eval_config.yaml": {
+      "bytes": 94,
+      "sha256": "916cf6cb34a6cc3de39837fa72cac681599b9ac2a3ee0b893adadfd36474c531"
+    },
+    "candidate/prompts/system.md": {
+      "bytes": 6419,
+      "sha256": "480c0f7582c6ba83f9ea5f3314124a912a516b616706164d8dd9b9db51a30a2e"
+    },
+    "contract-pipeline.svg": {
+      "bytes": 2299,
+      "sha256": "9d452bb7a39174f63b08c83a7b53290c02740b69d9ce86411b6d856834f5c681"
+    },
+    "rebuild_e03.py": {
+      "bytes": 7166,
+      "sha256": "ec34e6334b53e1cc08f7f9efc14540341fc3de2f0568e2eae49affbe53cb57e4"
+    }
+  },
+  "proposed_repository_directory": "e03-issue-contract-2026-10-14",
+  "publication_performed": false,
+  "root_publication_gates": "final source peer; fresh repository head/preservation checks; confirm competition-associated Kaggle availability and applicable rights/privacy requirements",
+  "schema": "gemma-e03-public-release-allowlist/1",
+  "self_hash_excluded": true,
+  "source_and_actual_cpu_artifacts_only": true
+}

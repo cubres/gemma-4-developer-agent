@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1060" height="285" viewBox="0 0 1060 285" role="img" aria-labelledby="title desc">
+  <title id="title">The issue contract before the first tool call</title>
+  <desc id="desc">One new short contract precedes the unchanged locate, edit, coverage, verify and submit route. Completion, contradictions, time and calls are measured; no improvement is established.</desc>
+  <defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#637287"/></marker></defs>
+  <rect width="1060" height="285" rx="20" fill="#f7f9fc"/>
+  <g font-family="Arial, sans-serif" fill="#172a42">
+    <text x="28" y="41" font-size="25" font-weight="700">Define the issue before deciding the patch</text>
+    <text x="28" y="69" font-size="16">One source-only hypothesis; original model, runtime and coverage checkpoint remain unchanged.</text>
+    <g fill="#e7edf4" stroke="#bdc9d7" stroke-width="1.5">
+      <rect x="28" y="103" width="166" height="75" rx="12" fill="#deeff0" stroke="#398d92"/>
+      <rect x="223" y="103" width="138" height="75" rx="12"/>
+      <rect x="390" y="103" width="138" height="75" rx="12"/>
+      <rect x="557" y="103" width="138" height="75" rx="12"/>
+      <rect x="724" y="103" width="138" height="75" rx="12"/>
+      <rect x="891" y="103" width="138" height="75" rx="12"/>
+    </g>
+    <g font-size="18" text-anchor="middle">
+      <text x="111" y="131" font-weight="700">Issue contract</text><text x="111" y="157" font-size="15">Trigger · outcome · preserve</text>
+      <text x="292" y="147">Locate</text><text x="459" y="147">Source edit</text><text x="626" y="147">Coverage</text><text x="793" y="147">Verify</text><text x="960" y="147">Submit</text>
+    </g>
+    <g stroke="#637287" stroke-width="2" marker-end="url(#arrow)"><path d="M196 140h23"/><path d="M363 140h23"/><path d="M530 140h23"/><path d="M697 140h23"/><path d="M864 140h23"/></g>
+    <text x="28" y="212" font-size="17" font-weight="700">Measure: completed outcomes · contradictions · time · charged calls</text>
+    <text x="28" y="241" font-size="16">No model run yet. The contract must precede the first tool and preserve the existing finish route.</text>
+  </g>
+</svg>

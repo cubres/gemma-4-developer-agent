@@ -6,6 +6,10 @@ The Budget-Fit V5 coverage-checkpoint experiment completed with **public score 0
 
 The recipe credits Wilmer E. Henao (verracodeguacas), whose upstream V5 scorecard also showed 0.18. Our bounded post-edit checkpoint is an exploratory addition; this single result does not isolate its causal effect. The package includes attribution, runtime settings, a diagram and an exact CPU rebuild. Earlier failed and pending native experiments remain documented separately.
 
+## Next isolated experiment · 14 October
+
+[Pre-edit issue contract](e03-issue-contract-2026-10-14/README.md) adds one original **50-word prefix** to the scored E01 prompt. Two actual CPU builds produced the same **8,525-byte ZIP**, preserving all runtime files, the original prompt and its coverage checkpoint. Source, exact diffs, a diagram and a paired protocol are public. **Model quality and the E03 official score remain unmeasured**; the completed 0.18 above belongs to E01.
+
 ## Earlier snapshot · 12 October
 
 At that snapshot, the latest verified completed campaign score was **0.13**, from the separate D configuration. [Owned prompt feedback](owned-r2-prompt-feedback-2026-10-12/README.md) provides an exact CPU rebuild of a controlled A_think prompt change, practical Bash mechanics and validation evidence. Compiler and scripted-loop checks passed; upload start returned HTTP 401, so the new candidate has no evaluation or score.

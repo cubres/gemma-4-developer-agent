@@ -1,0 +1,65 @@
+{
+  "accepted_official_score": "0.18",
+  "accepted_submission_id": 57111761,
+  "accepted_zip_bytes": 8055,
+  "accepted_zip_sha256": "0311b8a71ff9498aaaca30a8a6d22be5622a62539eaef0360dd585d401fe3af9",
+  "allowed_changed_members": [
+    "prompts/system.md",
+    "NOTICE.txt"
+  ],
+  "builder_executed": false,
+  "candidate_archive_sha256": null,
+  "candidate_native_quality": "UNMEASURED",
+  "candidate_official_score": null,
+  "contract_output_word_limit": 50,
+  "contract_prefix_whitespace_words": 50,
+  "members": {
+    "LICENSE.txt": {
+      "accepted_bytes": 10142,
+      "accepted_sha256": "09e8a9bcec8067104652c168685ab0931e7868f9c8284b66f5ae6edae5f1130b",
+      "candidate_bytes": 10142,
+      "candidate_sha256": "09e8a9bcec8067104652c168685ab0931e7868f9c8284b66f5ae6edae5f1130b",
+      "changed": false
+    },
+    "NOTICE.txt": {
+      "accepted_bytes": 1150,
+      "accepted_sha256": "8c3af5d4307a5554f2db473e453da33223243b2246a9b9b9283eecc81230903e",
+      "candidate_bytes": 1850,
+      "candidate_sha256": "fffaa18c77f0568eae3efd4ecb0ad6ed00934b2356205537612303e99002f468",
+      "changed": true
+    },
+    "agent.yaml": {
+      "accepted_bytes": 314,
+      "accepted_sha256": "680799291cc7d156d06fb7bfb5577f683ccc0d555b00e8ddb662d577f9bfa5e4",
+      "candidate_bytes": 314,
+      "candidate_sha256": "680799291cc7d156d06fb7bfb5577f683ccc0d555b00e8ddb662d577f9bfa5e4",
+      "changed": false
+    },
+    "configs/sampling.yaml": {
+      "accepted_bytes": 119,
+      "accepted_sha256": "571a934e89911734927533f1d36cbcc7b8d493592febe63b217e911cf7ed4926",
+      "candidate_bytes": 119,
+      "candidate_sha256": "571a934e89911734927533f1d36cbcc7b8d493592febe63b217e911cf7ed4926",
+      "changed": false
+    },
+    "eval_config.yaml": {
+      "accepted_bytes": 94,
+      "accepted_sha256": "916cf6cb34a6cc3de39837fa72cac681599b9ac2a3ee0b893adadfd36474c531",
+      "candidate_bytes": 94,
+      "candidate_sha256": "916cf6cb34a6cc3de39837fa72cac681599b9ac2a3ee0b893adadfd36474c531",
+      "changed": false
+    },
+    "prompts/system.md": {
+      "accepted_bytes": 6075,
+      "accepted_sha256": "c993fb556ac819f2d891149b8ff284893f4c932f0280c5c40b21e6f2c493e474",
+      "candidate_bytes": 6419,
+      "candidate_sha256": "480c0f7582c6ba83f9ea5f3314124a912a516b616706164d8dd9b9db51a30a2e",
+      "changed": true
+    }
+  },
+  "model_calls": 0,
+  "prompt_relationship": "exact original E01 prompt remains contiguous and byte-identical after one original prefix",
+  "schema": "gemma-e03-source-only-preedit-contract/1",
+  "status": "SOURCE_ONLY_CANDIDATE_NOT_EXECUTED",
+  "zip_method": "Prospective exact E01 wrapper: fixed-order ZIP_DEFLATED,1980 timestamp,0644 permissions; require unchanged accepted8055-byte ZIP roundtrip in memory before output; root must execute and verify"
+}
