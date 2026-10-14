@@ -1,0 +1,71 @@
+{
+  "schema": "gemma-e03-current-v31-local-mechanics-result/1",
+  "status": "PASS_LOCAL_MODEL_FREE_MECHANICS_ONLY",
+  "execution": {
+    "started_utc": "2026-10-14T12:14:16.339210Z",
+    "finished_utc": "2026-10-14T12:14:20.346342Z",
+    "exit_code": 0,
+    "qualification_receipt_sha256": "0bb77c6def6e9b0c3c2bac572363245676af03461095c6b030e0ae19ea0d8708",
+    "root_actual_result_sha256": "c8d88d8527165a47217da29448138b27d21d097feeec6051ff03619a87dcee3a"
+  },
+  "package_profile": {
+    "organizer_wheelhouse_version_requested": 31,
+    "measurement": "Physically measured published package archives, used for a local compiler, template and scripted-loop check.",
+    "package_measurement_receipt_sha256": "72f1aeaae3e9147e8797e1744a4ac64c71274b05d0ffaf0e4ba767689c831ce7",
+    "measured_distributions": [
+      {"name": "adk_eval_core", "version": "0.1.0", "distribution_archive_sha256": "e614e1b2fe8d886a634871e4c57f9887e1cc66e8c27300f8503a43c6e3ca82f3"},
+      {"name": "adk_submission", "version": "0.2.13", "distribution_archive_sha256": "f156f0bd84580ccb9334726d114d7a5481f16d3a6e2887cc4d276ced0ef8d99d"},
+      {"name": "swegemma", "version": "0.2.11", "distribution_archive_sha256": "9ad876581f3acde8ec3c369858f0834e2b9f41a3cffce3ca42f09cb090aea9d3"}
+    ]
+  },
+  "arms": {
+    "E01_control": {
+      "archive_bytes": 8055,
+      "archive_sha256": "0311b8a71ff9498aaaca30a8a6d22be5622a62539eaef0360dd585d401fe3af9",
+      "compiler": "PASS",
+      "templates": "PASS",
+      "tool_declaration_count": 9,
+      "scripted_loop": {"status": "PASS_MECHANICS_ONLY", "charged_calls": 5, "scripted_llm_calls": 9, "target_model_calls": 0, "patch_sha256": "4e73a2364a1ea685a8721e45ee69ed250de3cfeee9ecff395eeabd5a3bf94246"}
+    },
+    "E03_treatment": {
+      "archive_bytes": 8525,
+      "archive_sha256": "e97d9072134b8217cccfc6511d9f2180f911c6169f6464118977eb2964f7abd9",
+      "compiler": "PASS",
+      "templates": "PASS",
+      "tool_declaration_count": 9,
+      "scripted_loop": {"status": "PASS_MECHANICS_ONLY", "charged_calls": 5, "scripted_llm_calls": 9, "target_model_calls": 0, "patch_sha256": "4e73a2364a1ea685a8721e45ee69ed250de3cfeee9ecff395eeabd5a3bf94246"}
+    }
+  },
+  "paired_patch_hashes_equal": true,
+  "measured_contract_both_arms": {
+    "minutes": 8,
+    "maximum_charged_calls": 28,
+    "maximum_turns": 80,
+    "command_timeout_seconds": 240,
+    "phase2_verification_timeout_seconds": 300
+  },
+  "negative_controls": {"unknown_tool": "PASS_REJECTED_EXPECTED_INVALID_INPUT", "unknown_model": "PASS_REJECTED_EXPECTED_INVALID_INPUT", "six_members_counted": "PASS_REJECTED_EXPECTED_INVALID_INPUT"},
+  "claim_limits": {
+    "scripted_routing_is_invented": true,
+    "target_model_calls": 0,
+    "model_decisions_or_contract_adherence_measured": false,
+    "native_local_qualification": "NOT_PERFORMED",
+    "native_agent_quality": "UNMEASURED",
+    "hosted_organizer_ABI_verified": false,
+    "full_target_runtime_dependencies_qualified": false,
+    "E03_official_submission_performed": false,
+    "E03_official_score": null,
+    "scientific_preregistration_completed": false,
+    "submission_admission_granted": false,
+    "competition_task_snapshots_used": false,
+    "network_permitted": false
+  },
+  "separate_existing_E01_result": {
+    "submission_id": 57111761,
+    "status": "COMPLETE",
+    "public_score": "0.18",
+    "result_url": "https://github.com/cubres/gemma-4-developer-agent/blob/e4e612afb6c25b0778d33134e368e3330aef2a2c/bfv5-coverage-2026-10-12/RESULT.md",
+    "not_a_result_of_this_local_check": true
+  },
+  "publication_scope": "Original public facts and metadata only; organizer source, declarations, descriptions, traces, resources and package binaries are excluded."
+}
