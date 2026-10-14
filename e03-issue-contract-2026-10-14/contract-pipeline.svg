@@ -15,7 +15,7 @@
       <rect x="891" y="103" width="138" height="75" rx="12"/>
     </g>
     <g font-size="18" text-anchor="middle">
-      <text x="111" y="131" font-weight="700">Issue contract</text><text x="111" y="157" font-size="15">Trigger · outcome · preserve</text>
+      <text x="111" y="131" font-weight="700">Issue contract</text><text x="111" y="149" font-size="13">Trigger · outcome</text><text x="111" y="166" font-size="13">Behavior to preserve</text>
       <text x="292" y="147">Locate</text><text x="459" y="147">Source edit</text><text x="626" y="147">Coverage</text><text x="793" y="147">Verify</text><text x="960" y="147">Submit</text>
     </g>
     <g stroke="#637287" stroke-width="2" marker-end="url(#arrow)"><path d="M196 140h23"/><path d="M363 140h23"/><path d="M530 140h23"/><path d="M697 140h23"/><path d="M864 140h23"/></g>
