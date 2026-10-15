@@ -1,0 +1,23 @@
+Budget-Aware Gemma agent — reproduction notice
+
+The four files under bundle/ are reproduced byte for byte from the public
+Budget-Aware Coding Agent V10 by Igor Zharov / flexonafft:
+https://www.kaggle.com/code/flexonafft/gemma-4-budget-aware-coding-agent-v2?scriptVersionId=357955943
+The native reference displayed Apache License 2.0 on 15 October 2026.
+No changes were made to these four runtime members.
+
+Credited lineage:
+- Igor Zharov / flexonafft: bounded navigation and guarded edit recovery.
+- Matterhorn3838: original SuperAgent notebook and budget strategy.
+- verracodeguacas: budget-fit configuration antecedent credited in the
+  reproduction evidence.
+- Google / Kaggle: official starter and evaluation harness.
+
+The upstream notebook credits the official sample_submission prompt and
+community investigations of graph tools. Its older unscored source notice
+precedes the later native V10 score badge; this reproduction does not claim
+that score as its own.
+
+The standalone rebuild.py, documentation and diagram are original
+reproduction material by the cubres / prvsiyan project contributors (2026),
+provided under Apache License 2.0. The accompanying LICENSE applies.

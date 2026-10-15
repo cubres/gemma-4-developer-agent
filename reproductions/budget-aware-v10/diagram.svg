@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1160" height="250" viewBox="0 0 1160 250" role="img" aria-labelledby="title desc">
+<title id="title">A four-file Gemma agent reproduction</title>
+<desc id="desc">Inspect the pinned public files, build and verify the ZIP offline, then evaluate it in the competition harness. Packaging success is separate from a pending score.</desc>
+<defs><marker id="arrow" markerWidth="9" markerHeight="9" refX="7" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8" fill="#56677c"/></marker></defs>
+<rect width="1160" height="250" rx="16" fill="#f6f8fb"/>
+<g font-family="system-ui,sans-serif" fill="#172b4d">
+<text x="32" y="38" font-size="22" font-weight="700">Exact files first. Packaging and scoring are separate checks.</text>
+<g fill="#fff" stroke="#b8c8dc" stroke-width="1.5"><rect x="32" y="68" width="245" height="112" rx="12"/><rect x="318" y="68" width="245" height="112" rx="12"/><rect x="604" y="68" width="245" height="112" rx="12"/><rect x="890" y="68" width="238" height="112" rx="12"/></g>
+<g font-size="17" font-weight="650"><text x="50" y="99">Inspect public source</text><text x="336" y="99">Build and verify</text><text x="622" y="99">Four-member ZIP</text><text x="908" y="99">Competition harness</text></g>
+<g font-size="14" fill="#46566d"><text x="50" y="128">Agent · prompt · sampling</text><text x="50" y="151">Evaluation limits · SHA-256</text><text x="336" y="128">Python standard library</text><text x="336" y="151">No network or model run</text><text x="622" y="128">Validated native output</text><text x="622" y="151">CPU packaging: 23.1 seconds</text><text x="908" y="128">Accepted; score pending</text><text x="908" y="151">Model evaluation happens here</text></g>
+<g stroke="#56677c" stroke-width="2" marker-end="url(#arrow)"><path d="M281 124 H309"/><path d="M567 124 H595"/><path d="M853 124 H881"/></g>
+<text x="32" y="219" font-size="14" fill="#46566d">Upstream V10: 0.22. Our accepted attempt: awaiting score as of 15 October 2026, 16:21 UTC.</text>
+</g></svg>
