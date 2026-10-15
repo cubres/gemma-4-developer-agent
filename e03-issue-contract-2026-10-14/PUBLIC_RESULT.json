@@ -1,0 +1,73 @@
+{
+  "schema": "gemma-e03-public-organizer-result/1",
+  "competition": "gemma-4-developer-agent",
+  "account": "prvsiyan",
+  "experiment": "E03 pre-tool issue contract",
+  "official_result": {
+    "submission_ref": 57183017,
+    "raw_status": "COMPLETE",
+    "public_score": "0.17",
+    "accepted_at": "2026-10-14T12:59:50.863Z",
+    "verified_at": "2026-10-15T12:55:29.390169+00:00",
+    "exact_raw_identity_binding_verified": true,
+    "native_ui_raw_score_agree": true
+  },
+  "notebook": {
+    "ref": "prvsiyan/gemma-and-the-shape-of-doubt",
+    "title": "Gemma and the Shape of Doubt",
+    "version": 29,
+    "native_version_id": 358340528,
+    "url": "https://www.kaggle.com/code/prvsiyan/gemma-and-the-shape-of-doubt?scriptVersionId=358340528",
+    "observed_native_badge": "0.17 V29",
+    "native_badge_observed_at": "2026-10-15T12:50:11.244Z"
+  },
+  "archive": {
+    "file_name": "submission.zip",
+    "bytes": 8525,
+    "sha256": "e97d9072134b8217cccfc6511d9f2180f911c6169f6464118977eb2964f7abd9",
+    "identity_basis": "Preserved original exact notebook-output/archive admission, acceptance record, and exact terminal row binding",
+    "reacquired_during_terminal_read": false
+  },
+  "accepted_description": {
+    "bytes": 315,
+    "sha256": "be660b9ceaa3415ccd698ae5b0dc474628f1ae90fbd18a6ba9faf9e941aeb455"
+  },
+  "comparison": {
+    "experiment": "E01 post-edit coverage checkpoint",
+    "submission_ref": 57111761,
+    "raw_status": "COMPLETE",
+    "public_score": "0.18",
+    "accepted_at": "2026-10-12T15:36:36.663Z",
+    "evidence_observed_at": "2026-10-13T23:35:30.661910+00:00",
+    "descriptive_e03_minus_e01_score": "-0.01",
+    "design": "Two separate single unpaired organizer draws",
+    "causal_gain_or_loss_established": false,
+    "reliable_ranking_established": false
+  },
+  "attempt_policy": {
+    "e03": "PERMANENTLY_CONSUMED_NEVER_REPEAT",
+    "e01": "PERMANENTLY_CONSUMED_NEVER_REPEAT"
+  },
+  "evidence_fingerprints_sha256": {
+    "e03_exact_terminal_row_receipt": "b5d2dfe1152a1e53f507d2dcfb3e431c9b2aa89c436ef30e5f164df37d96984a",
+    "e03_native_ui_receipt": "0242011a6f2b137047738c0ad5deefb40d2f638d4cf0dbb6d93b62b804b43064",
+    "e03_original_accepted_row_receipt": "ade18c50121086d9342c0d66f06643445c9c0b4eeaca81a4d0331bcf44eb77f6",
+    "e01_completed_row_receipt": "6a7ea2d8449117e65c3dd4c6bc000218d81713c9a12d88ed341bdc18b737f765"
+  },
+  "publication_scope": {
+    "repository": "cubres/gemma-4-developer-agent",
+    "directory": "e03-issue-contract-2026-10-14/",
+    "sanitized_result_addendum": true,
+    "credentials_or_auth_responses_included": false,
+    "private_errors_or_signed_capabilities_included": false,
+    "unrelated_submissions_included": false
+  },
+  "original_source_publication": {
+    "repository": "cubres/gemma-4-developer-agent",
+    "commit": "206027a6bde96c0b26b28c931d73b52e2f77ebc1",
+    "directory": "e03-issue-contract-2026-10-14/",
+    "url": "https://github.com/cubres/gemma-4-developer-agent/tree/206027a6bde96c0b26b28c931d73b52e2f77ebc1/e03-issue-contract-2026-10-14",
+    "original_scope": "CPU source packaging only; no native or model score at publication",
+    "result_is_subsequent_addendum": true
+  }
+}
