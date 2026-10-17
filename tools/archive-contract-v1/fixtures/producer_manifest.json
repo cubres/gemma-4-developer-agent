@@ -1,0 +1,21 @@
+{
+  "members": {
+    "agent.yaml": {
+      "bytes": 80,
+      "sha256": "3f3312b707c8042e6afac141f01ce122161a5df11b6ecd087feef68a85c4a7e5"
+    },
+    "configs/sampling.yaml": {
+      "bytes": 50,
+      "sha256": "ae833b27e87a4750b2a40e39666999b5bd3dde76d9d31de26a86bf90a3674e01"
+    },
+    "eval_config.yaml": {
+      "bytes": 55,
+      "sha256": "dc02d465ea2502e6022ae1ad9afb071bc7b73bfd5777535126850d1a0cff22fd"
+    },
+    "prompts/system.md": {
+      "bytes": 93,
+      "sha256": "ada8132de80ca41a73338d79103ebfd23c6f2b399d443ea3a8c2dc530fa92bfc"
+    }
+  },
+  "schema": "four-member-producer-manifest/1"
+}

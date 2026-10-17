@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="390" viewBox="0 0 1080 390" role="img" aria-labelledby="title desc">
+<title id="title">Four-file ZIP contract: bytes, structure and evidence</title>
+<desc id="desc">An independently trusted producer manifest and one bounded ZIP snapshot feed structure checks and actual stream and hash checks. A pass proves local member equivalence. An optional archive pin checks exact container identity. Remote score and version linkage require separate evidence.</desc>
+<defs><marker id="arrow" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto"><path d="M0 0 L10 4 L0 8" fill="#356174"/></marker></defs>
+<rect width="1080" height="390" rx="18" fill="#f3f7fa"/>
+<g font-family="system-ui,sans-serif" fill="#18384a">
+<text x="35" y="40" font-size="24" font-weight="700">Check the artifact; keep the evidence boundaries clear</text>
+<g fill="#fff" stroke="#9db9c6" stroke-width="2">
+<rect x="35" y="80" width="235" height="80" rx="12"/><rect x="35" y="190" width="235" height="80" rx="12"/>
+<rect x="320" y="115" width="200" height="115" rx="12"/><rect x="570" y="115" width="215" height="115" rx="12"/>
+<rect x="835" y="115" width="210" height="115" rx="12" fill="#e1f2e8"/>
+</g>
+<g font-size="17"><text x="52" y="110" font-weight="700">Trusted producer manifest</text><text x="52" y="138">Four names, sizes, hashes</text>
+<text x="52" y="220" font-weight="700">One ZIP byte snapshot</text><text x="52" y="248">Bounded read; no extraction</text>
+<text x="338" y="148" font-weight="700">Structure checks</text><text x="338" y="177">Names, types, flags,</text><text x="338" y="204">layout and limits</text>
+<text x="588" y="148" font-weight="700">Actual stream checks</text><text x="588" y="177">EOF, CRC, decoded</text><text x="588" y="204">size and SHA-256</text>
+<text x="853" y="148" font-weight="700">Local contract PASS</text><text x="853" y="177">Optional archive pin:</text><text x="853" y="204">exact container bytes</text></g>
+<g stroke="#356174" stroke-width="2" fill="none" marker-end="url(#arrow)"><path d="M270 120 L320 150"/><path d="M270 230 L320 195"/><path d="M520 172 L570 172"/><path d="M785 172 L835 172"/></g>
+<rect x="35" y="305" width="1010" height="53" rx="10" fill="#e7edf4"/>
+<text x="55" y="338" font-size="18">Separate evidence required: agent correctness · measured quality · accepted native version · official score</text>
+</g></svg>

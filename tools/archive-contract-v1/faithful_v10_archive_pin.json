@@ -1,0 +1,10 @@
+{
+  "bytes": 3713,
+  "limitation": "Accepted metadata totalBytes 88266 (native annotation 86 KiB) remains unexplained; the freshly downloaded native artifact is 3713 bytes. No internal judge expansion, repackaging or consumed-attempt replay is inferred.",
+  "native_version": 358738566,
+  "notebook_url": "https://www.kaggle.com/code/prvsiyan/gemma-and-the-shape-of-doubt?scriptVersionId=358738566",
+  "observation": "Coordinator downloaded this ZIP through native accepted Submission Details for V31 during the 2026-10-18 refresh. Independent local audit confirms the exact archive and four member hashes, matching the retained 2026-10-15 output.",
+  "schema": "accepted-archive-provenance/1",
+  "sha256": "6ff73d104725cc31deadd18787f3f55e5ce534889cec82387e3b280637d34887",
+  "unpacked_bytes": 6850
+}

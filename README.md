@@ -1,5 +1,13 @@
 # Gemma 4 Developer Agent: experiments and public notebook
 
+## Accepted archive reconciliation and runnable toolkit · 18 October
+
+[Archive Contract Lab](tools/archive-contract-v1/README.md) provides an original standard-library checker, eleven wholly invented deterministic archive cases, runnable examples, a diagram and an MIT-scoped dataset card. All eleven adversarial tests pass. Static contract checks establish packaging properties; they do not measure agent quality.
+
+The actual file downloaded from accepted submission **57237203**, linked natively to [public notebook V31](https://www.kaggle.com/code/prvsiyan/gemma-and-the-shape-of-doubt?scriptVersionId=358738566), is exactly **3,713 bytes**, SHA256 `6ff73d104725cc31deadd18787f3f55e5ce534889cec82387e3b280637d34887`. All four runtime members match the faithful public control. Its completed official score is **0.17**; the upstream reference's **0.22** is not our score. The separate 88,266-byte / 86 KiB annotation is inconsistent with the downloaded file and remains unexplained.
+
+The toolkit's pinned source record separates that accepted result from a proposed 4096-to-1024 thinking-budget change. A real paired quality screen remains unrun because no qualified model endpoint is available. No improvement is claimed for that proposal.
+
 ## Completed official result · 14 October
 
 The Budget-Fit V5 coverage-checkpoint experiment completed with **public score 0.18**, above the account's earlier **0.13** best from a different configuration. [Read the completed result and exact archive proof](bfv5-coverage-2026-10-12/RESULT.md): Kaggle submission **57111761**, COMPLETE, with the downloaded scored ZIP matching the original 8,055-byte candidate byte for byte.
