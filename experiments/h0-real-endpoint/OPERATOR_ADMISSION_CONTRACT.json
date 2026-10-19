@@ -1,0 +1,40 @@
+{
+  "schema": "h0-fresh-operator-admission-contract/1",
+  "status": "CONTRACT_NOT_AUTHORIZATION",
+  "driver_sha256": "cd9154a22e6139289dabdada6610acb3f4f781f304e3d72351a85da00f8a9090",
+  "one_run_only": true,
+  "authorization_template": "ROOT_H0_ADMISSION.json",
+  "authority_owner": "one local operator/coordinator named root; not a credential or perpetual grant",
+  "admission_age_seconds_inclusive": [
+    0,
+    4650
+  ],
+  "dispatch_live_checks_max_age_seconds": 300,
+  "compute_seconds_limit": 900,
+  "native_seconds_limit": 1050,
+  "whole_physical_gpu_count": 4,
+  "gpu_type": "NVIDIA L4",
+  "raw_gpu_seconds_budget": 4200,
+  "conservative_reserved_quota_seconds": 8400,
+  "provider_billing_factor_inferred": false,
+  "required_rechecks": [
+    "fresh existing notebook identity/source/full17 metadata/terminal status",
+    "public immutable modelV2 and original dependencies rights/version binding",
+    "actual four-L4 profile and whole allocation quota",
+    "global GPU-commit capacity and no active/ambiguous Gemma run",
+    "new sourcekit actual publicV1 ID/inventory/hash and exact bootstrap manifest binding"
+  ],
+  "separation": "Immutable sourcekit and model/data identity support rebuilding; resource admission must be freshly issued and old dataset file cannot certify live capacity.",
+  "do_not": [
+    "refresh only the timestamp of an old record",
+    "modify mounted immutable sourcekit or old admission",
+    "reset/reuse consumed attempt markers",
+    "treat local/source/publication checks as actual runtime or quality evidence"
+  ],
+  "secrets_required": false,
+  "public_result_claims": {
+    "model_execution": false,
+    "task_benchmark": false,
+    "official_score": false
+  }
+}
