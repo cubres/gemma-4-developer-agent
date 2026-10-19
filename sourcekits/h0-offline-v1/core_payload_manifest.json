@@ -1,0 +1,13 @@
+{
+  "files": {
+    "FORK_AND_REBUILD.md": "cbdaaeb52558f1f7d52def97ccbdd45e07d05cbc927782806da523029dd1a4e4",
+    "LICENSE": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+    "NOTICE": "8ab5cb1bf0ec033bae7ed6fbea1e9612f39120394ddaac16c7fec9cc7609e1f7",
+    "OPERATOR_ADMISSION_CONTRACT.json": "d0bc400921a96eca388f2dd81f6cc3a1c8408e019413d5ccb4bea181bdd7ce0b",
+    "README.md": "ff032898dc4e4c12f772e391f0570926a72920b7c160d4954cd1249ac8d948d8",
+    "ROOT_H0_ADMISSION.json": "37aa13d0801901b18bd0dae448ed8d175316414e68ab889f5b55a1521750ee3a",
+    "run_h0.py": "cd9154a22e6139289dabdada6610acb3f4f781f304e3d72351a85da00f8a9090"
+  },
+  "schema": "gemma-h0-github-compact-source-allowlist/1",
+  "status": "SOURCE_ONLY_INVALID_ADMISSION_NO_RUNTIME_RESULT"
+}

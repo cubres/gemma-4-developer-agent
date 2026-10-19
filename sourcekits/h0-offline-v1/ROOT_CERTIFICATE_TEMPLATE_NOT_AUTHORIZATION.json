@@ -1,0 +1,10 @@
+{
+  "status": "NOT_AUTHORIZATION",
+  "coordinator": "root",
+  "experiment_id": null,
+  "observed": null,
+  "dispatch": null,
+  "source_id": null,
+  "source_version": null,
+  "checks": []
+}
