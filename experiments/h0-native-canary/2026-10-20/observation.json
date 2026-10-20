@@ -1,0 +1,48 @@
+{
+  "schema": "gemma-h0-native-ui-observation/1",
+  "observed_date_utc": "2026-10-20",
+  "notebook_ref": "prvsiyan/gemma-and-the-shape-of-doubt",
+  "version": 34,
+  "native_version_id": 360225179,
+  "native_status": "ERROR",
+  "native_displayed_wall_seconds": 20.4,
+  "native_displayed_accelerator": "GPU L4 x4",
+  "artifact_observation": {
+    "method": "native exact-version Output viewer; no artifact download",
+    "filename": "h0_public_receipt.json",
+    "displayed_bytes": 453,
+    "status": "HOLD_H0_FAILED",
+    "actual_success_verified": false,
+    "actual_call_count_verified": false,
+    "raw_logs_exported": false,
+    "official_score_claimed": false
+  },
+  "not_original_remote_artifact": true,
+  "remote_artifact_sha256_not_acquired": true,
+  "failure_cause": "UNKNOWN",
+  "zero_model_calls_proven": false,
+  "source_based_gate_inferences": [
+    "physical kit content/member hashes/containment",
+    "compact certificate predicates",
+    "private core-copy admission",
+    "outer cleanup routine returned true"
+  ],
+  "not_proven": [
+    "native mounted-version header",
+    "actual GPU inventory",
+    "runtime and ABI qualification",
+    "model/server/compiler/tool success",
+    "core cleanup acceptance",
+    "call count",
+    "speed/quality/score improvement"
+  ],
+  "original_helper_sha256": "49dea7e5d52f5c43e55083c4829f02bad4d76782be29ee75f6219d253c4fd79a",
+  "original_core_sha256": "cd9154a22e6139289dabdada6610acb3f4f781f304e3d72351a85da00f8a9090",
+  "original_serializer_sha256": "45f3418bf33901fdb12545be0672ff739f66e5c315bd9cda3eb71b88c0ae1abf",
+  "parsed_postsource_matches_reviewed_candidate": true,
+  "postsource_bytes": 998289,
+  "postsource_sha256": "6df12ae535e5a5c0f3abe1e428c12c1b842073afd79fb9a9d1f3fa5b8a67d6e7",
+  "failed_attempt_closed": true,
+  "competition_submission_performed": false,
+  "new_diagnostic_implemented_in_this_report": false
+}
