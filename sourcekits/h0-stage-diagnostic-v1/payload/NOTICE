@@ -1,0 +1,5 @@
+H0 stage diagnostic entrypoint, 2026.
+New source is licensed under Apache-2.0.
+The original Gemma H0 V1 source kit is a separate, unchanged input. Its original
+LICENSE/NOTICE, helper/core/serializer bytes, dataset identity and versions remain
+preserved. This payload supplies no model, third-party wheel or runtime license.

@@ -1,0 +1,27 @@
+{
+  "schema": "gemma-h0-separate-stage-diagnostic-payload/2",
+  "status": "SOURCE_ONLY_R2_UNPUBLISHED_NO_AUTHORITY",
+  "license": "Apache-2.0",
+  "files": {
+    "LICENSE": {
+      "bytes": 11358,
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+    },
+    "NOTICE": {
+      "bytes": 324,
+      "sha256": "88004501a97ef78b8e9e3336f1b760c15287994aa5faff6756e7f4bf44df1a38"
+    },
+    "README.md": {
+      "bytes": 5252,
+      "sha256": "836f015da40145afa559998206e3489121c9ebaf3a1a2c8630d05c81d8c3b04a"
+    },
+    "h0_stage_diagnostic.py": {
+      "bytes": 7983,
+      "sha256": "99a72ec7ac28d00e1e1e5a7374c9710ad7d74929664c9bc2e7ffbd20c3612256"
+    }
+  },
+  "parent_R1_source_freeze_sha256": "ce0e992d6b6be7a4a0d4f6115aa56ed8fd079e49bb8331f32204f89d3eca5225",
+  "separate_diagnostic_dataset_id": null,
+  "separate_diagnostic_version": null,
+  "actual_original_helper_invocations": 0
+}
