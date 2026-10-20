@@ -1,0 +1,26 @@
+Gemma E07 verification / six-tool policy combination
+Original packaging and combination work: 2026 cubres / prvsiyan, Apache-2.0.
+
+The graded members preserve the Apache-2.0 Budget-Aware Coding Agent V10 by
+Igor Zharov / flexonafft, native version357955943, source SHA256
+ec76bd9a4dedc4626bee9d31781469023e6cfe29b666afd095dff5723f717e7b.
+Source: https://www.kaggle.com/code/flexonafft/gemma-4-budget-aware-coding-agent-v2?scriptVersionId=357955943
+
+Retained upstream source-header attribution (verbatim):
+Original notebook and budget strategy: matterhorn3838, Gemma 4 SuperAgent.
+Source: https://www.kaggle.com/code/matterhorn3838/gemma-4-superagent
+The source credits the official sample_submission prompt and community
+investigations of graph tools. Thank you to the author and contributors.
+
+Earlier project lineage also credits verracodeguacas (budget-fit antecedent)
+and Google/Kaggle (official starter and evaluation harness). Existing notebook
+credit cells, prior source, IDs and artwork are preserved independently.
+
+The system prompt retains cubres/prvsiyan's original E05 final-edit
+verification prefix. agent.yaml retains the exact E06 removal of three graph
+declarations. No model, sampling, thinking or evaluation-budget change is made.
+The exact E05 and E06 completed member hashes are recorded in the build
+manifest. Historical scores and upstream performance are not E07 results.
+
+No upstream model weights, official wheels, training-task rows, gold patches,
+private evaluation traces, credentials or runtime logs are redistributed.

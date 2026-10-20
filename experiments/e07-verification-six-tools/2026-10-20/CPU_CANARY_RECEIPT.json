@@ -1,0 +1,179 @@
+{
+  "check_count": 60,
+  "checks": [
+    "input pin research/codex_gemma_e05_postedit_verification_20261018/native_v32_exact_zip_acquisition_once/submission.zip",
+    "scored archive four members",
+    "scored archive CRC",
+    "input pin research/codex_gemma_e06_native_preparation_20261019/native_v33_exact_zip_acquisition_once/submission.zip",
+    "scored archive four members",
+    "scored archive CRC",
+    "input pin research/codex_gemma_e07_actual_candidate_sourceonly_20261020/SOURCE_ONLY_PUBLIC_INPUT/e07_cpu_packager.py",
+    "producer entrypoint is exact source pin",
+    "E07 exact scored E06 agent",
+    "E07 other three exact scored E05 members",
+    "new combination is not E06",
+    "only three declaration deletions",
+    "no added or altered agent line",
+    "7320 unpacked bytes",
+    "full sampling/thinking equality",
+    "full evaluation-budget equality",
+    "four combination-policy corruptions rejected",
+    "bounded ASCII public contract",
+    "public receipt exact member pins",
+    "public contract source pin",
+    "public contract producer scope",
+    "invented private token absent",
+    "producer exact archive layout",
+    "producer archive byte roundtrip",
+    "deterministic archive headers",
+    "bounded ASCII public contract",
+    "public receipt exact member pins",
+    "public contract source pin",
+    "public contract producer scope",
+    "invented private token absent",
+    "producer exact archive layout",
+    "producer archive byte roundtrip",
+    "deterministic archive headers",
+    "two new producer fixtures deterministic",
+    "bad source rejected before archive or receipt construction",
+    "input pin research/codex_gemma_campaign_refresh_20261017T221612Z/official_current/adk_submission-0.2.13-py3-none-any.whl",
+    "input pin research/codex_gemma_campaign_refresh_20261017T221612Z/official_current/swegemma-0.2.11-py3-none-any.whl",
+    "pinned official compiler zipimport",
+    "official function pin create_tools",
+    "official registry nine names",
+    "e05 single inert agent",
+    "e05 exact model alias",
+    "e05 ordered declared tools",
+    "e05 exact E05 instruction",
+    "e05 full real GenAI config equality",
+    "e07 single inert agent",
+    "e07 exact model alias",
+    "e07 ordered declared tools",
+    "e07 exact E05 instruction",
+    "e07 full real GenAI config equality",
+    "official function pin _extract_declared_tools",
+    "official function pin build_agent_prompt",
+    "official declared-tool extraction",
+    "graph-absent task prompts byte-identical",
+    "only graph-guidance section differs with assets",
+    "exact595-byte task-prompt difference",
+    "three graph guides omitted in E07",
+    "zero tool calls and forbidden operations",
+    "observed peakRSS below1GiB",
+    "CPU30s and wall60s budgets"
+  ],
+  "graded_members": {
+    "agent.yaml": {
+      "bytes": 245,
+      "sha256": "6ad913b0c0cb67d669116a4074d7b520b3a69c8d5aa960b6abe51f9850b45227"
+    },
+    "configs/sampling.yaml": {
+      "bytes": 119,
+      "sha256": "571a934e89911734927533f1d36cbcc7b8d493592febe63b217e911cf7ed4926"
+    },
+    "eval_config.yaml": {
+      "bytes": 94,
+      "sha256": "916cf6cb34a6cc3de39837fa72cac681599b9ac2a3ee0b893adadfd36474c531"
+    },
+    "prompts/system.md": {
+      "bytes": 6862,
+      "sha256": "811d013466d5a89b7e4aac44e7629c5ee73830bcdb13ff67e5f81de8b5b9c386"
+    }
+  },
+  "inputs": {
+    "research/codex_gemma_campaign_refresh_20261017T221612Z/official_current/adk_submission-0.2.13-py3-none-any.whl": {
+      "bytes": 66528,
+      "sha256": "f156f0bd84580ccb9334726d114d7a5481f16d3a6e2887cc4d276ced0ef8d99d"
+    },
+    "research/codex_gemma_campaign_refresh_20261017T221612Z/official_current/swegemma-0.2.11-py3-none-any.whl": {
+      "bytes": 119670,
+      "sha256": "9ad876581f3acde8ec3c369858f0834e2b9f41a3cffce3ca42f09cb090aea9d3"
+    },
+    "research/codex_gemma_e05_postedit_verification_20261018/native_v32_exact_zip_acquisition_once/submission.zip": {
+      "bytes": 3922,
+      "sha256": "d92b7b6f3ea6d9ee6ac4180c0f8f55154b41d3b70385bacfd53d4aecbd2b9ab0"
+    },
+    "research/codex_gemma_e06_native_preparation_20261019/native_v33_exact_zip_acquisition_once/submission.zip": {
+      "bytes": 3681,
+      "sha256": "23fe724f34349ee9f5a3095c265dd21ebcb1b136699e8c3e6d7d8dd301292f10"
+    },
+    "research/codex_gemma_e07_actual_candidate_sourceonly_20261020/SOURCE_ONLY_PUBLIC_INPUT/e07_cpu_packager.py": {
+      "bytes": 5842,
+      "sha256": "3f7f1808b8eeb36607307530033c723afef509b47da0eb09db078effe454b7c1"
+    }
+  },
+  "launch_admission": false,
+  "limitations": [
+    "No Google ADK runtime integration, endpoint, model request or task-quality test",
+    "Negative policy pins are local contract checks, not claimed native compiler rejections",
+    "Public input availability, final candidate/SDK peer, fresh CPU launch and native submission gates remain root-only"
+  ],
+  "negative_policy_controls": {
+    "changed_budget": "REJECTED_BY_EXACT_POLICY_MEMBER_CONTRACT",
+    "changed_model": "REJECTED_BY_EXACT_POLICY_MEMBER_CONTRACT",
+    "reintroduced_graph_declaration": "REJECTED_BY_EXACT_POLICY_MEMBER_CONTRACT",
+    "wrong_prompt": "REJECTED_BY_EXACT_POLICY_MEMBER_CONTRACT"
+  },
+  "official_function_pins": {
+    "_extract_declared_tools": "bde414c79a308c897a105f34ed65d8c042b23e627e4f224ab0128bad575c856d",
+    "build_agent_prompt": "b2ad45c71b6bf156b27eaed3b70cf8fce87976009a9af38de08c737ead00820f",
+    "create_tools": "2593b3fe3a1421fc5dd87395f6583636e0ea8b62784f3c41b05360317f2b46bf"
+  },
+  "producer_fixtures": [
+    {
+      "bytes": 3890,
+      "public_contract_bytes": 878,
+      "public_contract_sha256": "24d338844e0166d58135d73a1401cb3bd85964e71ca0f24f5dd86d42ad64ca55",
+      "sha256": "e0f17eb9b96dbd341fa60d04e0be06770f8a75ab815feee25b25304d42f44c6d"
+    },
+    {
+      "bytes": 3890,
+      "public_contract_bytes": 878,
+      "public_contract_sha256": "24d338844e0166d58135d73a1401cb3bd85964e71ca0f24f5dd86d42ad64ca55",
+      "sha256": "e0f17eb9b96dbd341fa60d04e0be06770f8a75ab815feee25b25304d42f44c6d"
+    }
+  ],
+  "quality": "UNMEASURED",
+  "resources": {
+    "GPU_uses": 0,
+    "cpu_limit_seconds": 30,
+    "cpu_seconds": 0.50747,
+    "model_calls": 0,
+    "network_attempts": 0,
+    "peak_rss_bytes": 82690048,
+    "rss_acceptance_limit_bytes": 1073741824,
+    "rss_enforcement": "observed peak gate; no hard RSS sandbox",
+    "tool_calls": 0,
+    "wall_limit_seconds": 60,
+    "wall_seconds": 0.6346810830000322
+  },
+  "runtime": {
+    "ADK": "explicit inert import/constructor fixtures",
+    "GenAI": "real installed config types; no client",
+    "compiler": "unmodified pinned official0.2.13 wheel",
+    "pydantic": "2.13.4",
+    "python": "3.12.14 (main, Aug 25 2026, 13:50:33) [Clang 22.1.3 ]",
+    "yaml": "6.0.3"
+  },
+  "schema": "gemma-e07-new-combination-cpu-contract/1",
+  "source_script_sha256": "2f1cd39fc767728c5b05f2626ae646a8128a10772a4bd02c0e843d09a3ce2917",
+  "status": "PASS_CPU_CONTRACT_ONLY",
+  "task_prompts": {
+    "e05_graph_absent": {
+      "bytes": 1672,
+      "sha256": "6fc448e0184def5d7deb79a0ae0c788d9c8343ef0191fdd1aae467102986cc63"
+    },
+    "e05_graph_present": {
+      "bytes": 2267,
+      "sha256": "712d9c9659f31ccac24d92540b2e81c49631f4e6f800b81439379d772307c497"
+    },
+    "e07_graph_absent": {
+      "bytes": 1672,
+      "sha256": "6fc448e0184def5d7deb79a0ae0c788d9c8343ef0191fdd1aae467102986cc63"
+    },
+    "e07_graph_present": {
+      "bytes": 1672,
+      "sha256": "6fc448e0184def5d7deb79a0ae0c788d9c8343ef0191fdd1aae467102986cc63"
+    }
+  }
+}

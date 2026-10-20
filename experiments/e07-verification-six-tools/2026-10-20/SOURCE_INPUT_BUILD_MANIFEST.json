@@ -1,0 +1,71 @@
+{
+  "actual_dataset_id": null,
+  "actual_dataset_version": null,
+  "actual_publication_receipt": null,
+  "files": {
+    "LICENSE": {
+      "bytes": 11358,
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+    },
+    "NOTICE": {
+      "bytes": 1549,
+      "sha256": "386b610774c1c13e3adefd8b4af92741f26eab33af65c0ee2734abf720b5aeb1"
+    },
+    "README.md": {
+      "bytes": 3102,
+      "sha256": "b32cb17f67e556477cbfdf44b2b4e60a7f23b9532bf6f2ba58ef7b7f4ce734c8"
+    },
+    "agent.yaml": {
+      "bytes": 245,
+      "sha256": "6ad913b0c0cb67d669116a4074d7b520b3a69c8d5aa960b6abe51f9850b45227"
+    },
+    "e07_cpu_packager.py": {
+      "bytes": 5842,
+      "sha256": "3f7f1808b8eeb36607307530033c723afef509b47da0eb09db078effe454b7c1"
+    },
+    "eval_config.yaml": {
+      "bytes": 94,
+      "sha256": "916cf6cb34a6cc3de39837fa72cac681599b9ac2a3ee0b893adadfd36474c531"
+    },
+    "sampling.yaml": {
+      "bytes": 119,
+      "sha256": "571a934e89911734927533f1d36cbcc7b8d493592febe63b217e911cf7ed4926"
+    },
+    "system.md": {
+      "bytes": 6862,
+      "sha256": "811d013466d5a89b7e4aac44e7629c5ee73830bcdb13ff67e5f81de8b5b9c386"
+    }
+  },
+  "graded_members": {
+    "agent.yaml": {
+      "bytes": 245,
+      "origin": "E06 scored archive",
+      "sha256": "6ad913b0c0cb67d669116a4074d7b520b3a69c8d5aa960b6abe51f9850b45227"
+    },
+    "configs/sampling.yaml": {
+      "bytes": 119,
+      "origin": "E05 scored archive",
+      "sha256": "571a934e89911734927533f1d36cbcc7b8d493592febe63b217e911cf7ed4926"
+    },
+    "eval_config.yaml": {
+      "bytes": 94,
+      "origin": "E05 scored archive",
+      "sha256": "916cf6cb34a6cc3de39837fa72cac681599b9ac2a3ee0b893adadfd36474c531"
+    },
+    "prompts/system.md": {
+      "bytes": 6862,
+      "origin": "E05 scored archive",
+      "sha256": "811d013466d5a89b7e4aac44e7629c5ee73830bcdb13ff67e5f81de8b5b9c386"
+    }
+  },
+  "immutable_build_time_provenance": true,
+  "intended_ref": "prvsiyan/gemma-e07-verification-six-tools",
+  "launch_admission": false,
+  "license": "Apache-2.0",
+  "new_ZIP_hash": null,
+  "producer_executed": false,
+  "publication_facts_require_separate_root_receipt": true,
+  "schema": "gemma-e07-eight-member-public-input-build/1",
+  "source_entrypoint": "e07_cpu_packager.py",
+  "status": "UNPUBLISHED_SOURCE_ONLY"
+}
