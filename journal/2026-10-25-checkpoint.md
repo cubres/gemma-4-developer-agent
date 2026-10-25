@@ -23,7 +23,7 @@ Result:
 
 - The worker reported six of six correct for the preflight and two of six for the no-preflight baseline, which passes everything [V, worker report].
 - The coordinator reran the pinned local verifier. It exited 0 with `verified: true`: six tests run and six passing cases executed. `official_score` is null [V].
-- **The result is not accepted.** The worker's declared checks did not match the commands it ran: one declared check used a placeholder instead of the exact hypothesis text. The broker holds the outcome as `needs_review` [V].
+- **The result is not accepted.** The broker holds the outcome as `needs_review` with `validation_matches: false` [V]. One of the worker's declared checks used a placeholder instead of the exact hypothesis text [V]. That placeholder is the likely cause of the mismatch [I].
 - None of the documented resolution routes applies to a passing write-mode result with no failed commands, so the task stays held. It was not retried and its slot was not reused [V].
 
 This result is a local tool check only. It does not measure agent quality and does not predict the leaderboard [I].
