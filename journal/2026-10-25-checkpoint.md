@@ -37,3 +37,11 @@ This result is a local tool check only. It does not measure agent quality and do
 
 - The `needs_review` hold needs a documented resolution before this preflight can count as an accepted result.
 - If it is accepted, the preflight can serve as a local gate before archive packaging [I].
+
+## 5. Addendum: result accepted by coordinator validation (later on 25 October 2026)
+
+Section 2 above is superseded on one point. Since then, the preflight result has been accepted through the queue's documented worker-review route, using an independently approved coordinator review packet (SHA256 `cd5cf5c2…`). The task is now COMPLETE, with result evidence `9dc1bd70…` [V].
+
+- Acceptance came from coordinator validation of the actual worker output, contract and source tree. The worker's own declared validation is still recorded as unaccepted [V].
+- The model was not rerun, and the task's slot was not reused [V].
+- It is still a local archive-layout check only. It measures neither agent quality nor the leaderboard. No notebook was changed and nothing was submitted [V].
